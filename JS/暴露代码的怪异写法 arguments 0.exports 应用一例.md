@@ -46,9 +46,9 @@ Object.assign(arguments[0].exports, exp)
 ```
 其中的赋值语句`exp.default= exp`即可达到代码瘦身的目的，而`Object.assign(arguments[0].exports, exp)`正是此法的怪异之处。这条，很不容易想到。
 
+### 不这么写会怎么样？
 
-
-如果不这么写会怎么样？比如尝试如下写法（可惜，都行不通的）
+比如尝试如下写法（可惜，都行不通的）
 ```js
 //* 以下7种尝试简化的写法都行不通
 let exp={
@@ -65,4 +65,6 @@ export exp;                          // Failed to compile
 //*/
 ```
 
-本项目下载链接 `git@gitee.com:zhaiduting/vue-sell-cube.git` 或者 https://gitee.com/zhaiduting/vue-sell-cube.git （npm i 之后 npm run serve）。
+### 本项目下载链接 
+
+`git@gitee.com:zhaiduting/vue-sell-cube.git` 或者 https://gitee.com/zhaiduting/vue-sell-cube.git （npm i 之后 npm run serve）。
