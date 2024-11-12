@@ -15,7 +15,7 @@
 4、按下功能键 F12 即可看到如下截图
 ![file](https://cdn.learnku.com/uploads/images/201903/18/24833/D1714abixz.png!large)
 其中主js文件为 main.js 代码如下
-```
+```js
 var thisModule=require('./thisModule')
 console.log('in main.js:')
 console.log(thisModule);
