@@ -1,8 +1,9 @@
 # 忽略 Obsidian 配置文件夹
 .obsidian/
 
-# 忽略缓存文件
+# 忽略缓存文件与手机端
 .cache/
+.trash/
 
 # 忽略日志文件
 *.log
