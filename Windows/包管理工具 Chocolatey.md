@@ -1,5 +1,5 @@
  
-[Chocolatey](https://chocolatey.org/) 是 Windows 上最受欢迎的包管理器，它允许你通过命令行安装、更新和管理软件包。
+[Chocolatey](https://community.chocolatey.org/)是 Windows 上最受欢迎的包管理器，它允许你通过命令行安装、更新和管理软件包。
 
 ### 安装方法
 
@@ -18,3 +18,7 @@ Chocolatey 的用法很简单，记住以下 3 条就够了：
 
 例如以下命令
 `choco install wechat` 安装微信
+`choco install googlechrome` 安装谷歌浏览器
+
+### 安装命令
+
