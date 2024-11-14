@@ -20,5 +20,11 @@ Chocolatey 的用法很简单，记住以下 3 条就够了：
 `choco install wechat` 安装微信
 `choco install googlechrome` 安装谷歌浏览器
 
-### 安装命令
+### 常用软件的安装命令集
 
+`choco install fscapture` 截图软件
+`choco install 7zip` 文件压缩解压工具
+`choco install notepadplusplus` 文本编辑器 Notepad++
+`choco install tencentqq` 腾讯 QQ
+`choco install wechat` 微信
+`choco install googlechrome` 谷歌浏览器
