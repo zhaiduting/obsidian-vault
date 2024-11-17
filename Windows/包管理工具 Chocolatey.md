@@ -28,3 +28,5 @@ Chocolatey 的用法很简单，记住以下 3 条就够了：
 `choco install tencentqq` 腾讯 QQ
 `choco install wechat` 微信
 `choco install googlechrome` 谷歌浏览器
+`choco install obsidian`
+`choco install intellijidea-ultimate` 旗舰版（最好的版本）
