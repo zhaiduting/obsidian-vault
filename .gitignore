@@ -1,5 +1,6 @@
-# 忽略 Obsidian 配置文件夹
-.obsidian/
+# 忽略 Obsidian 配置文件夹，但并不忽略插件
+.obsidian/*
+!/.obsidian/plugins
 
 # 忽略缓存文件与手机端删除的文件
 .cache/
