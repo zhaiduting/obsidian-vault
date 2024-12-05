@@ -3,6 +3,8 @@
 !/.obsidian/plugins
 # 追踪插件的开关状态
 !.obsidian/*plugins.json
+# 追踪 Obsidian 的设置
+!.obsidian/app.json
 
 # 忽略缓存文件与手机端删除的文件
 .cache/
