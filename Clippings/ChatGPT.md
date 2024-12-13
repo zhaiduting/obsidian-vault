@@ -1,12 +1,13 @@
 ---
-title: "ChatGPT"
-source: "https://chatgpt.com/c/6758edde-e4b8-800e-b514-0a5cfe19327b"
-author:
-published:
+title: ChatGPT
+source: https://chatgpt.com/c/6758edde-e4b8-800e-b514-0a5cfe19327b
+author: 
+published: 
 created: 2024-12-11
-description: "ChatGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try. Just ask and ChatGPT can help with writing, learning, brainstorming and more."
+description: ChatGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try. Just ask and ChatGPT can help with writing, learning, brainstorming and more.
 tags:
-  - "clippings"
+  - clippings
+  - ChatGPT
 ---
 对于你提到的几个工具，我们来逐个分析一下它们在不同平台上执行 Git 命令（如 `git clone git@github.com:your-username/my-project.git`）的表现。主要考虑平台兼容性和本地执行 Git 命令的能力。
 
