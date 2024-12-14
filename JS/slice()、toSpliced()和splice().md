@@ -6,7 +6,7 @@ slice(start)
 slice(start, end)
 ```
 
-toSpliced() 返回一个新数组，并在给定的索引处删除和/或替换了一些元素。
+toSpliced() 返回一个新数组，并在给定的索引处删除和/或替换了一些元素。原数组不变！注意：这个是2023年7月份引入的新方法，旧浏览器不支持。
 ```js
 // start 为元素索引，deleteCount 为删除元素的个数
 // item1 到 itemN 皆为插入的新元素
@@ -16,7 +16,7 @@ toSpliced(start, deleteCount, item1)
 toSpliced(start, deleteCount, item1, item2, /* …, */ itemN)
 ```
 
-splice() 语法与 toSpliced() 完全一样，但是不会生成新数组，而是直接修改了原数组！
+splice() 语法与 toSpliced() 一样，但是返回值是被删除的元素组成的数组，而是直接修改了原数组！
 ```js
 splice(start)
 splice(start, deleteCount)
@@ -25,3 +25,14 @@ splice(start, deleteCount, item1, item2)
 splice(start, deleteCount, item1, item2, /* …, */ itemN)
 ```
 
+## 测试
+
+```
+let arr = [0, 1, 2, 3, 4];
+console.log(arr.splice(1, 1))		// [1]
+console.log(arr)					// [0, 2, 3, 4]
+
+arr = [0, 1, 2, 3, 4];
+console.log(arr.toSpliced(1, 1))	// [0, 2, 3, 4]
+console.log(arr)					// [0, 1, 2, 3, 4]
+```
