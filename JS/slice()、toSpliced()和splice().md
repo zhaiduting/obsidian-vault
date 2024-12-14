@@ -36,3 +36,32 @@ arr = [0, 1, 2, 3, 4];
 console.log(arr.toSpliced(1, 1))	// [0, 2, 3, 4]
 console.log(arr)					// [0, 1, 2, 3, 4]
 ```
+
+## 代码优化示例
+
+以下JS函数好像写得很繁琐，能否简化？
+```js
+function removeItemAtIndex(arr, index) {  
+  return [...arr.slice(0, index), ...arr.slice(index + 1)];  
+}
+```
+
+改用 splice 的写法如下
+```js
+function removeItemAtIndex(arr, index) {
+  arr.splice(index, 1);
+  return arr;
+}
+```
+
+改用 toSpliced 似乎更简洁，如下
+```js
+function removeItemAtIndex(arr, index) {
+  return [...arr.toSpliced(index, 1)]; //此处 toSpliced 改成 splice 是错误写法
+}
+```
+
+还可以采用 [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 改写
+```js
+const removeItemAtIndex = (arr, index) => arr.filter((_, i) => i !== index);
+```
