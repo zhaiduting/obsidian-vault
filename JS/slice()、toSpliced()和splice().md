@@ -27,7 +27,7 @@ splice(start, deleteCount, item1, item2, /* …, */ itemN)
 
 ## 测试
 
-```
+```js
 let arr = [0, 1, 2, 3, 4];
 console.log(arr.splice(1, 1))		// [1]
 console.log(arr)					// [0, 2, 3, 4]
