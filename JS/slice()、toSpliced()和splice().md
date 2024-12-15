@@ -25,18 +25,6 @@ splice(start, deleteCount, item1, item2)
 splice(start, deleteCount, item1, item2, /* …, */ itemN)
 ```
 
-## 测试
-
-```js
-let arr = [0, 1, 2, 3, 4];
-console.log(arr.splice(1, 1))		// [1]
-console.log(arr)					// [0, 2, 3, 4]
-
-arr = [0, 1, 2, 3, 4];
-console.log(arr.toSpliced(1, 1))	// [0, 2, 3, 4]
-console.log(arr)					// [0, 1, 2, 3, 4]
-```
-
 ## 代码优化示例
 
 以下JS函数好像写得很繁琐，能否简化？
@@ -46,7 +34,7 @@ function removeItemAtIndex(arr, index) {
 }
 ```
 
-改用 splice 的写法如下
+改用 splice 的写法如下，问题是**这种写法改变了原数组 arr**
 ```js
 function removeItemAtIndex(arr, index) {
   arr.splice(index, 1);
@@ -61,7 +49,59 @@ function removeItemAtIndex(arr, index) {
 }
 ```
 
+上面的写法有冗余，更简洁的是下面这样
+```js
+function removeItemAtIndex(arr, index) {
+  return arr.toSpliced(index, 1);
+};
+```
+
 还可以采用 [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 改写
 ```js
-const removeItemAtIndex = (arr, index) => arr.filter((_, i) => i !== index);
+function removeItemAtIndex(arr, index) {
+  return arr.filter((_, i) => i !== index);
+};
+```
+
+## 测试
+
+简单一点
+```js
+let arr = [0, 1, 2, 3, 4];
+console.log(arr.slice())			// [0, 1, 2, 3, 4]
+console.log(arr.toSpliced())		// [0, 1, 2, 3, 4]
+console.log(arr.splice(), arr)		// [] 和 [0, 1, 2, 3, 4]
+
+console.log(arr.splice(1, 1))		// [1]
+console.log(arr)					// [0, 2, 3, 4]
+
+arr = [0, 1, 2, 3, 4];
+console.log(arr.toSpliced(1, 1))	// [0, 2, 3, 4]
+console.log(arr)					// [0, 1, 2, 3, 4]
+
+console.log(arr.slice(1, 1))		// []
+```
+
+调用函数测试
+```js
+let removeItemAtIndex = function (arr, index) {
+  arr.splice(index, 1);
+  return arr;
+};
+let arr = ['a', 'b', 'c'];
+console.log(removeItemAtIndex(arr, 1)); // ["a", "c"]
+console.log(arr); // 原数组也被改成了 ["a", "c"]
+
+removeItemAtIndex = function (arr, index) {
+  return arr.toSpliced(index, 1);
+};
+arr = ['a', 'b', 'c'];
+console.log(removeItemAtIndex(arr, 1)); // ["a", "c"]
+console.log(arr); // ["a", "b", "c"]
+
+removeItemAtIndex = function (arr, index) {
+  return arr.filter((_, i) => i !== index);
+};
+console.log(removeItemAtIndex(arr, 1)); // ["a", "c"]
+console.log(arr); // ["a", "b", "c"]
 ```
