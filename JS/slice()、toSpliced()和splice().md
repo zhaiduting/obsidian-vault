@@ -56,7 +56,7 @@ function removeItemAtIndex(arr, index) {
 };
 ```
 
-还可以采用 [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 改写
+还可以采用 [filter](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) 改写，但是这种写法需要遍历所有元素，耗时
 ```js
 function removeItemAtIndex(arr, index) {
   return arr.filter((_, i) => i !== index);
