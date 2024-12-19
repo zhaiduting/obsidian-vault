@@ -66,7 +66,7 @@ function removeItemAtIndex(arr, index) {
 ## 测试
 
 简单一点
-```js
+```js hl:11 title:easy 
 let arr = [0, 1, 2, 3, 4];
 console.log(arr.slice())			// [0, 1, 2, 3, 4]
 console.log(arr.toSpliced())		// [0, 1, 2, 3, 4]
@@ -103,5 +103,72 @@ removeItemAtIndex = function (arr, index) {
   return arr.filter((_, i) => i !== index);
 };
 console.log(removeItemAtIndex(arr, 1)); // ["a", "c"]
-console.log(arr); // ["a", "b", "c"]
+console.log({arr:[2,3]}); // ["a", "b", "c"]
 ```
+
+```markdown-tree
+abb
+	dd
+		efghi
+	cc
+		fefe
+		fefjej
+		ssj
+ccc
+	dfefe
+		fejfejf
+		
+```
+
+```livecodes:{ "template": "html" }
+// 在这里编写你的代码 console.log("Hello, world!"); 
+```
+
+```c
+main(){
+	systerm.print("Hello")
+}
+```
+
+```js
+// React 示例：显示当前时间的组件
+import React, { useState, useEffect } from 'react';
+
+const Clock = () => {
+  const [time, setTime] = useState(new Date().toLocaleTimeString());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return <div>Current time: {time}</div>;
+};
+
+export default Clock;
+
+```
+
+
+```html
+<iframe height="300" style="width: 100%;" scrolling="no" title="Untitled" src="https://codepen.io/zhaiduting/pen/LEPWyVe?editors=1112" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+</iframe>
+```
+
+### 例1
+<iframe src="https://codesandbox.io/embed/98969n?view=editor+%2B+preview&module=%2Fsrc%2Findex.js&expanddevtools=1" style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;" title="react.dev (forked)" allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking" sandbox="allow-styles allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
+</iframe>
+
+### 例2
+```html
+<iframe src="https://stackblitz.com/edit/vitejs-vite-dtbpsyz3?embed=1&file=index.html"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="测试"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+   
+   ```
