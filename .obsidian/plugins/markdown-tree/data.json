@@ -1,6 +1,6 @@
 {
   "fancy": true,
   "fullPath": false,
-  "trailing": true,
-  "root": true
+  "trailing": false,
+  "root": false
 }
