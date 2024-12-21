@@ -1,10 +1,14 @@
-# 忽略 Obsidian 配置文件夹，但并不忽略插件
+# 忽略 Obsidian 配置文件夹
 .obsidian/*
-!/.obsidian/plugins
-# 追踪插件的开关状态
+# 但需追踪此保存在此文件夹下的应用设置及插件开关状态
 !.obsidian/*plugins.json
-# 追踪 Obsidian 的设置
 !.obsidian/app.json
+
+# 还需追踪指定的插件
+!/.obsidian/plugins
+/.obsidian/plugins/*
+!/.obsidian/plugins/obsidian-git
+!/.obsidian/plugins/markdown-tree
 
 # 忽略缓存文件与手机端删除的文件
 .cache/
