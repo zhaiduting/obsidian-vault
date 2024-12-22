@@ -1,4 +1,6 @@
 [
   "obsidian-git",
-  "markdown-tree"
+  "markdown-tree",
+  "sample-plugin",
+  "hot-reload"
 ]
