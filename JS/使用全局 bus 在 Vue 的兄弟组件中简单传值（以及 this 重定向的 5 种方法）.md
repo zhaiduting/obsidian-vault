@@ -38,7 +38,7 @@ const app = new Vue({
 `bus.$on('msg_SelectedItemChange', 回调函数的名称)`
 
 **难点在于回调函数内部的this指向可能有问题**，比如下面的写法就不能在浏览器里面显示组件2获取的数据
-```vue
+```html
 <template>
     <div>组件2：{{cartItems}}</div>
 </template>
