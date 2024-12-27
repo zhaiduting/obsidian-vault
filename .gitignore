@@ -1,8 +1,9 @@
 # 忽略 Obsidian 配置文件夹
 .obsidian/*
-# 但需追踪此保存在此文件夹下的应用设置及插件开关状态
-!.obsidian/*plugins.json
+# 但需追踪保存在此文件夹下的应用设置
 !.obsidian/app.json
+# 不再追踪插件的开关状态（下面这行已被注释）
+# !.obsidian/*plugins.json
 
 # 还需追踪指定的插件
 !/.obsidian/plugins
