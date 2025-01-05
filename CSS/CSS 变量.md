@@ -56,3 +56,5 @@ h2 {
   <p>This is a paragraph.</p>
 </div>
 ```
+
+参考链接 [MDN](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Using_CSS_custom_properties) 

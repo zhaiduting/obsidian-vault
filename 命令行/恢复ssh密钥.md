@@ -26,6 +26,6 @@ ssh-add -D
 
 ### 解决一个Bug
 
-Win11_24H2_Chinese_Simplified_Arm64 系统的 ssh-agent 无法记住密码，这是因为有多个 OpenSSH 导致的。终端敲入命令`choco uninstall git`将Git卸载，这也会将 Git 捆绑的 OpenSSH 一并卸载。然后访问 [https://git-scm.com/downloads/win]() 手动下载并安装Git，注意：安装过程中不要安装捆绑的 OpenSSH（如下图）
+Win11_24H2_Chinese_Simplified_Arm64 系统的 ssh-agent 无法记住密码，这是因为有多个 OpenSSH 导致的。终端敲入命令`choco uninstall git`将Git卸载，这也会将 Git 捆绑的 OpenSSH 一并卸载。然后访问 [git-scm.com](https://git-scm.com/downloads/win) 手动下载并安装Git，注意：安装过程中不要安装捆绑的 OpenSSH（如下图）
 
 ![[安装Git时不要安装捆绑的OpenSSH.jpg]]
