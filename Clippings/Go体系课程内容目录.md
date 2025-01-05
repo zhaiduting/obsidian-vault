@@ -1,7 +1,7 @@
 ---
 source: https://class.imooc.com/newgo#Anchor
-author: 
-published: 
+author:
+  - 慕课网
 created: 2025-01-06
 description: 慕课网就业班,一条通往有钱途的IT就业班,精心打造适合你的编程学习路线,从零起点培养WEB前端工程师、JAVA工程师、Android工程师、PHP工程师,为晋级加薪提供平坦之路
 tags:
