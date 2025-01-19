@@ -2,7 +2,7 @@
 title: 如何识别 Mac 上的 DFU 端口 - 官方 Apple 支持 (中国)
 source: https://support.apple.com/zh-cn/120694
 author:
-  - "[[Apple Support]]"
+  - Apple Support
 published: 
 created: 2024-12-13
 description: 了解如何查找 Mac 上的设备固件更新端口。

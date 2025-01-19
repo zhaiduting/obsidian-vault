@@ -1,13 +1,13 @@
 ---
-title: "‎Gemini - chat to supercharge your ideas"
-source: "https://gemini.google.com/app/25910a98c0afaeaf"
+title: ‎Gemini - chat to supercharge your ideas
+source: https://gemini.google.com/app/25910a98c0afaeaf
 author:
-  - "[[Gemini]]"
-published:
+  - Gemini
+published: 
 created: 2025-01-15
-description: "Bard is now Gemini. Get help with writing, planning, learning, and more from Google AI."
+description: Bard is now Gemini. Get help with writing, planning, learning, and more from Google AI.
 tags:
-  - "clippings"
+  - clippings
 ---
 
 ### 我想了解一下 go 的继承机制

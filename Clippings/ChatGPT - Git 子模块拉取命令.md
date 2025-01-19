@@ -2,7 +2,7 @@
 title: ChatGPT - Git 子模块拉取命令
 source: https://chatgpt.com/share/675bb934-2300-800e-8bea-d9070e767b40
 author:
-  - "[[ChatGPT]]"
+  - ChatGPT
 published: 
 created: 2024-12-13
 description: Shared via ChatGPT
