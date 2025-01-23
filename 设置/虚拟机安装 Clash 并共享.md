@@ -6,7 +6,7 @@
 
 这是一个访问外网的工具，下载链接为 [clashforwindows.net](https://www.clashforwindows.net/clash-for-windows-download/)，Mac 版下载链接为 [clashx.org](https://clashx.org/clashx-download/)
 
-使用方法也简单，只需要把有效的订阅地址写到 Profiles 的 Download from Url 文本框里，之后点击 Download 按钮就可以访问外网了
+使用方法也简单，只需要把有效的==订阅链接==写到 Profiles 的 Download from a URL 文本框里，之后点击 Download 按钮就可以访问外网了
 ![[粘贴订阅地址.jpg]]
 
 ### 共享设置
@@ -24,7 +24,7 @@
 在手机的 WiFi 设置界面，手动添加一个==代理服务器==，将以上端口号及虚拟机 IP 地址填进去。稍候，手机也可以访问外网了。
 
 对于宿主机及其它设备的网络设置方法同理。
-![[Screenshot_20250123_124635.jpg]]
+![[设置 wifi 代理.jpg]]
 
 ### 注意
 
