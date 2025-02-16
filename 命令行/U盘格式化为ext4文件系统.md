@@ -1,3 +1,5 @@
+如果路由器的 jffs 容量太小，可以采用将 U 盘挂载为 jffs 分区的办法解决这个问题。注意 U 盘需使用 ext4 格式，不能使用 FAT32、NTFS、exFAT 或 APFS 格式。
+
 ### 相关命令
 
 查看存储设备
@@ -13,7 +15,7 @@
 ```
 
 格式化前需要卸载 U 盘`diskutil unmountDisk /dev/disk8`
-使用`sudo mkfs.ext4 /dev/disk8`格式化 U 盘，这条命令需要满足以下条件
+==使用`sudo mkfs.ext4 /dev/disk8`格式化 U 盘==，这条命令需要满足以下条件
 
 - 需要安装  `e2fsprogs`，安装命令为`brew install e2fsprogs`
 - 修改 .zshrc 文件配置路径变量
@@ -22,6 +24,8 @@
 export PATH="/opt/homebrew/opt/e2fsprogs/bin:$PATH"
 export PATH="/opt/homebrew/opt/e2fsprogs/sbin:$PATH"
 ```
+
+在拔出 U 盘前，为安全起见可以再敲一遍`diskutil unmountDisk /dev/disk8`命令。
 
 ### 终端记录
 
@@ -46,6 +50,7 @@ mke2fs 1.47.2 (1-Jan-2025)
 写入超级块和文件系统账户统计信息：已完成
 
 ~ > diskutil list
+# 此处省略其它设备
 
 /dev/disk8 (external, physical):
    #:                       TYPE NAME                    SIZE       IDENTIFIER
