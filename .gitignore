@@ -41,6 +41,13 @@ desktop.ini
 
 # Node.js 项目相关
 node_modules/
+yarn.lock
+package.json
+.prettierrc
 
 # Vim 临时文件
 *.swp
+
+# 其它
+/废纸篓/
+/草稿/
