@@ -13,7 +13,7 @@ tags:
 
 crontab -e 这条命令是什么意思？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 `crontab -e` 这个命令是用来编辑当前用户的 **crontab** 文件的。**crontab** 文件是一个定时任务的配置文件，允许用户安排某些命令在特定的时间或周期性地自动执行。
 
@@ -38,7 +38,7 @@ crontab -e 这条命令是什么意思？
 
 \* \* \* 能否改成 \*\*\* 呢？为什么要用 3 个星号？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 在 `crontab` 中，时间和日期的设置是用五个字段来表示的，每个字段用一个星号 `*` 或数字来指定。
 
@@ -71,7 +71,7 @@ crontab -e 这条命令是什么意思？
 
 30 2 \* \* \* /path/to/script.sh 每隔 2 小时 30 分钟执行一次 script.sh ？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 不完全是。`30 2 * * * /path/to/script.sh` 这条 `crontab` 命令的意思是 **每天凌晨 2:30** 执行一次 `script.sh`，而不是每隔 2 小时 30 分钟执行。
 
@@ -116,7 +116,7 @@ done
 
 @boot script.sh 是什么意思？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 `@boot` 是 `cron` 中的一种特殊时间表示方式，表示 **系统启动时执行某个命令**。
 
@@ -147,7 +147,7 @@ done
 
 @minute 呢？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 `@minute` 并不是 `cron` 中的一个有效的特殊时间表示。`cron` 中没有 `@minute` 这个表示方式。
 
@@ -181,7 +181,7 @@ done
 
 怎么表达一分钟后执行 echo Hello
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 要表达 **一分钟后执行** `echo Hello`，你可以使用 `sleep` 命令来延迟执行，或者使用 `at` 命令来在指定时间执行。
 
@@ -226,7 +226,7 @@ echo "echo Hello" | at now + 1 minute
 
 34 \* \* \* \* echo Hello 是不是每隔 34 分钟执行一次 echo？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 是的，`34 * * * * echo Hello` 会在 **每小时的第 34 分钟** 执行一次 `echo Hello`。
 
@@ -269,7 +269,7 @@ echo "echo Hello" | at now + 1 minute
 
 1 \* \* \* \* echo Hello 每隔 1 分钟执行一次 echo 命令吗？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 不，`1 * * * * echo Hello` **并不是每隔 1 分钟** 执行一次 `echo Hello`。
 
@@ -295,7 +295,7 @@ echo "echo Hello" | at now + 1 minute
 
 1 \* \* \* \* echo Hello 表示每小时的第 1 分钟执行命令？ 10 \* \* \* \* echo Hello 表示每小时的第 10 分钟执行命令？ 61 \* \* \* \* echo Hello 表示每小时的第 61 分钟执行命令？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 你的理解基本正确！下面是对每个表达式的详细解释：
 
@@ -330,7 +330,7 @@ echo "echo Hello" | at now + 1 minute
 
 1 2 \* \* \* echo Hello 表示每一天的第 2 小时的第 1 分钟执行命令？
 
-###### ![ChatGPT 说：](chatGPT.svg)
+###### ![ChatGPT 说：](/assets/chatGPT.svg)
 
 是的，`1 2 * * * echo Hello` 这条 `cron` 表达式表示 **每天的第 2 小时的第 1 分钟** 执行命令。
 

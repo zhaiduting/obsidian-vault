@@ -8,7 +8,7 @@
 - 操作系统选择其它 Linux；
 - 名称随意，勾选==安装前设定==；
 - ==更改虚拟机硬盘为之前下载的文件== `openwrt-24.10.0-rc7-armsr-armv8-generic-ext4-combined-efi.img.hdd`，这会触发硬盘格式的自动转换
-    ![](img自动转hdd.png)
+    ![](/assets/img自动转hdd.png)
     3、启动虚拟机后没有图形界面，只显示一个黑底白字的终端。敲入以下命令
 
 ```shell

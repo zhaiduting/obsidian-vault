@@ -1,5 +1,5 @@
 {
-  "attachmentFolderPath": "assets",
+  "attachmentFolderPath": "/",
   "alwaysUpdateLinks": true,
   "useMarkdownLinks": true
 }

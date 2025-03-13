@@ -17,5 +17,5 @@ new Setting(contentEl).addButton((btn) =>
 ```
 
 效果图如下
-![[Setting(contentEl).png]]
+![[/assets/Setting(contentEl).png]]
 其中`setCta()` 的作用是将按钮设置为“主要行动按钮”（Call To Action），这会给按钮添加特定的样式，使其在视觉上更加突出。

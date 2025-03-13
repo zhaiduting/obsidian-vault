@@ -6,7 +6,7 @@
 
 ### 举例
 将文件 `~/obsidian-vault/JS/'slice()、toSpliced()和splice().md'` 恢复到某个历史版本，终端截图如下。
-![](git%20restore.png)
+![](/assets/git%20restore.png)
 ### 注意
 输入命令`git log <file>` 后，终端会分页显示，可以使用以下键盘快捷键浏览信息或退出日志：
 
