@@ -14,7 +14,7 @@ Host gitee.com
 ```
 
 代理工具安装在路由器里，其中 192.168.50.1 正是路由器的 ip 地址，而 55555 则是 Socks 端口号，可以打开 http://192.168.50.1:9990/ui/zashboard/#/settings 更改端口号（临时有效）。下图终端敲入命令`git push`后的输出结果说明配置已生效。
-![](/assets/为ssh协议设置代理.png)
+![为ssh协议设置代理](https://lib.zhaiduting.work.gd/uPic/%E4%B8%BAssh%E5%8D%8F%E8%AE%AE%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86.png)
 要想永久更改端口号，可以通过编辑 .yaml 文件实现，末尾加入一行 ==socks-port: 55555==
 
 ### ssh 设置代理的关键配置项
