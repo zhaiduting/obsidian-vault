@@ -1,11 +1,13 @@
 ---
 author:
-  - "[[DeepSeek]]"
+  - "[[Clippings/curl 命令]]"
 source: https://chat.deepseek.com/a/chat/s/89bf7713-dd0d-4ada-943b-bd52f89d7243
 published: 
 created: 2025-01-19
 tags:
   - clippings
+  - 命令行
+  - Go
 ---
 
 在 Go 语言中，`%+v` 是 `fmt` 包中用于格式化输出的一个动词（verb），用于打印结构体时显示字段名和对应的值。

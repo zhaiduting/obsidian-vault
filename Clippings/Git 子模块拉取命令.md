@@ -9,7 +9,7 @@ description: Shared via ChatGPT
 tags:
   - clippings
   - "#git"
-  - ChatGPT
+  - 命令行
 ---
 如果子模块只有一个空文件夹，这通常意味着子模块的初始化没有正确完成，或者仓库的某个部分尚未完全拉取。你可以尝试以下命令来确保子模块正确初始化并拉取内容：
 
