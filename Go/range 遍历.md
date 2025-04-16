@@ -71,3 +71,62 @@ for val := range ch {
 总之，关闭通道后仍然可以读取剩余数据，`range`  会读完所有值后安全退出。
 
 如果通道未关闭，`range`  会一直等待新数据，可能导致死锁（除非有其他 goroutine 继续发送数据）。
+
+### 遍历模版
+
+| 写法                      | 有 index 吗 | 用法                  |
+| ------------------------- | ----------- | --------------------- |
+| `{{ range . }}`           | ❌ 无 index | 只能用 `{{ .Field }}` |
+| `{{ range $i, $v := . }}` | ✅ 有 index | 用 `$i`、`$v` 来访问  |
+
+以下为使用 index 的示例，变量需要使用 $ 开头
+
+```go
+// 传入数据 []string{"Apple", "Banana", "Cherry"}
+
+<ul>
+    {{ range $i, $v := . }}
+        <li>{{ $i }}: {{ $v }}</li>
+    {{ end }}
+</ul>
+
+/* 结果为
+<ul>
+    <li>0: Apple</li>
+    <li>1: Banana</li>
+    <li>2: Cherry</li>
+</ul>
+*/
+```
+
+无 index 示例如下
+
+```go
+type Item struct {
+    ID   int
+    Body string
+    Link string
+}
+
+items := []Item{
+    {ID: 1, Body: "Hello", Link: "/hello"},
+    {ID: 2, Body: "World", Link: "/world"},
+}
+
+tmpl := template.Must(template.New("list").Parse(`
+<ul>
+    {{ range . }}
+    <li><a href="{{.Link}}">{{.ID}} {{.Body}}</a></li>
+    {{ end }}
+</ul>
+`))
+
+tmpl.Execute(os.Stdout, items)
+
+/* 结果为
+<ul>
+    <li><a href="/hello">1 Hello</a></li>
+    <li><a href="/world">2 World</a></li>
+</ul>
+*/
+```
