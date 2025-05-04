@@ -101,7 +101,7 @@ cfg := spew.ConfigState{
     Indent: "  ",  // 缩进2空格，默认缩进只有1空格
     MaxDepth: 2,
 }
-cfg.Dump(app.DB)
+cfg.Dump(DB)
 ```
 
 或者改用如下链式写法
@@ -111,5 +111,5 @@ cfg.Dump(app.DB)
 (&spew.ConfigState{  
     Indent:   "\t",  
     MaxDepth: 2,  
-}).Dump(app.DB)
+}).Dump(DB)
 ```
