@@ -264,7 +264,7 @@ go 1.24.2
 
 require example.com/lib v0.0.0 // v0.0.0 代表“任意版本”
 
-replace example.com/lib => ../lib // 符号 => 的左右两侧至少保留1个空格！
+replace example.com/lib => ../lib // 箭头符号左、右两侧的空格不可少！
 ```
 
 此时 app 应该可以正常运行了
