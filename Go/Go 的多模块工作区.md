@@ -252,3 +252,19 @@ monorepo 是什么意思？
 ```
 
 你就可以通过 `go.work` 把这些模块统一管理，开发起来就像一个整体项目一样高效。
+
+## 如果改用 replace
+
+删除`go.work`文件，将会导致前文的 app 项目无法运行。如果改用传统的 replace 做法，app 项目中的 go.mod 文件应该类似如下
+
+```go
+module example.com/app
+
+go 1.24.2
+
+require example.com/lib v0.0.0 // v0.0.0 代表“任意版本”
+
+replace example.com/lib => ../lib // 符号 => 的左右两侧至少保留1个空格！
+```
+
+此时 app 应该可以正常运行了
