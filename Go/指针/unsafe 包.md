@@ -111,9 +111,9 @@ Align of MyStruct: 4 bytes
 */
 ```
 
-### 示例
+### 举个关于数组的例子
 
-以下示例实际上相当于`fmt.Println(arr[2])`，只不过是改用了 unsafe 的代码
+以下示例实际上相当于`fmt.Println(arr[2])`，只不过是改用了 unsafe 的写法
 
 ```go
 package main
@@ -200,3 +200,72 @@ ptrToSecond := (*int)(unsafe.Pointer(addr))
 #### ✅ 正确做法
 
 最佳写法前文已述，要点：保持  `unsafe.Pointer`  直接转换，避免中间  `uintptr`  存储。或者改用单行表达式内完成计算也是可以的，但是单行写法不便于阅读。
+
+再次整理最佳写法如下
+
+```go
+package main
+
+import (
+	"fmt"
+	"unsafe"
+)
+
+func main() {
+	arr := [3]int{10, 20, 30}
+	ptrToArr := &arr // 地址等于 &arr[0]
+	sizeOfInt := unsafe.Sizeof(arr[0])
+
+	// 使用 unsafe 包进行指针运算
+	ptrToSecond := (*int)(
+		unsafe.Pointer(
+			uintptr(unsafe.Pointer(ptrToArr)) + 2*sizeOfInt,
+		),
+	)
+	fmt.Printf("%v\n", *ptrToSecond) // 输出 30
+}
+```
+
+### 类型转换的问题
+
+✅ 合法转换：`unsafe.Pointer(uintptr(p) + offset)`，**只在表达式中使用临时 uintptr，可以追踪原始指针**
+
+❌ 不合法转换：`unsafe.Pointer(x)` 其中 `x` 是 `uintptr` 类型变量，**GC 无法追踪，编译器拒绝**
+
+简单来讲，尝试将 uintptr 类型的变量转换为 Pointer 类型，是非法的。只有表达式中计算出的 uintptr 值才可以合法转换成 Pointer 类型。论证如下
+
+```go
+func main() {
+	arr := [3]int{10, 20, 30}
+	ptrToArr := &arr
+	uintptrToArr2 := uintptr(unsafe.Pointer(ptrToArr)) + 2*8
+
+	// 使用 unsafe 包进行指针运算
+	ptrToSecond := (*int)(
+		unsafe.Pointer(
+			//uintptrToArr2, // 非法
+			uintptr(unsafe.Pointer(ptrToArr)) + 16, // 合法
+		),
+	)
+
+	fmt.Println(*ptrToSecond, uintptrToArr2)
+}
+```
+
+简单起见，以上 ptrToSecond 的计算过程中，省略了中间变量 sizeOfInt，直接改用写死的 16 了（适用于 64 位机）。
+
+如果尝试将表达式中 uintptr(unsafe.Pointer(ptrToArr)) + 16 的计算过程改用 uintptr 类型的中间变量 uintptrToArr2 进行替换，就会报错：possible misuse of unsafe.Pointer
+
+```go
+	uintptrToArr2 := uintptr(unsafe.Pointer(ptrToArr)) + 2*8
+
+	ptrToSecond := (*int)(
+		unsafe.Pointer(
+			uintptrToArr2, // 非法
+		),
+	)
+```
+
+### 官方资料
+
+文档链接 https://pkg.go.dev/unsafe
