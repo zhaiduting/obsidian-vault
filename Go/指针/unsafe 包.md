@@ -129,19 +129,74 @@ func main() {
 	offset := uint(2)
 	sizeOfInt := unsafe.Sizeof(arr[0])
 
-	// 使用 unsafe 包进行指针算术
+	// 使用 unsafe 包进行指针运算
 	ptrToSecond := (*int)(unsafe.Pointer(uintptr(unsafe.Pointer(ptrToArr)) + uintptr(offset)*uintptr(sizeOfInt)))
 	fmt.Printf("%v\n", *ptrToSecond) // 输出 30
 }
 ```
 
-解释
+### 多行改写的示例
 
-- **`uintptr(unsafe.Pointer(ptrToArr))`:** 将 `*int` 类型的 `ptrToArr` 转换为 `uintptr`。
-- **`uintptr(offset)`:** 将 `uint` 类型的 `offset` 转换为 `uintptr`。
-- **`uintptr(sizeOfInt)`:** 获取 `int` 类型的大小（以字节为单位），并转换为 `uintptr`。
-- **`uintptr(offset) * uintptr(sizeOfInt)`:** 计算出要偏移的实际字节数。
-- **`uintptr(unsafe.Pointer(ptrToArr)) + uintptr(offset)*uintptr(sizeOfInt)`:** 将起始地址加上偏移量。
-- **`unsafe.Pointer(...)`:** 将计算后的 `uintptr` 转换回 `unsafe.Pointer` 类型。
-- **`(*int)(...)`:** 将 `unsafe.Pointer` 转换回 `*int` 类型的指针。
-- **`*ptrToSecond`:** 解引用得到第二个元素的值。
+上例计算 ptrToSecond 的代码只有一行，不便阅读。改写成多行形式如下
+
+```go
+ptrToSecond := (*int)(
+    unsafe.Pointer(
+       uintptr(unsafe.Pointer(ptrToArr)) +
+       uintptr(offset)*uintptr(sizeOfInt),
+    ),
+)
+```
+
+这段代码展示了  **Go 中实现指针运算的标准方式**，通过：
+
+1. `unsafe.Pointer`  擦除指针类型。
+2. `uintptr`  转换为数值进行地址计算。
+3. 最终转换回目标指针类型。
+
+具体来说，采用 unsafe 读取 arr[2] 的值，关键是要拿到 arr[2] 的 Pointer，之后就可以通过强制类型转换得到 int 类型的指针了。
+
+想要拿到 arr[2] 的 Pointer，就要涉及到指针运算。**指针运算的本质**：通过内存地址的数值计算（如加减偏移量），访问相邻或特定位置的数据。虽然 Go 本身  **不支持直接指针运算**（如 C 的  `ptr + offset`），但可以通过  `unsafe`  包实现类似功能。
+
+在 Go 中，**只有  `uintptr`  类型的值才能显式地进行指针算术运算**。
+
+```
+arr[2] 的 uintptr
+ = arr[0] 的 uintptr + 内存偏移量
+ = arr[0] 的 uintptr + 2 的 uintptr * int 类型占用的字节数
+```
+
+考虑到 unsafe.Sizeof() 的返回值类型已经是 uintptr 了，因此 uintptr(sizeOfInt) 这步转换实际上是多余的。另外，无类型常量数字 2 在参与运算时，Go 编译器会根据上下文自动将其转换为匹配的类型（这里是  `uintptr`）。因此，之前的计算可以进一步简化成如下形式
+
+```go
+// 删除 offset := uint(2)
+// ✅ 以下为安全且便于阅读的多行写法
+
+ptrToSecond := (*int)(
+    unsafe.Pointer(
+       uintptr(unsafe.Pointer(ptrToArr)) + 2*sizeOfInt,
+    ),
+)
+```
+
+算出的 arr[2] 的 uintptr 值，实际上就是 arr[2] 在内存中的地址。要想访问此地址存储的数据，必须将 uintptr 转换成 Pointer 后再进一步转换成 int 指针。
+
+### 避免  `uintptr`  临时变量导致 GC 问题
+
+#### ⚠️ 以下为危险的多行写法
+
+```go
+// 使用 unsafe 包进行指针算术（多行版本）
+ptr := unsafe.Pointer(ptrToArr)
+addr := uintptr(ptr)
+addr += 2 * sizeOfInt
+ptrToSecond := (*int)(unsafe.Pointer(addr))
+```
+
+采用中间变量临时存储 uintptr 值是危险的， 因为`uintptr`  是一个普通的整数类型，**不持有对象的引用**，因此 Go 的垃圾回收器（GC）不会认为  `uintptr`  变量仍然在引用某个对象。
+
+如果在  `uintptr`  计算期间，Go 的 GC 回收了原始对象，那么后续的  `unsafe.Pointer(addr)`  可能会指向无效内存，导致  **悬垂指针（dangling pointer）**，进而引发未定义行为（如程序崩溃、数据损坏等）。
+
+#### ✅ 正确做法
+
+最佳写法前文已述，要点：保持  `unsafe.Pointer`  直接转换，避免中间  `uintptr`  存储。或者改用单行表达式内完成计算也是可以的，但是单行写法不便于阅读。
