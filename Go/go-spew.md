@@ -107,7 +107,8 @@ cfg.Dump(DB)
 或者改用如下链式写法
 
 ```go
-// 注意 & 符号不能省！
+// 方法接收者为字面量时，不会自动取址
+// 因此，下面的取址符号 & 不能省略
 (&spew.ConfigState{  
     Indent:   "\t",  
     MaxDepth: 2,  
