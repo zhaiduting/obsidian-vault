@@ -7,9 +7,11 @@ created: 2025-06-03
 tags:
   - clippings
 ---
+
 > atmos 和 air 有什么区别
 
 ---
+
 ![](/assets/gemini.png)
 "Atmos" 和 "air" 虽然都与“空气”有关，但在不同的语境下有不同的含义和侧重点。
 
