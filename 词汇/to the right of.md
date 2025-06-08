@@ -1,10 +1,11 @@
+![沿Z轴平移](https://lib.zhaiduting.work.gd/uPic/%E6%B2%BFZ%E8%BD%B4%E5%B9%B3%E7%A7%BB.png)
+
 > Translating Objects Along the Z Axis
 >
 > Notice the arrow handle above the sphere. This handle allows you to move an object up or down.
 >
 > You'll also notice the sphere leaves a shadow on the Workplane. When you drag it up, the distance between the shadow and the sphere increases, and a number measurement appears to the right of the sphere. This number, and the corresponding lines, indicate the distance between the object and Workplane.
 
-![沿Z轴平移](https://lib.zhaiduting.work.gd/uPic/%E6%B2%BFZ%E8%BD%B4%E5%B9%B3%E7%A7%BB.webp)
 沿 Z 轴平移物体（Translating Objects Along the Z Axis）
 
 请注意球体上方的箭头控制柄。这个控制柄允许你将物体向上或向下移动。
@@ -20,14 +21,14 @@
 
 #### ✅ 为什么不是 **at**、**beside** 或其他介词？
 
-| 介词                      | 是否合适         | 原因说明                    |
-| ----------------------- | ------------ | ----------------------- |
-| **to the right of**     | ✅ 最准确        | 表示“朝……右边的方向”，强调方向性、相对位置 |
-| **at the right of**     | ⛔ 不自然        | 不用于这种表示相对方向的位置描述        |
-| **beside the sphere**   | 🟡 可用但不精确    | 表示“在旁边”，但没有说明是左边还是右边    |
-| **next to the sphere**  | 🟡 类似 beside | 同样太模糊，没有给出方向信息          |
-| **on the right of**     | ⛔ 生硬/不地道     | 很少用于这种句型，听起来不自然         |
-| **beside the right of** | ❌ 错误         | 没这种说法                   |
+| 介词                    | 是否合适        | 原因说明                                   |
+| ----------------------- | --------------- | ------------------------------------------ |
+| **to the right of**     | ✅ 最准确       | 表示“朝……右边的方向”，强调方向性、相对位置 |
+| **at the right of**     | ⛔ 不自然       | 不用于这种表示相对方向的位置描述           |
+| **beside the sphere**   | 🟡 可用但不精确 | 表示“在旁边”，但没有说明是左边还是右边     |
+| **next to the sphere**  | 🟡 类似 beside  | 同样太模糊，没有给出方向信息               |
+| **on the right of**     | ⛔ 生硬/不地道  | 很少用于这种句型，听起来不自然             |
+| **beside the right of** | ❌ 错误         | 没这种说法                                 |
 
 #### ✅ 例句对比
 
