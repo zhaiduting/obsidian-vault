@@ -1,5 +1,4 @@
 ---
-title: "Microsoft Copilot: 你的 AI 助手"
 source: https://copilot.microsoft.com/chats/WRhWLEVf59qVXEG4Vc6mt
 author:
   - Copilot
