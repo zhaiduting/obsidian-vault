@@ -22,6 +22,8 @@ Chocolatey 的用法很简单，记住以下 3 条就够了：
 
 ### 常用软件的安装命令集
 
+`choco install logitech-options-plus` 罗技键鼠工具
+
 `choco install fscapture` 截图软件
 `choco install 7zip` 文件压缩解压工具
 `choco install notepadplusplus` 文本编辑器 Notepad++
