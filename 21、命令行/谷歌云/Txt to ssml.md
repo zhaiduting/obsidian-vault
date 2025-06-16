@@ -29,6 +29,9 @@ BEGIN {
     punct = "([.。？！、,，…!?]+[[:space:]]*)+"
 }
 {
+    if ($0 ~ /^[[:space:]]*$/) {
+        print ""; next;
+    }
     input_line = $0;
     output_line = "";
     last_insert_pos = 0;
@@ -39,12 +42,13 @@ BEGIN {
 
         text_before = substr(input_line, 1, RSTART - 1);
         punc_block = substr(input_line, RSTART, RLENGTH);
+		remaining = substr(input_line, RSTART + RLENGTH);
 
         output_line = output_line text_before;
 
         current_pos = offset + RSTART;
 
-        if (current_pos - last_insert_pos >= min_spacing) {
+        if (current_pos - last_insert_pos >= min_spacing && remaining ~ /[[:alnum:]]/) {
             output_line = output_line punc_block "<mark name=\x27timepoint_" (++i) "\x27/>";
             last_insert_pos = current_pos;
         } else {
@@ -52,7 +56,7 @@ BEGIN {
         }
 
         offset += RSTART + RLENGTH - 1;
-        input_line = substr(input_line, RSTART + RLENGTH);
+        input_line = remaining;
     }
 
     output_line = output_line input_line;
