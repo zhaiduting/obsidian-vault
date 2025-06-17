@@ -26,7 +26,7 @@ echo "<speak>" > "$output_file"
 cat "$input_file" | awk -v i=0 -v min_spacing=20 '
 BEGIN {
     # Define regex for punctuations (including optional space)
-    punct = "([.。？！、,，…!?]+[[:space:]]*)+"
+    punct = "([.。？！、,，…!?]+[[:space:]]*[”」』]*[[:space:]]*)+"
 }
 {
     if ($0 ~ /^[[:space:]]*$/) {
