@@ -3,22 +3,18 @@ author:
   - DeepSeek
 ---
 
-Old MacDonald **was** (be) a farmer who **had** (have) a wild imagination. One morning, he **began** (begin) his day by **drinking** (drink) coffee when his phone **rang** (ring). It **was** (be) his neighbor, who **said** (say), "Your sheep **have** (have) **run** (run) away!"
+Old MacDonald was a farmer with a wild imagination. One morning as he drank his coffee, the phone rang. His neighbor shouted, "Your sheep have run away!"
 
-MacDonald **sprang** (spring) into action. He **rode** (ride) his horse, **drove** (drive) his tractor, and **ran** (run) through the fields. He **saw** (see) his sheep **eating** (eat) flowers, so he **caught** (catch) them and **brought** (bring) them back.
+MacDonald sprang into action. He rode his horse, drove his tractor, then ran through the fields. He saw the sheep eating his flowers, so he caught them and brought them home.
 
-Later, he **found** (find) his dog **digging** (dig). The dog **had** (have) **dug** (dig) up a treasure map! MacDonald **took** (take) it, **drew** (draw) a route, and **set** (set) off. He **swam** (swim) across a river, **flew** (fly) over a hill, and **fell** (fall) into a bush. But he **kept** (keep) going.
+Later, he found his dog digging wildly. To his surprise, the dog had uncovered a treasure map! MacDonald studied it carefully, drew his route, and set off immediately. He swam across a rushing river, flew over a steep hill, then fell into a thorny bush - but nothing could stop him.
 
-At sunset, he **met** (meet) a wizard who **taught** (teach) him a spell. MacDonald **spoke** (speak) the words, and suddenly, gold coins **rose** (rise) from the ground! He **put** (put) them in a bag and **sent** (send) some to his family.
+At sunset, he met a white-bearded wizard who taught him a magic spell. When MacDonald spoke the words, gold coins erupted from the ground! He put them in a sack and sent some to his family.
 
-That night, he **dreamt** (dream) of dragons. He **fought** (fight) one, **hit** (hit) it with a stick, and **cut** (cut) its tail. The dragon **hurt** (hurt) his arm, but he **shut** (shut) his eyes and **woke** (wake) up.
+That night, he dreamed of fighting a fire-breathing dragon. He hit it with a stick, cut off its tail, but got hurt by its claws. When he shut his eyes and opened them, he woke up.
 
-The next day, he **sold** (sell) some treasure and **bought** (buy) a new hat. His wife **made** (make) pie, which **cost** (cost) him nothing because she **forgave** (forgive) his silly adventures.
+Next day, he sold some treasure and bought a fancy new hat. His wife baked his favorite pie, forgiving his crazy adventure. At dinner, the children sang songs and told jokes while eating happily. MacDonald felt truly blessed.
 
-At dinner, his children **sang** (sing), **told** (tell) jokes, and **ate** (eat) happily. MacDonald **felt** (feel) lucky. He **knew** (know) life wasn’t perfect—sometimes he **lost** (lose) things, **forgot** (forget) chores, or **broke** (break) tools. But he **meant** (mean) to enjoy every moment.
+Under twinkling stars, he sat on the porch thinking about his day. In his journal, he wrote: "Today I became a treasure hunter!" Then he went to bed, slept soundly, and dreamed again - this time of sheep with wings flying across the night sky.
 
-As stars **shone** (shine), he **sat** (sit) outside, **thought** (think) about his day, and **wrote** (write) in his journal: "Today, I **became** (become) a treasure hunter!" Then he **went** (go) to bed, **slept** (sleep) deeply, and **dreamt** (dream) again—this time of flying sheep.
-
-**The End.**
-
-*(All target verbs included in their base, past, and past participle forms!)* 😊
+**The End**
