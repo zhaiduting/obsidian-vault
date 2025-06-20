@@ -16,7 +16,7 @@ toSpliced(start, deleteCount, item1)
 toSpliced(start, deleteCount, item1, item2, /* …, */ itemN)
 ```
 
-splice() 语法与 toSpliced() 一样，但是返回值是被删除的元素组成的数组，而是直接修改了原数组！
+splice() 语法与 toSpliced() 一样，但是返回值是被删除的元素组成的数组，而且直接修改了原数组！
 ```js
 splice(start)
 splice(start, deleteCount)
