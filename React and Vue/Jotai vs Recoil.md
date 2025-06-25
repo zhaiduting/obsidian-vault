@@ -69,3 +69,7 @@ export function JotaiCounter() {
 	);
 }
 ```
+
+## 结论
+
+Jotai 无需设置 key， 无需使用 RecoilRoot 包裹状态，派生状态的 get 函数无需解构即可获取，使用状态时只需一个 useAtom 即可搞定。总之，**Jotai 要比 Recoil 更简洁、更优雅**。
