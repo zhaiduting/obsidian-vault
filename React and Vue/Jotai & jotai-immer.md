@@ -26,7 +26,7 @@ import { todoListState } from "./todoListState.js";
 import { useAtom } from "jotai";
 
 export function TodoItem({ item }) {
-	const [todoList, setTodoList] = useAtom(todoListState);
+	const [, setTodoList] = useAtom(todoListState);
 
 	return (
 		<p>
