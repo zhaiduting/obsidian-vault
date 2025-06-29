@@ -69,4 +69,4 @@ goblog2 >
 export PATH=$PATH:$HOME/go/bin
 ```
 
-重新开启终端后再次执行 air 命令就没问题了。除了 air 之外，对于使用 `go install` 命令安装的其他工具同理解决。这便是添加 Go 工具到 PATH 变量中的作用。
+重新开启终端后再次执行 air 命令就没问题了。除了 air 之外，对于使用 `go install` 命令安装的其他工具同理。这便是添加 Go 工具到 PATH 变量中的作用。

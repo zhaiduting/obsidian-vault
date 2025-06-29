@@ -1,11 +1,11 @@
 ## 🧪 对比一览：atom
 
-| 功能      | Recoil                    | Jotai                              |
-| --------- | ------------------------- | ---------------------------------- |
-| 定义 atom | `atom({ key, default })`  | `atom(initialValue)`               |
-| 使用 atom | `useRecoilState(atom)`    | `useAtom(atom)`                    |
-| 只读值    | `useRecoilValue(atom)`    | `const [val] = useAtom(atom)`      |
-| 更新值    | `useSetRecoilState(atom)` | `const [, setVal] = useAtom(atom)` |
+| 功能      | Recoil                    | Jotai                             |
+| ------- | ------------------------- | --------------------------------- |
+| 定义 atom | `atom({ key, default })`  | `atom(initialValue)`              |
+| 使用 atom | `useRecoilState(atom)`    | `useAtom(atom)`                   |
+| 只读值     | `useRecoilValue(atom)`    | `const val= useAtomValue(atom)`   |
+| 更新值     | `useSetRecoilState(atom)` | `const setVal = useSetAtom(atom)` |
 
 ## ⚙️ 对比二：派生状态（selector）
 
