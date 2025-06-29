@@ -25,7 +25,7 @@ echo "<speak>" > "$output_file"
 
 cat "$input_file" | awk -v i=0 -v min_spacing=20 '
 BEGIN {
-    punct = "([.。？！、,，…!?]+[[:space:]]*[”」』]*[[:space:]]*)+"
+    punct = "([.。？！、,，…!?]+[[:space:]]*[\\)）’”」』】\\]}]*[[:space:]]*)+"
 }
 {
     if ($0 ~ /^[[:space:]]*$/) {
@@ -68,8 +68,6 @@ BEGIN {
 
     output_line = output_line input_line;
     print output_line;
-}
-END {
 }
 ' >> "$output_file"
 
