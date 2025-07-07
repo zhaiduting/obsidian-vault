@@ -1,4 +1,4 @@
-使用 `adb devices` 查看已连接的设备，结果为空
+ADB 是 Android Debug Bridge 的缩写。首先使用 `adb devices` 查看已连接的设备，结果为空，说明手机没有连接。
 
 ```
 ~ > adb devices
