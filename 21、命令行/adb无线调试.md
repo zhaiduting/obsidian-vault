@@ -29,7 +29,7 @@ Enter pairing code: 342569
 Successfully paired to 192.168.50.217:39729 [guid=adb-1558369949000TE-dPaZrc]
 ```
 
-### 连接
+### 手动连接
 
 配对成功并不代表已经连接，还需要敲入 `adb connect` 命令进行连接（跟上手机的 IP 及端口号）。
 
@@ -44,3 +44,25 @@ adb-1558369949000TE-dPaZrc._adb-tls-connect._tcp	device
 ```
 
 注意：电脑重启后无需再次配对，但需要重新连接。
+
+### 自动连接
+
+每次电脑开机后，想要调试手机里的 App 时，如果总要敲入 `adb connect` 命令重新建立连接，那仍然是一件很麻烦的事，尽管已无需执行配对命令。为此，自动连接功能就显得尤为重要。
+
+在 `开发者选项` 页面关闭 `无线调试` 开关，敲入命令 `adb devices` 显示手机处于 offline 离线状态；重新打开 `无线调试` 开关，稍等 2 秒后再次敲入命令，显示 device 说明手机已连接。
+
+```shell
+~ > adb devices
+List of devices attached
+adb-1558369949000TE-dPaZrc._adb-tls-connect._tcp	offline
+
+~ > adb devices
+List of devices attached
+adb-1558369949000TE-dPaZrc._adb-tls-connect._tcp	device
+
+~ >
+```
+
+电脑重启后，**ADB 会读取磁盘中持久保存的有效配对凭证**。当手机开启无线调试功能时，它会通过 **mDNS 广播自身的网络位置和服务信息**。电脑上的 ADB 服务器监听这些 mDNS 广播，并能识别出网络中可用的设备。如果 ADB 发现一个已知的或已配对的设备，它会**利用本地存储的配对凭证自动完成加密的 TLS 连接**，从而省去了手动执行 `adb connect` 的步骤。最终，`adb devices` 命令便会显示设备处于 `device` 状态。
+
+简而言之，**mDNS 解决了“设备在哪里”的发现问题，而持久化的配对凭证解决了“如何信任并连接”的验证问题**。二者结合实现了无需手动命令的自动重连。
