@@ -49,9 +49,14 @@ adb-1558369949000TE-dPaZrc._adb-tls-connect._tcp	device
 
 每次电脑开机后，想要调试手机里的 App 时，如果总要敲入 `adb connect` 命令手动连接，那仍然是一件很麻烦的事，尽管已无需执行配对命令。为此，自动连接功能就显得尤为重要。
 
-在 `开发者选项` 页面关闭 `无线调试` 开关，敲入命令 `adb devices` 显示手机处于 offline 离线状态；重新打开 `无线调试` 开关，稍等 2 秒后再次敲入命令，显示 device 说明手机已连接。
+首先在终端敲入 `adb kill-server` 命令断开所有连接并清除缓存，然后直接断开手机的无线网络，此时返回终端执行 `adb devices` 命令，等待几秒后输出结果显示未连接任何设备。再打开手机的无线网，并进入手机的 `开发者选项` 页面打开 `无线调试` 开关，之后立即回到电脑终端敲入 `adb devices` 命令，显示手机处于 offline 离线状态。稍等 2 秒后，再次执行此命令，之前的 offline 状态已自动变更为 device 状态，这说明手机已连接成功。
 
 ```shell
+Last login: Wed Jul  9 12:37:41 on ttys000
+~ > adb kill-server
+~ > adb devices
+List of devices attached
+
 ~ > adb devices
 List of devices attached
 adb-1558369949000TE-dPaZrc._adb-tls-connect._tcp	offline
@@ -60,7 +65,7 @@ adb-1558369949000TE-dPaZrc._adb-tls-connect._tcp	offline
 List of devices attached
 adb-1558369949000TE-dPaZrc._adb-tls-connect._tcp	device
 
-~ >
+~ > 
 ```
 
 电脑重启后，**ADB 会读取磁盘中持久保存的有效配对凭证**。当手机开启无线调试功能时，它会通过 **mDNS 广播自身的网络位置和服务信息**。电脑上的 ADB 服务器监听这些 mDNS 广播，并能识别出网络中可用的设备。如果 ADB 发现一个已知的或已配对的设备，它会**利用本地存储的配对凭证自动完成加密的 TLS 连接**，从而省去了手动执行 `adb connect` 的步骤。最终，`adb devices` 命令便会显示设备处于 `device` 状态。
@@ -75,4 +80,3 @@ adb 无线调试功能非常方便，无需使用 usb 数据线就可以自动�
 - 检查手机无线调试开关是否已开启（每次切换或关闭无线网时此开关都会被自动关闭）
 
 对于新设备需要先执行配对命令一次，并手动连接一次，以后就可以依靠 adb 的自动发现功能实现自动连接了。
-
