@@ -1,4 +1,4 @@
-使用 adb 命令截图，并将截图直接保存到电脑桌面，命令如下。注意，命令中必须使用 -p 选项将图片保存为 png 格式（省略 -p 将导致图片无效）。
+使用 adb 命令截图，并将**截图直接保存到电脑桌面**，命令如下。注意，命令中必须使用 -p 选项将图片保存为 png 格式（省略 -p 将导致图片无效）。
 
 ```shell
 adb shell screencap -p > $HOME/Desktop/Adbshot_$(date +%Y%m%d_%H%M%S).png
