@@ -37,3 +37,11 @@ npm run android
 编译成功后将会在手机弹出一个申请安装 app 的弹窗，点击同意，安装好的 app 界面类似下图
 
 ![Adbshot_20250711_091403](https://lib.zhaiduting.work.gd/uPic/Adbshot_20250711_091403.png)
+
+### 着手开发
+
+以上截图中已经说明，只需敲入以下命令即可得到一个全新的空白项目。要想清空示例项目，只需删除 app-example 文件夹就可以了。
+
+```shell
+npm run reset-project
+```
