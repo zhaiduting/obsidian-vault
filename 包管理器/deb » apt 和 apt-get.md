@@ -11,13 +11,13 @@
 
 ## 🥊 区别对比
 
-| 功能 / 命令  | `apt` 示例        | `apt-get` 对应命令     | 说明                                           |
-| ------------ | ----------------- | ---------------------- | ---------------------------------------------- |
-| 安装软件     | `apt install xxx` | `apt-get install xxx`  | ✅ 一样                                        |
-| 升级所有包   | `apt upgrade`     | `apt-get upgrade`      | ✅ 一样                                        |
-| 更新软件列表 | `apt update`      | `apt-get update`       | ✅ 一样                                        |
-| 删除软件     | `apt remove xxx`  | `apt-get remove xxx`   | ✅ 一样                                        |
-| 显示软件信息 | `apt show xxx`    | `apt-cache show xxx`   | ✅ 简化                                        |
-| 搜索软件     | `apt search xxx`  | `apt-cache search xxx` | ✅ 简化                                        |
-| 清除下载缓存 | `apt clean`       | `apt-get clean`        | ✅ 一样                                        |
-| 安全自动升级 | 🚫                | `apt-get dist-upgrade` | ❌ apt 没有完全替代所有命令（如 dist-upgrade） |
+| 功能 / 命令 | `apt` 示例          | `apt-get` 对应命令         | 说明                               |
+| ------- | ----------------- | ---------------------- | -------------------------------- |
+| 安装软件    | `apt install xxx` | `apt-get install xxx`  | ✅ 一样                             |
+| 升级所有包   | `apt upgrade`     | `apt-get upgrade`      | ✅ 一样                             |
+| 更新软件列表  | `apt update`      | `apt-get update`       | ✅ 一样                             |
+| 删除软件    | `apt remove xxx`  | `apt-get remove xxx`   | ✅ 一样                             |
+| 显示软件信息  | `apt show xxx`    | `apt-cache show xxx`   | ✅ 简化                             |
+| 搜索软件    | `apt search xxx`  | `apt-cache search xxx` | ✅ 简化                             |
+| 清除下载缓存  | `apt clean`       | `apt-get clean`        | ✅ 一样                             |
+| 安全自动升级  | 🚫                | `apt-get dist-upgrade` | ❌ apt 没有完全替代所有命令（如 dist-upgrade） |
