@@ -1,4 +1,4 @@
-文件开头添加`//go:build debug`表示生产环境下不会编译此文件，例如以下仿写 PHP 的 var_dump 的文件便是一例（更好的选择是使用 [go-spew](/Go/go-spew.md) ）。
+文件开头添加`//go:build debug`表示生产环境下不会编译此文件，例如以下仿写 PHP 的 var_dump 的文件便是一例（更好的选择是使用 [go-spew](61、Go/go-spew.md) ）。
 
 ```go
 //go:build debug
