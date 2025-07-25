@@ -74,7 +74,69 @@
 
 ---
 
-### 🌐 官网链接
+### 🔍 查找软件的安装命令
+
+可以根据以下命令查找
+
+```shell
+brew search <模糊匹配的包名>
+brew search <精确包名>
+```
+
+或者直接在官网文本框中搜索
 
 - 官网：[https://brew.sh](https://brew.sh)
 - GitHub：[https://github.com/Homebrew/brew](https://github.com/Homebrew/brew)
+
+---
+
+### 📦 已整理的安装命令
+
+brew install --cask logi-options-plus 罗技鼠标程序
+brew install git 覆盖 Mac 自带的 git
+brew install git-gui
+
+brew install --cask google-chrome 谷歌浏览器
+==brew install --cask obsidian== 支持 markdown 语法的编辑器
+
+brew install node
+brew install yarn
+brew install gradle
+
+brew install --cask picgo 图床工具
+
+#### IDE
+
+brew install --cask phpstorm
+brew install --cask intellij-idea 安装 IntelliJ IDEA
+brew install --cask goland 安装 GoLand
+brew install --cask android-studio
+
+brew install --cask apifox 国产 Api 开发工具
+brew install --cask google-cloud-sdk 谷歌云，软件开发工具包
+
+#### 通讯
+
+brew install --cask aliwangwang 阿里旺旺
+brew install --cask telegram 电报==(网页版 [https://web.telegram.org/](https://web.telegram.org/) )==
+brew install --cask qq
+brew install --cask wechat 微信
+
+#### 虚拟机
+
+brew install --cask parallels 付费虚拟机（已购买 v19 和 v20 两个版本）
+brew install --cask utm (改用苹果付费程序)
+brew install --cask crossover Mac 直接运行 Win 程序（已购买 2024 版）
+brew install --cask virtualbox
+
+#### 数据库
+
+brew install mysql
+
+brew tap mongodb/brew
+brew install mongodb-community
+
+#### 游戏
+
+brew install --cask steam
+brew install --cask battle-net
