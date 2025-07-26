@@ -107,6 +107,7 @@ brew install --cask picgo 图床工具
 
 #### IDE
 
+brew install --cask visual-studio-code
 brew install --cask phpstorm
 brew install --cask intellij-idea 安装 IntelliJ IDEA
 brew install --cask goland 安装 GoLand
