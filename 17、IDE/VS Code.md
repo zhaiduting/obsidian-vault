@@ -18,3 +18,7 @@ VS Code（Visual Studio Code）是由微软（Microsoft）开发的一款轻量�
 如果选择 remove 的话，文件保存时将会自动删除结尾的分号。
 如果选择 ignore 的话，不会处理结尾的分号（这通常会出现分号不统一的现象）
 ![VSCode统一分号](https://lib.zhaiduting.work.gd/uPic/VSCode%E7%BB%9F%E4%B8%80%E5%88%86%E5%8F%B7.png)
+
+### 快捷键
+
+`⌘ + J` 打开或关闭终端面板
