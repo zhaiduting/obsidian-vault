@@ -16,7 +16,7 @@ brew install --cask localsend
 
 ### 安卓手机安装方法
 
-谷歌应用商店安装 [localsend](https://play.google.com/store/apps/details?id=org.localsend.localsend_app)
+可以在谷歌应用商店下载安装 [localsend](https://play.google.com/store/apps/details?id=org.localsend.localsend_app)
 
 ### Windows 电脑安装方法
 
@@ -29,3 +29,8 @@ choco install localsend
 # 方法 2
 choco install localsend
 ```
+
+### 官方链接
+
+可以访问 LocalSend 的官方网站了解更多信息，链接如下  
+https://localsend.org/download
