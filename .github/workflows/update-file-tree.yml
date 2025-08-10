@@ -66,7 +66,7 @@ jobs:
           awk '
             BEGIN { inside=0 }
             /<!-- file-tree -->/ { inside=1; print; while ((getline line < "tmp_tree.txt") > 0) print line; next }
-            /<!-- file-tree-stop -->/ { inside=0; next }
+            /<!-- file-tree-stop -->/ { inside=0; print; next }
             !inside { print }
           ' README.md > README.new
           mv README.new README.md
