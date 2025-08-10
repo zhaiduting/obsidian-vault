@@ -1,4 +1,5 @@
-![overview of what an embankment is](https://s15485.pcdn.co/wp-content/uploads/2020/06/overview-of-what-an-embankment-is.jpg)Embankments have been constructed for more than 3,000 years, dating all the way back to ancient Egypt. This is because they are relatively easy to construct and often serve an essential purpose. In addition, many ancient civilizations built their society near a river, so the need to control flooding was essential.
+![overview of what an embankment is](https://s15485.pcdn.co/wp-content/uploads/2020/06/overview-of-what-an-embankment-is.jpg)  
+Embankments have been constructed for more than 3,000 years, dating all the way back to ancient Egypt. This is because they are relatively easy to construct and often serve an essential purpose. In addition, many ancient civilizations built their society near a river, so the need to control flooding was essential.
 
 An embankment is either a man-made or naturally-formed wall on the side of a river that prevents water from carrying over during a flood. They often serve an important role in ensuring flooding does not occur to either side of the river, which can cause issues with the land being used for a range of purposes.
 
@@ -10,7 +11,7 @@ The following is a complete overview of what an embankment is, including how the
 
 An embankment, or a levee, can either be man-made or naturally formed. They often serve an important purpose in preventing flooding of land. In simplest terms, a naturally-formed embankment is the result of water that overflows in a river, leading to a flow of sediment onto the river bank. Over time, the sediment becomes a part of the bank, and the increased material leads to a raised elevation surrounding the river.
 
-![riverbank and natural embankment](https://s15485.pcdn.co/wp-content/uploads/2020/06/riverbank-and-natural-embankment.jpg)
+![riverbank and natural embankment](https://s15485.pcdn.co/wp-content/uploads/2020/06/riverbank-and-natural-embankment.jpg)  
 Naturally-formed embankments rarely, if ever, cause a concern. In fact, they can be very beneficial by preventing flooding. If flooding does occur again, then the embankment is likely to grow even higher over time due to more sediment carrying over from the river to the river bank. As the embankment continues to grow taller, flooding becomes less and less likely.
 
 The benefits of a naturally-formed embankment include keeping land from flooding next to a river. This is particularly useful if there are homes in the area or land that is used for a commercial or industrial purpose.
@@ -36,7 +37,7 @@ Of course, these are all larger types of embankments with big purposes. An emban
 
 ### What Materials are Used to Make Embankments
 
-![concrete embankment](https://s15485.pcdn.co/wp-content/uploads/2020/06/concrete-embankment.jpg)
+![concrete embankment](https://s15485.pcdn.co/wp-content/uploads/2020/06/concrete-embankment.jpg)  
 There is a range of different types of materials that work well for embankments. As mentioned, the type of material that is most appropriate depends on how big the need is for the embankment. Several of the more commonly utilized types of material used when constructing an embankment include:
 
 - Soil
