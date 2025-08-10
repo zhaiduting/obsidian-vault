@@ -21,7 +21,7 @@ jobs:
       - name: Generate flat file list with dirs first, exclude unwanted
         run: |
           # 生成只带路径的列表，不带符号树状结构，dirsfirst
-          tree --dirsfirst -if --noreport -I "node_modules|📄 草稿|🗑️ 废纸篓|yarn.lock|package.json|full_paths.txt" | tail -n+2 > full_paths.txt
+          tree --dirsfirst -if --noreport -I "assets|node_modules|📄 草稿|🗑️ 废纸篓|yarn.lock|package.json|full_paths.txt" | tail -n+2 > full_paths.txt
 
       - name: Convert flat paths to markdown tree with links (spaces → %20)
         run: |
@@ -56,7 +56,8 @@ jobs:
               printf "%*s- %s\n", indent, "", substr(path, length(path)-length($NF)+1)
             } else {
               encoded_path = url_encode(path)
-              printf "%*s- [%s](%s)\n", indent, "", $NF, encoded_path
+              display_name = gensub(/\.md$/, "", 1, $NF)
+              printf "%*s- [%s](%s)\n", indent, "", display_name, encoded_path
             }
           }
           ' full_paths.txt > tmp_tree.txt
