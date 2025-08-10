@@ -1,0 +1,45 @@
+name: Update README File Tree
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-tree:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Install tree command
+        run: sudo apt-get update && sudo apt-get install -y tree
+
+      - name: Generate file tree (excluding node_modules and hidden files)
+        run: |
+          echo '<!-- file-tree -->' > tmp_tree.txt
+          echo '```' >> tmp_tree.txt
+          tree --dirsfirst -I "tmp_tree.txt|node_modules|📄 草稿|🗑️ 废纸篓|yarn.lock|package.json" >> tmp_tree.txt
+          echo '```' >> tmp_tree.txt
+          echo '<!-- file-tree-stop -->' >> tmp_tree.txt
+
+      - name: Update README.md with file tree
+        run: |
+          awk '
+            BEGIN { inside=0 }
+            /<!-- file-tree -->/ { inside=1; print; while ((getline line < "tmp_tree.txt") > 0) print line; next }
+            /<!-- file-tree-stop -->/ { inside=0; next }
+            !inside { print }
+          ' README.md > README.new
+          mv README.new README.md
+
+      - name: Commit and push if changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          add: README.md
+          message: 'chore: update README file tree'
+          default_author: github_actions
+
