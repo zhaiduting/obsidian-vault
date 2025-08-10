@@ -27,7 +27,7 @@ brew install --cask localsend
 choco install localsend
 
 # 方法 2
-choco install localsend
+winget install localsend
 ```
 
 ### 官方链接
