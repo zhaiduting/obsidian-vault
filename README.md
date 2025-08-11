@@ -34,6 +34,7 @@ Spring 2003, The Bund, Shanghai
       - [copilot » 亚历克斯的伟大冒险](./11、词汇/不规则动词/copilot%20»%20亚历克斯的伟大冒险.md)
       - [豆包 » The Time-Travel Adventure, Verb Transformation Odyssey](./11、词汇/不规则动词/豆包%20»%20The%20Time-Travel%20Adventure,%20Verb%20Transformation%20Odyssey.md)
       - [豆包 » 时空旅行冒险：动词变形大作战](./11、词汇/不规则动词/豆包%20»%20时空旅行冒险：动词变形大作战.md)
+    - [As well as](./11、词汇/As%20well%20as.md)
     - [Fundamentals](./11、词汇/Fundamentals.md)
     - [Got the hang of it](./11、词汇/Got%20the%20hang%20of%20it.md)
     - [Route vs Router](./11、词汇/Route%20vs%20Router.md)
@@ -136,6 +137,7 @@ Spring 2003, The Bund, Shanghai
     - [1、创建](./52、React%20Navigation/1、创建.md)
     - [2、createNativeStackNavigator()](./52、React%20Navigation/2、createNativeStackNavigator().md)
     - [3、屏幕切换](./52、React%20Navigation/3、屏幕切换.md)
+    - [4、路由参数](./52、React%20Navigation/4、路由参数.md)
   - 55、Vite
     - [修改默认端口号](./55、Vite/修改默认端口号.md)
     - [创建项目](./55、Vite/创建项目.md)
