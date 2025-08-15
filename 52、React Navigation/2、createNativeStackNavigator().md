@@ -54,5 +54,3 @@ const RootStack = createNativeStackNavigator({
 	},
 });
 ```
-
-查看运行效果可以点击 [Try on Snack](https://snack.expo.dev/@zhaiduting/passing-params)
