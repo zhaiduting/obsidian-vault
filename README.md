@@ -136,7 +136,7 @@
     - [2、createNativeStackNavigator()](./52、React%20Navigation/2、createNativeStackNavigator().md)
     - [3、屏幕切换](./52、React%20Navigation/3、屏幕切换.md)
     - [4、路由参数](./52、React%20Navigation/4、路由参数.md)
-    - [5、嵌套的导航](./52、React%20Navigation/5、嵌套的导航.md)
+    - [5、嵌套的导航器](52、React%20Navigation/5、嵌套的导航器.md)
     - [6、设置父屏选项](./52、React%20Navigation/6、设置父屏选项.md)
   - 55、Vite
     - [修改默认端口号](./55、Vite/修改默认端口号.md)
