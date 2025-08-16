@@ -1,6 +1,6 @@
 > If we were to set the `headerTitle` with `options` for the `FeedScreen`, this would not work. This is because `App` stack will only look at its immediate children for configuration: `HomeTabs` and `SettingsScreen`.
 
-引文出自[Options with nested navigators](https://reactnavigation.org/docs/screen-options-resolution/)
+引文出自 [Options with nested navigators](https://reactnavigation.org/docs/screen-options-resolution#setting-parent-screen-options-based-on-child-navigators-state)
 
 ### 这是对将来条件的虚拟
 
