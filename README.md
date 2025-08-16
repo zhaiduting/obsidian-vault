@@ -139,8 +139,8 @@
     - [3、屏幕切换](./52、React%20Navigation/3、屏幕切换.md)
     - [4、路由参数](./52、React%20Navigation/4、路由参数.md)
     - [5、嵌套的导航器](./52、React%20Navigation/5、嵌套的导航器.md)
-    - [6.1、无需设置父导航器选项](./52、React%20Navigation/6.1、无需设置父导航器选项.md)
-    - [6、设置父导航器选项](./52、React%20Navigation/6、设置父导航器选项.md)
+    - [6.2、无需设置父导航器选项](52、React%20Navigation/6.2、无需设置父导航器选项.md)
+    - [6.1、设置父导航器选项](52、React%20Navigation/6.1、设置父导航器选项.md)
   - 55、Vite
     - [修改默认端口号](./55、Vite/修改默认端口号.md)
     - [创建项目](./55、Vite/创建项目.md)
