@@ -54,3 +54,10 @@ const RootStack = createNativeStackNavigator({
 	},
 });
 ```
+
+有些选项是与平台相关的，例如以下与标题栏的返回按钮相关的属性只有在 iOS 上才会显示，对 Android 或 Web 都无效
+
+```jsx
+headerBackTitle: 'Custom Back',
+headerBackTitleStyle: { fontSize: 30 },
+```
