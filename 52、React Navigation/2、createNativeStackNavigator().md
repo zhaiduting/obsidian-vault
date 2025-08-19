@@ -60,4 +60,8 @@ const RootStack = createNativeStackNavigator({
 ```jsx
 headerBackTitle: 'Custom Back',
 headerBackTitleStyle: { fontSize: 30 },
+
+// headerBackImageSource 可修改图标
 ```
+
+更多可配置选项可参考官方文档 https://reactnavigation.org/docs/native-stack-navigator/#options
