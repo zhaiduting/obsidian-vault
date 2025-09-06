@@ -6,7 +6,7 @@
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
     - [Hot-Reload Plugin for Obsidian](./10、关于%20Obsidian/Hot-Reload%20Plugin%20for%20Obsidian.md)
-    - [Markdown的一些简单语法](./10、关于%20Obsidian/Markdown的一些简单语法.md)
+    - [1、Markdown的一些简单语法](10、关于%20Obsidian/1、Markdown的一些简单语法.md)
     - [Obsidian 的 CSS 代码片段](./10、关于%20Obsidian/Obsidian%20的%20CSS%20代码片段.md)
     - [Setting(contentEl) 用法](./10、关于%20Obsidian/Setting(contentEl)%20用法.md)
     - [写一个能解析自定义代码块的黑曜石插件](./10、关于%20Obsidian/写一个能解析自定义代码块的黑曜石插件.md)

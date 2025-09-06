@@ -92,20 +92,7 @@ brew search <精确包名>
 
 ### 📦 已整理的安装命令
 
-brew install --cask logi-options-plus 罗技鼠标程序
-brew install git 覆盖 Mac 自带的 git
-brew install git-gui
-
-brew install --cask google-chrome 谷歌浏览器
-==brew install --cask obsidian== 支持 markdown 语法的编辑器
-
-brew install node
-brew install yarn
-brew install gradle
-
-brew install --cask picgo 图床工具
-
-#### IDE
+#### 📝 IDE / 集成开发环境
 
 brew install --cask visual-studio-code
 brew install --cask phpstorm
@@ -113,31 +100,60 @@ brew install --cask intellij-idea 安装 IntelliJ IDEA
 brew install --cask goland 安装 GoLand
 brew install --cask android-studio
 
+#### 🛠️ 开发工具
+
+brew install git 覆盖 Mac 自带的 git
+brew install git-gui
+brew install act
 brew install --cask apifox 国产 Api 开发工具
+brew install --cask postman
+brew install tree
+
+#### ⚙️ 开发环境与依赖管理
+
+brew install node
+brew install yarn
+brew install gradle
 brew install --cask google-cloud-sdk 谷歌云，软件开发工具包
 
-#### 通讯
-
-brew install --cask aliwangwang 阿里旺旺
-brew install --cask telegram 电报==(网页版 [https://web.telegram.org/](https://web.telegram.org/) )==
-brew install --cask qq
-brew install --cask wechat 微信
-
-#### 虚拟机
-
-brew install --cask parallels 付费虚拟机（已购买 v19 和 v20 两个版本）
-brew install --cask utm (改用苹果付费程序)
-brew install --cask crossover Mac 直接运行 Win 程序（已购买 2024 版）
-brew install --cask virtualbox
-
-#### 数据库
+#### 🗄️ 数据库与存储
 
 brew install mysql
 
 brew tap mongodb/brew
 brew install mongodb-community
 
-#### 游戏
+#### 💻 虚拟化与系统工具
+
+brew install --cask parallels 付费虚拟机（已购买 v19 和 v20 两个版本）
+brew install --cask utm (改用苹果付费程序)
+brew install --cask crossover Mac 直接运行 Win 程序（已购买 2024 版）
+brew install --cask virtualbox
+brew install --cask docker
+
+brew install --cask keka 压缩工具，改用 App Store 付费版
+brew install --cask logi-options-plus 罗技鼠标程序
+
+#### 🌐 浏览器
+
+brew install --cask google-chrome 谷歌浏览器
+
+#### 📡 通讯与传输
+
+brew install --cask aliwangwang 阿里旺旺
+brew install --cask telegram ==电报，[或改用网页版](https://web.telegram.org/)==
+brew install --cask qq
+brew install --cask wechat 微信
+brew install --cask localsend
+
+#### 📚 知识管理与效率工具
+
+==brew install --cask obsidian== 支持 markdown 语法的编辑器
+brew install --cask eudic 欧路词典
+brew install --cask xnapper 截图工具
+brew install --cask picgo 图床工具
+
+#### 🎮 游戏与娱乐
 
 brew install --cask steam
 brew install --cask battle-net
