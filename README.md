@@ -84,6 +84,7 @@
     - [虚拟机安装 Clash 并共享](./18、设置/虚拟机安装%20Clash%20并共享.md)
     - [路由终端命令](./18、设置/路由终端命令.md)
   - 19、包管理器
+    - [Brew upgrade Google Chrome](./19、包管理器/Brew%20upgrade%20Google%20Chrome.md)
     - [deb » apt 和 apt-get](./19、包管理器/deb%20»%20apt%20和%20apt-get.md)
     - [mac » Homebrew](./19、包管理器/mac%20»%20Homebrew.md)
     - [rpm » yum & dnf](./19、包管理器/rpm%20»%20yum%20&%20dnf.md)
@@ -99,6 +100,8 @@
       - [5、使用adb给手机录屏](./20、命令行/adb无线调试/5、使用adb给手机录屏.md)
       - [6、上传文件](./20、命令行/adb无线调试/6、上传文件.md)
       - [99、了解adb别名命令](./20、命令行/adb无线调试/99、了解adb别名命令.md)
+    - ssh
+      - [6、User 配置项的作用](./20、命令行/ssh/6、User%20配置项的作用.md)
     - 谷歌云
       - [Homebrew 安装谷歌云 SDK](./20、命令行/谷歌云/Homebrew%20安装谷歌云%20SDK.md)
       - [Txt to ssml](./20、命令行/谷歌云/Txt%20to%20ssml.md)
