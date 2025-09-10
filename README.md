@@ -5,8 +5,8 @@
 <!-- file-tree -->
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
+    - [1、Markdown的一些简单语法](./10、关于%20Obsidian/1、Markdown的一些简单语法.md)
     - [Hot-Reload Plugin for Obsidian](./10、关于%20Obsidian/Hot-Reload%20Plugin%20for%20Obsidian.md)
-    - [1、Markdown的一些简单语法](10、关于%20Obsidian/1、Markdown的一些简单语法.md)
     - [Obsidian 的 CSS 代码片段](./10、关于%20Obsidian/Obsidian%20的%20CSS%20代码片段.md)
     - [Setting(contentEl) 用法](./10、关于%20Obsidian/Setting(contentEl)%20用法.md)
     - [写一个能解析自定义代码块的黑曜石插件](./10、关于%20Obsidian/写一个能解析自定义代码块的黑曜石插件.md)
@@ -113,8 +113,11 @@
     - [修改 Git 历史记录](./20、命令行/修改%20Git%20历史记录.md)
     - [恢复ssh密钥](./20、命令行/恢复ssh密钥.md)
     - [手动打开模拟器](./20、命令行/手动打开模拟器.md)
+    - [服务管理 Set-Service](./20、命令行/服务管理%20Set-Service.md)
+    - [服务管理](./20、命令行/服务管理.md)
     - [正斜杠与反斜杠](./20、命令行/正斜杠与反斜杠.md)
     - [水印命令](./20、命令行/水印命令.md)
+    - [终端分页器](./20、命令行/终端分页器.md)
     - [终端整行删除键](./20、命令行/终端整行删除键.md)
     - [调试技巧](./20、命令行/调试技巧.md)
     - [🔧 正则工具](./20、命令行/🔧%20正则工具.md)
@@ -240,7 +243,6 @@
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
-    - [服务操作命令 Set-Service](./Windows/服务操作命令%20Set-Service.md)
   - 其它
     - [多设备通信 KDE Connect](./其它/多设备通信%20KDE%20Connect.md)
     - [多设备通信 LocalSend 👍](./其它/多设备通信%20LocalSend%20👍.md)
