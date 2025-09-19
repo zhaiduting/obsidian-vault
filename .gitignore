@@ -10,7 +10,6 @@
 /.obsidian/plugins/*
 !/.obsidian/plugins/obsidian-git
 !/.obsidian/plugins/markdown-tree
-!/.obsidian/plugins/obsidian-plugin-prettier
 
 # 忽略缓存文件与手机端删除的文件
 .cache/
@@ -44,6 +43,7 @@ desktop.ini
 node_modules/
 yarn.lock
 package.json
+package-lock.json
 .prettierrc
 
 # Vim 临时文件
@@ -52,3 +52,4 @@ package.json
 # 其它
 /*废纸篓/
 /*草稿/
+/*图稿/

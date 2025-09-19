@@ -1,5 +1,5 @@
 {
-  "fancy": true,
+  "fancy": false,
   "fullPath": false,
   "trailing": false,
   "root": false
