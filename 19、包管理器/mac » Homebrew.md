@@ -94,66 +94,85 @@ brew search <精确包名>
 
 #### 📝 IDE / 集成开发环境
 
-brew install --cask visual-studio-code
-brew install --cask phpstorm
-brew install --cask intellij-idea 安装 IntelliJ IDEA
-brew install --cask goland 安装 GoLand
-brew install --cask android-studio
+```sh
+brew install --cask visual-studio-code    # 通用编辑器/IDE
+brew install --cask phpstorm              # PHP 开发 IDE
+brew install --cask intellij-idea         # Java/多语言 IDE
+brew install --cask goland                # Go 语言 IDE
+brew install --cask android-studio        # Android 开发 IDE
+```
 
 #### 🛠️ 开发工具
 
-brew install git 覆盖 Mac 自带的 git
-brew install git-gui
-brew install act
-brew install --cask apifox 国产 Api 开发工具
-brew install --cask postman
-brew install tree
+```sh
+brew install git                          # 覆盖 macOS 自带的 git
+brew install git-gui                      # Git 图形界面
+brew install act                          # 本地运行 GitHub Actions
+brew install --cask apifox                # API 开发/调试/文档工具（国产）
+brew install --cask postman               # API 开发/调试工具
+brew install tree                         # 命令行目录树工具
+```
 
 #### ⚙️ 开发环境与依赖管理
 
-brew install node
-brew install yarn
-brew install gradle
-brew install --cask google-cloud-sdk 谷歌云，软件开发工具包
+```sh
+brew install node                         # JavaScript 运行环境
+brew install yarn                         # Node.js 包管理器
+brew install gradle                       # Java 构建与依赖管理工具
+brew install --cask google-cloud-sdk      # Google Cloud 开发工具包
+```
 
 #### 🗄️ 数据库与存储
 
-brew install mysql
+```sh
+brew install mysql                        # 关系型数据库
 
 brew tap mongodb/brew
-brew install mongodb-community
+brew install mongodb-community            # NoSQL 数据库
+```
 
 #### 💻 虚拟化与系统工具
 
-brew install --cask parallels 付费虚拟机（已购买 v19 和 v20 两个版本）
-brew install --cask utm (改用苹果付费程序)
-brew install --cask crossover Mac 直接运行 Win 程序（已购买 2024 版）
-brew install --cask virtualbox
-brew install --cask docker
+```sh
+brew install --cask parallels             # 付费虚拟机（已购 v19、v20）
+brew install --cask utm                   # 苹果平台虚拟机（付费版）
+brew install --cask crossover             # Mac 直接运行 Windows 程序（已购 2024）
+brew install --cask virtualbox            # 免费跨平台虚拟机
+brew install --cask docker                # 容器与虚拟化环境管理
 
-brew install --cask keka 压缩工具，改用 App Store 付费版
-brew install --cask logi-options-plus 罗技鼠标程序
+brew install --cask keka                  # 压缩/解压工具（改用 App Store 付费版）
+brew install --cask logi-options-plus     # 罗技外设配置工具
+```
 
 #### 🌐 浏览器
 
-brew install --cask google-chrome 谷歌浏览器
+```sh
+brew install --cask google-chrome         # 谷歌浏览器
+brew install --cask firefox               # 火狐浏览器
+```
 
 #### 📡 通讯与传输
 
-brew install --cask aliwangwang 阿里旺旺
-brew install --cask telegram ==电报，[或改用网页版](https://web.telegram.org/)==
-brew install --cask qq
-brew install --cask wechat 微信
-brew install --cask localsend
+```sh
+brew install --cask aliwangwang           # 阿里旺旺
+brew install --cask telegram              # 电报（或网页版）
+brew install --cask qq                    # QQ
+brew install --cask wechat                # 微信
+brew install --cask localsend             # 局域网文件传输工具
+```
 
 #### 📚 知识管理与效率工具
 
-==brew install --cask obsidian== 支持 markdown 语法的编辑器
-brew install --cask eudic 欧路词典
-brew install --cask xnapper 截图工具
-brew install --cask picgo 图床工具
+```sh
+brew install --cask obsidian              # 笔记/知识管理（Markdown）
+brew install --cask eudic                 # 欧路词典
+brew install --cask snagit                # 截图+录屏工具（专业，支持标注/多窗口）
+brew install --cask picgo                 # 图床工具（文档/博客辅助）
+```
 
 #### 🎮 游戏与娱乐
 
-brew install --cask steam
-brew install --cask battle-net
+```sh
+brew install --cask steam                 # 游戏平台
+brew install --cask battle-net            # 暴雪游戏平台
+```
