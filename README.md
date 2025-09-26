@@ -238,8 +238,10 @@
     - [资源路由](./Clippings/资源路由.md)
   - JS
     - Prettier
-      - [1、三种换行指令的区别](JS/Prettier/1、三种换行指令的区别.md)
-      - [3、缩进的用法](JS/Prettier/3、缩进的用法.md)
+      - [0、打印助手 ps(doc, width , log)](./JS/Prettier/0、打印助手%20ps(doc,%20width%20,%20log).md)
+      - [1、三种换行指令的区别](./JS/Prettier/1、三种换行指令的区别.md)
+      - [2、join](./JS/Prettier/2、join.md)
+      - [3、缩进的用法](./JS/Prettier/3、缩进的用法.md)
     - [slice()、toSpliced()和splice()](./JS/slice()、toSpliced()和splice().md)
     - [一个函数搞定等待提示（promise-gif v5发布，多例、任意定位）](./JS/一个函数搞定等待提示（promise-gif%20v5发布，多例、任意定位）.md)
     - [使用全局 bus 在 Vue 的兄弟组件中简单传值（以及 this 重定向的 5 种方法）](./JS/使用全局%20bus%20在%20Vue%20的兄弟组件中简单传值（以及%20this%20重定向的%205%20种方法）.md)
