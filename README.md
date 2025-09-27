@@ -40,6 +40,7 @@
     - [TinkerCAD 之 Multi Moves](./11、词汇/TinkerCAD%20之%20Multi%20Moves.md)
     - [TinkerCAD 之 View it](./11、词汇/TinkerCAD%20之%20View%20it.md)
     - [atmos 和 air 有什么区别](./11、词汇/atmos%20和%20air%20有什么区别.md)
+    - [aware， conscious，sensible](./11、词汇/aware，%20conscious，sensible.md)
     - [compromise 折中、泄密](./11、词汇/compromise%20折中、泄密.md)
     - [equal parts](./11、词汇/equal%20parts.md)
     - [get the most out of...](./11、词汇/get%20the%20most%20out%20of....md)
