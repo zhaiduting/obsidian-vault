@@ -72,6 +72,7 @@
   - 17、IDE
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [VS Code](./17、IDE/VS%20Code.md)
+    - [vimtutor](./17、IDE/vimtutor.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
   - 18、设置
     - [Barcode to pc](./18、设置/Barcode%20to%20pc.md)
