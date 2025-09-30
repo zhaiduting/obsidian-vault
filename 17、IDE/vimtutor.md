@@ -16,3 +16,7 @@ defaults write -g ApplePressAndHoldEnabled 0
 ```
 
 此时退出终端并重新打开，再次进入 vim 教程，按住 j 键不放，光标就可以不停的向下移动了。
+
+### 网上资料
+
+Vim 从入门到精通 https://wsdjeg.net/vim-galore-zh-cn/
