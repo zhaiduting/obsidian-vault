@@ -90,14 +90,14 @@
     - [虚拟机安装 Clash 并共享](./18、设置/虚拟机安装%20Clash%20并共享.md)
     - [路由终端命令](./18、设置/路由终端命令.md)
   - 19、包管理器
-    - [Brew upgrade Google Chrome](./19、包管理器/Brew%20upgrade%20Google%20Chrome.md)
+    - [Brew upgrade Google Chrome](19、包管理器/brew/Brew%20upgrade%20Google%20Chrome.md)
     - [deb » apt 和 apt-get](./19、包管理器/deb%20»%20apt%20和%20apt-get.md)
-    - [mac » Homebrew](./19、包管理器/mac%20»%20Homebrew.md)
-    - [node » npm](./19、包管理器/node%20»%20npm.md)
+    - [Homebrew](19、包管理器/brew/Homebrew.md)
+    - [node » npm](19、包管理器/npm/node%20»%20npm.md)
     - [rpm » yum & dnf](./19、包管理器/rpm%20»%20yum%20&%20dnf.md)
-    - [win » Chocolatey](./19、包管理器/win%20»%20Chocolatey.md)
-    - [win » Winget](./19、包管理器/win%20»%20Winget.md)
-    - [👀 npm help install](./19、包管理器/👀%20npm%20help%20install.md)
+    - [Chocolatey](19、包管理器/win/Chocolatey.md)
+    - [Winget](19、包管理器/win/Winget.md)
+    - [npm help install](19、包管理器/npm/npm%20help%20install.md)
   - 20、命令行
     - adb无线调试
       - [0、安装adb](./20、命令行/adb无线调试/0、安装adb.md)
