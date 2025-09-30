@@ -96,6 +96,7 @@
     - [rpm » yum & dnf](./19、包管理器/rpm%20»%20yum%20&%20dnf.md)
     - [win » Chocolatey](./19、包管理器/win%20»%20Chocolatey.md)
     - [win » Winget](./19、包管理器/win%20»%20Winget.md)
+    - [👀 npm help install](./19、包管理器/👀%20npm%20help%20install.md)
   - 20、命令行
     - adb无线调试
       - [0、安装adb](./20、命令行/adb无线调试/0、安装adb.md)
