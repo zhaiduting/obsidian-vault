@@ -37,7 +37,8 @@ Vim 从入门到精通 https://wsdjeg.net/vim-galore-zh-cn/
 的命令。
 ```
 
-退出并保存文件还可以使用 `:x`
+退出并保存文件建议使用 `:x` 而不是用 `:wq`，因为 wq 总会更新文件的修改时间，即使文件内容毫无变化。
+仅保存文件，不退出 vim 界面，请输入 `<ESC>   :w   <回车>`
 
 i 光标位置插入
 I 行首插入
@@ -119,3 +120,22 @@ gg 文件开头
 G 文末
 8G 跳转到第8行
 `` ` `` (两个反引号) 将光标返回到上次跳转的准确位置
+
+### 第5讲小结
+
+```
+  1. :!command 用于执行一个外部命令 command。
+     请看一些实际例子：
+         (MS-DOS)         (Unix)
+          :!dir            :!ls            -  用于显示当前目录的内容。
+          :!del FILENAME   :!rm FILENAME   -  用于删除名为 FILENAME 的文件。
+  2. :w FILENAME  可将当前 VIM 中正在编辑的文件保存到名为 FILENAME 的文
+     件中。
+  3. v motion :w FILENAME 可将当前编辑文件中可视模式下选中的内容保存到文件
+     FILENAME 中。
+  4. :r FILENAME 可提取磁盘文件 FILENAME 并将其插入到当前文件的光标位置
+
+     后面。
+  5. :r !dir 可以读取 dir 命令的输出并将其放置到当前文件的光标位置后面。
+```
+
