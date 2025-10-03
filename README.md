@@ -70,10 +70,12 @@
     - [虚拟条件句情态动词辨析](./12、英语语法/虚拟条件句情态动词辨析.md)
     - [非条件句的虚拟语气例句](./12、英语语法/非条件句的虚拟语气例句.md)
   - 17、IDE
+    - Vim
+      - [vim 怎么执行上一条命令](./17、IDE/Vim/vim%20怎么执行上一条命令.md)
+      - [vim 怎么翻页](./17、IDE/Vim/vim%20怎么翻页.md)
+      - [vimtutor](./17、IDE/Vim/vimtutor.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [VS Code](./17、IDE/VS%20Code.md)
-    - [vim 怎么翻页](./17、IDE/vim%20怎么翻页.md)
-    - [vimtutor](./17、IDE/vimtutor.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
   - 18、设置
     - [Barcode to pc](./18、设置/Barcode%20to%20pc.md)
