@@ -131,17 +131,23 @@ brew tap mongodb/brew
 brew install mongodb-community            # NoSQL 数据库
 ```
 
-#### 💻 虚拟化与系统工具
+#### 💻 虚拟化工具
 
 ```sh
-brew install --cask parallels             # 付费虚拟机（已购 v19、v20）
+brew install --cask parallels             # 付费虚拟机（已购）
 brew install --cask utm                   # 苹果平台虚拟机（付费版）
 brew install --cask crossover             # Mac 直接运行 Windows 程序（已购 2024）
 brew install --cask virtualbox            # 免费跨平台虚拟机
 brew install --cask docker                # 容器与虚拟化环境管理
 
-brew install --cask keka                  # 压缩/解压工具（改用 App Store 付费版）
-brew install --cask logi-options-plus     # 罗技外设配置工具
+```
+
+#### 🧩 系统工具与输入增强
+
+```sh
+brew install --cask keka                  # 压缩与解压工具，改用 App Store 付费版
+brew install --cask logi-options-plus     # 罗技鼠标管理程序
+brew install --cask karabiner-elements    # 高级键盘映射与输入定制工具
 ```
 
 #### 🌐 浏览器
