@@ -71,6 +71,7 @@
     - [非条件句的虚拟语气例句](./12、英语语法/非条件句的虚拟语气例句.md)
   - 17、IDE
     - Vim
+      - [Vim 光标移动大全](./17、IDE/Vim/Vim%20光标移动大全.md)
       - [vim 怎么执行上一条命令](./17、IDE/Vim/vim%20怎么执行上一条命令.md)
       - [vim 怎么翻页](./17、IDE/Vim/vim%20怎么翻页.md)
       - [vimtutor](./17、IDE/Vim/vimtutor.md)
