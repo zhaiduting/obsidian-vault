@@ -71,10 +71,10 @@
     - [非条件句的虚拟语气例句](./12、英语语法/非条件句的虚拟语气例句.md)
   - 17、IDE
     - Vim
-      - [4、光标移动大全](17、IDE/Vim/4、光标移动大全.md)
-      - [2、怎么执行上一条命令](17、IDE/Vim/2、怎么执行上一条命令.md)
-      - [1、怎么翻页](17、IDE/Vim/1、怎么翻页.md)
-      - [3、vimtutor](17、IDE/Vim/3、vimtutor.md)
+      - [1、怎么翻页](./17、IDE/Vim/1、怎么翻页.md)
+      - [2、怎么执行上一条命令](./17、IDE/Vim/2、怎么执行上一条命令.md)
+      - [3、vimtutor](./17、IDE/Vim/3、vimtutor.md)
+      - [4、光标移动大全](./17、IDE/Vim/4、光标移动大全.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [VS Code](./17、IDE/VS%20Code.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
@@ -276,6 +276,7 @@
     - [凭据管理器](./Windows/凭据管理器.md)
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
   - 其它
+    - [ffmpeg 导出 mp4 视频字幕](./其它/ffmpeg%20导出%20mp4%20视频字幕.md)
     - [多设备通信 KDE Connect](./其它/多设备通信%20KDE%20Connect.md)
     - [多设备通信 LocalSend 👍](./其它/多设备通信%20LocalSend%20👍.md)
     - [把魔兽世界装进移动硬盘，刷机后有效](./其它/把魔兽世界装进移动硬盘，刷机后有效.md)
