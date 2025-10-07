@@ -71,9 +71,10 @@
     - [非条件句的虚拟语气例句](./12、英语语法/非条件句的虚拟语气例句.md)
   - 17、IDE
     - Vim
-      - [vim 怎么执行上一条命令](./17、IDE/Vim/vim%20怎么执行上一条命令.md)
-      - [vim 怎么翻页](./17、IDE/Vim/vim%20怎么翻页.md)
-      - [vimtutor](./17、IDE/Vim/vimtutor.md)
+      - [4、光标移动大全](17、IDE/Vim/4、光标移动大全.md)
+      - [2、怎么执行上一条命令](17、IDE/Vim/2、怎么执行上一条命令.md)
+      - [1、怎么翻页](17、IDE/Vim/1、怎么翻页.md)
+      - [3、vimtutor](17、IDE/Vim/3、vimtutor.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [VS Code](./17、IDE/VS%20Code.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
