@@ -1,5 +1,3 @@
-命令如下
-
 ```sh
 npm version <new-version>
 ```

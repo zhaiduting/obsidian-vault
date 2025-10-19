@@ -105,7 +105,7 @@
     - npm
       - [node » npm](./19、包管理器/npm/node%20»%20npm.md)
       - [npm help install](./19、包管理器/npm/npm%20help%20install.md)
-      - [更新项目版本号](./19、包管理器/npm/更新项目版本号.md)
+      - [version 命令](19、包管理器/npm/version%20命令.md)
       - [链接本地库文件](./19、包管理器/npm/链接本地库文件.md)
     - win
       - [Chocolatey](./19、包管理器/win/Chocolatey.md)
