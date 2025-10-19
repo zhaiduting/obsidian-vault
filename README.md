@@ -6,6 +6,7 @@
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
     - [1、Markdown的一些简单语法](./10、关于%20Obsidian/1、Markdown的一些简单语法.md)
+    - [Build a plugin](./10、关于%20Obsidian/Build%20a%20plugin.md)
     - [Hot-Reload Plugin for Obsidian](./10、关于%20Obsidian/Hot-Reload%20Plugin%20for%20Obsidian.md)
     - [Obsidian 的 CSS 代码片段](./10、关于%20Obsidian/Obsidian%20的%20CSS%20代码片段.md)
     - [Setting(contentEl) 用法](./10、关于%20Obsidian/Setting(contentEl)%20用法.md)
@@ -104,6 +105,7 @@
     - npm
       - [node » npm](./19、包管理器/npm/node%20»%20npm.md)
       - [npm help install](./19、包管理器/npm/npm%20help%20install.md)
+      - [更新项目版本号](./19、包管理器/npm/更新项目版本号.md)
       - [链接本地库文件](./19、包管理器/npm/链接本地库文件.md)
     - win
       - [Chocolatey](./19、包管理器/win/Chocolatey.md)
@@ -235,6 +237,7 @@
   - Bug
     - [json 文件的导入问题](./Bug/json%20文件的导入问题.md)
     - [path 或 __dirname](./Bug/path%20或%20__dirname.md)
+    - [未初始化的属性报错问题](./Bug/未初始化的属性报错问题.md)
   - CSS
     - [CSS 变量](./CSS/CSS%20变量.md)
     - [文档模式 DOCTYPE](./CSS/文档模式%20DOCTYPE.md)
