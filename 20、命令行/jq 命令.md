@@ -145,3 +145,88 @@ jq [Options] '<Filter>' <Input File> [Output Redirection]
 ```
 
 最终，`jq` 只输出经过所有操作处理后的**单个完整 JSON 对象**。
+
+## 使用 `[]` 展开对象或数组
+
+假设 package.json 文件包含以下结构
+
+```json
+"author": {
+    "name": "zhaiduting",
+    "email": "zhaiduting@163.com"
+}
+```
+
+观察以下输出
+
+```sh
+mark-prettier > jq '.author' package.json
+{
+  "name": "zhaiduting",
+  "email": "zhaiduting@163.com"
+}
+mark-prettier > jq '.author[]' package.json
+"zhaiduting"
+"zhaiduting@163.com"
+mark-prettier > jq '.author[]' package.json -r
+zhaiduting
+zhaiduting@163.com
+```
+
+我们可以得到以下结论
+
+- `.author` 输出整个对象；
+- `.author[]` 迭代对象的值；
+- `-r` 让字符串去掉引号；
+- 选项顺序不影响结果，改用 `jq -r '.author[]' package.json` 结果不变。
+
+## 内置函数 to_entries
+
+这个函数的作用：把对象转化成特定结构的数组，方便迭代操作。转化后的数组类似如下结构
+
+```js
+[
+  { "key": ..., "value": ... },
+  { "key": ..., "value": ... },
+]
+```
+
+观察以下输出
+
+```sh
+mark-prettier > jq '.author | to_entries' package.json
+[
+  {
+    "key": "name",
+    "value": "zhaiduting"
+  },
+  {
+    "key": "email",
+    "value": "zhaiduting@163.com"
+  }
+]
+mark-prettier > jq '.author | to_entries[]' package.json
+{
+  "key": "name",
+  "value": "zhaiduting"
+}
+{
+  "key": "email",
+  "value": "zhaiduting@163.com"
+}
+mark-prettier > jq '.author | to_entries[] | .key + ": " + .value' package.json
+"name: zhaiduting"
+"email: zhaiduting@163.com"
+mark-prettier > jq '.author | to_entries[] | .key + ": " + .value' package.json -r
+name: zhaiduting
+email: zhaiduting@163.com
+```
+
+🔹 总结规律
+
+| 步骤        | 命令                   | 含义                             |
+| ----------- | ---------------------- | -------------------------------- |
+| 对象 → 数组 | `.author               | to_entries`                      |
+| 展开数组    | `to_entries[]`         | 逐个输出数组元素                 |
+| 拼接字符串  | `.key + ": " + .value` | 将每个对象元素转换成格式化字符串 |
+| 去掉引号    | `-r`                   | 输出原始字符串，不带 JSON 引号   |
