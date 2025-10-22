@@ -82,6 +82,7 @@
       - [99、光标移动大全](./17、IDE/Vim/99、光标移动大全.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [VS Code](./17、IDE/VS%20Code.md)
+    - [⚡️ GoLand 快捷键](./17、IDE/⚡️%20GoLand%20快捷键.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
   - 18、设置
     - [Barcode to pc](./18、设置/Barcode%20to%20pc.md)
@@ -281,6 +282,7 @@
     - [设置默认打开方式](./Mac/设置默认打开方式.md)
     - [设置默认预览方式](./Mac/设置默认预览方式.md)
     - [重装或修复 macOS](./Mac/重装或修复%20macOS.md)
+    - [🌐 设置标准功能键](./Mac/🌐%20设置标准功能键.md)
   - Php
     - [创建 Laravel 项目](./Php/创建%20Laravel%20项目.md)
   - Windows
