@@ -84,6 +84,7 @@
     - [VS Code](./17、IDE/VS%20Code.md)
     - [⚡️ GoLand 快捷键](./17、IDE/⚡️%20GoLand%20快捷键.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
+    - [启用暂存区](./17、IDE/启用暂存区.md)
   - 18、设置
     - [Barcode to pc](./18、设置/Barcode%20to%20pc.md)
     - [Edge 页面双击菜单取消隐藏的方法](./18、设置/Edge%20页面双击菜单取消隐藏的方法.md)
