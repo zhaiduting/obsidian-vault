@@ -27,7 +27,7 @@ npm version <new-version>
 | **`patch`** | `npm version patch`      | 将版本号的**最后一位**（补丁号）递增。例如：`1.0.0` 变成 `1.0.1`。  |
 | **`minor`** | `npm version minor`      | 将版本号的**中间一位**（次版本号）递增。例如：`1.0.1` 变成 `1.1.0`。 |
 | **`major`** | `npm version major`      | 将版本号的**第一位**（主版本号）递增。例如：`1.1.0` 变成 `2.0.0`。  |
-| **`pre*`**  | `npm version prerelease` | 创建预发布版本（如 `1.0.1-0`）。                        |
+| **`pre`**   | `npm version prerelease` | 创建预发布版本（如 `1.0.1-0`）。                        |
 
 ### 4. 更新版本号但不提交
 
