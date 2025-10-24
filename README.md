@@ -291,6 +291,7 @@
     - [凭据管理器](./Windows/凭据管理器.md)
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
   - 其它
+    - [Snagit 圆角透明度反馈信](./其它/Snagit%20圆角透明度反馈信.md)
     - [ffmpeg 导出 mp4 视频字幕](./其它/ffmpeg%20导出%20mp4%20视频字幕.md)
     - [多设备通信 KDE Connect](./其它/多设备通信%20KDE%20Connect.md)
     - [多设备通信 LocalSend 👍](./其它/多设备通信%20LocalSend%20👍.md)
