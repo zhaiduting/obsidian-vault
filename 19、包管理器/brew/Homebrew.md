@@ -172,8 +172,14 @@ brew install --cask localsend             # 局域网文件传输工具
 ```sh
 brew install --cask obsidian              # 笔记/知识管理（Markdown）
 brew install --cask eudic                 # 欧路词典
-brew install --cask snagit                # 截图+录屏工具（专业，支持标注/多窗口）
+brew install --cask snagit                # 截图+录屏工具（改用 AppStore 收费版）
 brew install --cask picgo                 # 图床工具（文档/博客辅助）
+```
+
+#### 🤖 AI 工具
+
+```sh
+brew install --cask chatgpt-atlas         # ChatGPT 桌面客户端
 ```
 
 #### 🎮 游戏与娱乐
