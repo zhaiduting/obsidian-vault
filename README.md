@@ -91,6 +91,7 @@
     - [Homebrew多镜像切换，个数不限（可自定义）](./18、设置/Homebrew多镜像切换，个数不限（可自定义）.md)
     - [IntelliJ IDEA 设置](./18、设置/IntelliJ%20IDEA%20设置.md)
     - [Parallels安装OpenWrt](./18、设置/Parallels安装OpenWrt.md)
+    - [git 文件名编码问题](./18、设置/git%20文件名编码问题.md)
     - [npm 及 yarn 镜像](./18、设置/npm%20及%20yarn%20镜像.md)
     - [npm 配置 @myscope](./18、设置/npm%20配置%20@myscope.md)
     - [npm 配置文件](./18、设置/npm%20配置文件.md)
@@ -278,6 +279,7 @@
     - [构造函数显式返回 this 在 new 运算及 call 方法中的比较，兼谈 call 函数的副作用及其消除](./JS/构造函数显式返回%20this%20在%20new%20运算及%20call%20方法中的比较，兼谈%20call%20函数的副作用及其消除.md)
     - [测试 ES6 Promise 对象的链式传值](./JS/测试%20ES6%20Promise%20对象的链式传值.md)
   - Mac
+    - [⌘J 统一访达窗口的设置](./Mac/⌘J%20统一访达窗口的设置.md)
     - [清除App的历史记录](./Mac/清除App的历史记录.md)
     - [系统镜像下载方法](./Mac/系统镜像下载方法.md)
     - [设置默认打开方式](./Mac/设置默认打开方式.md)
