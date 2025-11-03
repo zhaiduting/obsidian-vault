@@ -6,6 +6,7 @@
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
     - [1、Markdown的一些简单语法](./10、关于%20Obsidian/1、Markdown的一些简单语法.md)
+    - [2、终端粘贴空白行问题](./10、关于%20Obsidian/2、终端粘贴空白行问题.md)
     - [Build a plugin](./10、关于%20Obsidian/Build%20a%20plugin.md)
     - [Hot-Reload Plugin for Obsidian](./10、关于%20Obsidian/Hot-Reload%20Plugin%20for%20Obsidian.md)
     - [Obsidian 的 CSS 代码片段](./10、关于%20Obsidian/Obsidian%20的%20CSS%20代码片段.md)
@@ -150,6 +151,7 @@
     - [⚙️ .gitignore 规则不生效的解决办法](./20、命令行/⚙️%20.gitignore%20规则不生效的解决办法.md)
     - [修改 Git 历史记录](./20、命令行/修改%20Git%20历史记录.md)
     - [手动打开模拟器](./20、命令行/手动打开模拟器.md)
+    - [打印当前文件夹下所有文件的md5值](./20、命令行/打印当前文件夹下所有文件的md5值.md)
     - [服务管理 Set-Service](./20、命令行/服务管理%20Set-Service.md)
     - [服务管理](./20、命令行/服务管理.md)
     - [正斜杠与反斜杠](./20、命令行/正斜杠与反斜杠.md)
