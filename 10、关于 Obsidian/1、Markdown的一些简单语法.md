@@ -1,50 +1,60 @@
 ---
 ---
 
+# 标题的写法
+
+```
 # 一级标题
 
 ## 二级标题
 
 ###### 六级标题
-
-```jsx
-// 代码块
-import { useRecoilCallback, useRecoilState } from "recoil";
-import { countState } from "./state";
-import { useEffect } from "react";
-
-export function AsyncRecoilCallback() {
-	const [count, setCount] = useRecoilState(countState);
-
-	const incrementAsync = useRecoilCallback(
-		({ set }) => async () => {
-			// 模拟异步操作
-			await new Promise((resolve) => setTimeout(resolve, 3000));
-			// set(countState, prev => prev + 1);
-			setCount((prev) => prev + 1);
-			console.log(countState, count);
-		},
-		[] // 依赖数组，确保回调函数在这些值不变时不会重新创建
-	);
-	useEffect(() => {
-		console.log("Updated count:", count);
-	}, [count]); // 只有 count 发生变化时才会执行
-	return (
-		<div>
-			<p>Count: {count}</p>
-			<button onClick={incrementAsync}>Increment Async</button>
-		</div>
-	);
-}
 ```
 
-无序列表（每行开头输入减号，后面紧跟一个空格）
+# 代码块的写法
+
+````
+```javascript
+// 在此写入代码，例如
+console.log(Date());
+```
+````
+
+显示效果如下
+
+```javascript
+// 在此写入代码，例如
+console.log(Date());
+```
+
+# 列表的写法
+
+## 无序列表
+
+每行开头输入减号，后面紧跟一个空格
+
+```
+- 芒果、哈密瓜
+- 花生米、腰果
+- 充电器、剃须刀
+```
+
+显示效果如下
 
 - 芒果、哈密瓜
 - 花生米、腰果
 - 充电器、剃须刀
 
-有序列表（每行开头使用数字，紧跟一个小数点，再按空格）
+## 有序列表
+
+每行开头使用数字，紧跟一个小数点，再按空格
+
+```
+1. 刷牙洗脸
+2. 吃饭睡觉
+```
+
+显示效果如下
 
 1. 刷牙洗脸
 2. 吃饭睡觉
@@ -55,15 +65,15 @@ export function AsyncRecoilCallback() {
 
 1. **`[]()`**：用于创建一个**超链接**。例如：
 
-    `[Google](https://www.google.com)`
+   `[Google](https://www.google.com)`
 
-    这会创建一个指向 Google 网站的链接。
+   这会创建一个指向 Google 网站的链接。
 
 2. **`![]()`**：用于插入**图片**。例如：
 
-    `![Alt Text](https://example.com/image.jpg)`
+   `![Alt Text](https://example.com/image.jpg)`
 
-    这会插入一张图片，`Alt Text` 是图片无法加载时显示的文本。
+   这会插入一张图片，`Alt Text` 是图片无法加载时显示的文本。
 
 总之：
 
@@ -72,12 +82,12 @@ export function AsyncRecoilCallback() {
 
 # 元数据
 
-新建一个空白文章，然后将以下 3 行文字复制粘贴进去。效果立现
+新建一个**空白文章**，然后将以下 4 行复制粘贴进去。
 
 ```
 ---
-author: 
-created: 
+author:
+created:
 ---
 
 ```
