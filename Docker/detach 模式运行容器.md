@@ -1,4 +1,4 @@
-### 使用 -d 选项
+### 使用 -d 以 detach 模式运行容器
 
 ```sh
 obsidian-vault > docker container run -dp 80:80 --name nginx nginx
@@ -56,7 +56,7 @@ docker container run -p -d 80:80 nginx
 docker container run nginx --name nginx -d -p 80:80
 ```
 
-### 使用 attach 命令连接容器
+### 使用 attach 命令进入 attach 模式
 
 敲入 `docker container attach <container_id>` 可将终端连接到运行中的容器
 
@@ -72,4 +72,26 @@ obsidian-vault > docker container attach 97
 192.168.65.1 - - [04/Nov/2025:07:59:44 +0000] "GET / HTTP/1.1" 200 615 "-" "curl/8.7.1" "-"
 ```
 
-⚠️ 不推荐使用 `docker container attach` 命令
+### 交互模式
+
+不使用 attach 命令，改用 `docker container logs` 命令也可以查看信息。如果 logs 命令添加了 `-f` 选项，效果类似于执行了 attach 命令。
+
+无论是 attach 命令还是 logs 命令，感觉都不方便。最好用的还是 `docker container exec -it nginx sh` 命令，因为交互模式更方便。终端记录如下
+
+```sh
+obsidian-vault > docker container exec -it nginx
+docker: 'docker container exec' requires at least 2 arguments
+
+Usage:  docker container exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+See 'docker container exec --help' for more information
+obsidian-vault > docker container exec -it nginx sh
+# ls
+bin   docker-entrypoint.d   home   mnt	 root  srv  usr
+boot  docker-entrypoint.sh  lib    opt	 run   sys  var
+dev   etc		    media  proc  sbin  tmp
+# pwd
+/
+# exit
+obsidian-vault >
+```
