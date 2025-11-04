@@ -56,7 +56,7 @@ docker container run -p -d 80:80 nginx
 docker container run nginx --name nginx -d -p 80:80
 ```
 
-### 使用 attach 命令
+### 使用 attach 命令连接容器
 
 敲入 `docker container attach <container_id>` 可将终端连接到运行中的容器
 

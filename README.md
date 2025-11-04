@@ -266,7 +266,7 @@
     - [终端工具比较](./Clippings/终端工具比较.md)
     - [资源路由](./Clippings/资源路由.md)
   - Docker
-    - [attach 模式运行容器](./Docker/attach%20模式运行容器.md)
+    - [detach 模式运行容器](Docker/detach%20模式运行容器.md)
     - [命名容器](./Docker/命名容器.md)
   - JS
     - Prettier
