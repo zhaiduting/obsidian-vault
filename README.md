@@ -297,6 +297,7 @@
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
+    - [微软官方下载 Win 系统](./Windows/微软官方下载%20Win%20系统.md)
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
   - 其它
     - [Snagit 圆角透明度反馈信](./其它/Snagit%20圆角透明度反馈信.md)
