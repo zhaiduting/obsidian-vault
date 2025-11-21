@@ -8,12 +8,12 @@ created: 2025-10-23
 ### 1. Please tell us more about WHAT you would like to be improved.
 
 ```
-I would like to see an improvement in how Snagit captures the rounded corners of modern macOS application windows. Currently, when I capture a window, the area in the very corners—the space created by the round radius—is not truly transparent. Instead, it captures an opaque or semi-opaque color, which is usually a mixture of the window's shadow and the underlying desktop background. The captured PNG is therefore not fully transparent in the corners.
+I would like to see an improvement in how Snagit captures the rounded corners of modern macOS application windows. Currently, when I capture multiple windows simultaneously, the rounded corners are not truly transparent. Instead, it captures an opaque or semi-opaque color, which is usually a mixture of the window's shadow and the underlying desktop background. The captured PNG is therefore not fully transparent in the corners.
 
 The improvement I'm requesting is for Snagit to be able to natively capture the true alpha channel (transparency) data for these rounded corners directly from the operating system when taking a window screenshot.
 ```
 
-我希望 Snagit 能够改进其截取现代 macOS 应用程序窗口圆角的方式。目前，当我截取窗口时，圆角区域（由圆角半径产生的空间）并非真正透明。相反，它会截取不透明或半透明的颜色，通常是窗口阴影和底层桌面背景的混合。因此，截取的 PNG 图像在圆角处并非完全透明。
+我希望 Snagit 能够改进其截取现代 macOS 应用程序窗口圆角的方式。目前，当我同时截取多个窗口时，圆角区域并非真正透明。相反，它会截取不透明或半透明的颜色，通常是窗口阴影和底层桌面背景的混合。因此，截取的 PNG 图像在圆角处并非完全透明。
 
 我请求的改进是让 Snagit 能够在截取窗口屏幕截图时直接从操作系统原生截取这些圆角的真实 Alpha 通道（透明度）数据。
 
