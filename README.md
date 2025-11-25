@@ -96,6 +96,7 @@
     - [npm 及 yarn 镜像](./18、设置/npm%20及%20yarn%20镜像.md)
     - [npm 配置 @myscope](./18、设置/npm%20配置%20@myscope.md)
     - [npm 配置文件](./18、设置/npm%20配置文件.md)
+    - [parallels 锁定鼠标](./18、设置/parallels%20锁定鼠标.md)
     - [为 ssh 协议设置代理](./18、设置/为%20ssh%20协议设置代理.md)
     - [使用Prettier格式化代码块](./18、设置/使用Prettier格式化代码块.md)
     - [华硕路由 RT-BE88U](./18、设置/华硕路由%20RT-BE88U.md)
