@@ -96,13 +96,11 @@ brew search <精确包名>
 
 ```sh
 brew install --cask visual-studio-code    # 通用编辑器/IDE
-brew install --cask phpstorm              # PHP IDE
-brew install --cask intellij-idea         # Java/多语言 IDE
-brew install --cask goland                # GoLand IDE
-brew install go                           # Go 工具链 (可改用 GoLand 安装)
-brew install --cask android-studio        # Android 开发 IDE
-brew install --cask rustrover             # RustRover IDE 
-brew install rust                         # Rust 工具链 (编译器)
+brew install --cask android-studio        # Android
+brew install --cask phpstorm              # PHP
+brew install --cask intellij-idea         # Java/多语言
+brew install --cask goland                # GoLand
+brew install --cask rustrover             # Rust 
 ```
 
 #### 🛠️ 开发工具
