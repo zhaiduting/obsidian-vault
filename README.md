@@ -306,6 +306,7 @@
     - [微软官方下载 Win 系统](./Windows/微软官方下载%20Win%20系统.md)
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
   - 其它
+    - [LocalSend 发送文件夹问题](./其它/LocalSend%20发送文件夹问题.md)
     - [Snagit 圆角透明度反馈信](./其它/Snagit%20圆角透明度反馈信.md)
     - [ffmpeg 导出 mp4 视频字幕](./其它/ffmpeg%20导出%20mp4%20视频字幕.md)
     - [今日拯救了手机的 Wi-Fi](./其它/今日拯救了手机的%20Wi-Fi.md)
