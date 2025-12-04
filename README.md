@@ -6,14 +6,15 @@
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
     - [1、Markdown的一些简单语法](./10、关于%20Obsidian/1、Markdown的一些简单语法.md)
-    - [3、终端粘贴空白行问题](10、关于%20Obsidian/3、终端粘贴空白行问题.md)
+    - [2、禁止手机相册显示仓库图片](./10、关于%20Obsidian/2、禁止手机相册显示仓库图片.md)
+    - [3、终端粘贴空白行问题](./10、关于%20Obsidian/3、终端粘贴空白行问题.md)
+    - [99、多设备同步](./10、关于%20Obsidian/99、多设备同步.md)
     - [Build a plugin](./10、关于%20Obsidian/Build%20a%20plugin.md)
     - [Hot-Reload Plugin for Obsidian](./10、关于%20Obsidian/Hot-Reload%20Plugin%20for%20Obsidian.md)
     - [Obsidian 的 CSS 代码片段](./10、关于%20Obsidian/Obsidian%20的%20CSS%20代码片段.md)
     - [Setting(contentEl) 用法](./10、关于%20Obsidian/Setting(contentEl)%20用法.md)
     - [写一个能解析自定义代码块的黑曜石插件](./10、关于%20Obsidian/写一个能解析自定义代码块的黑曜石插件.md)
     - [可插入html及css](./10、关于%20Obsidian/可插入html及css.md)
-    - [2、禁止手机相册显示仓库图片](10、关于%20Obsidian/2、禁止手机相册显示仓库图片.md)
     - [输入全角空格](./10、关于%20Obsidian/输入全角空格.md)
   - 11、词汇
     - Embankment
