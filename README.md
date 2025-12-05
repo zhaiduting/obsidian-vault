@@ -299,8 +299,8 @@
   - Php
     - [创建 Laravel 项目](./Php/创建%20Laravel%20项目.md)
   - Rust
-    - [创建Rust项目](./Rust/创建Rust项目.md)
-    - [整数溢出](./Rust/整数溢出.md)
+    - [1 创建Rust项目](Rust/1%20创建Rust项目.md)
+    - [2 整数溢出](Rust/2%20整数溢出.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
