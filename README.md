@@ -303,6 +303,7 @@
     - [1 创建Rust项目](./Rust/1%20创建Rust项目.md)
     - [2 整数溢出](./Rust/2%20整数溢出.md)
     - [3 结构体](./Rust/3%20结构体.md)
+    - [4 带参枚举](./Rust/4%20带参枚举.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
