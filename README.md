@@ -271,7 +271,9 @@
     - [资源路由](./Clippings/资源路由.md)
   - Docker
     - [detach 模式运行容器](./Docker/detach%20模式运行容器.md)
+    - [docker-gcc](./Docker/docker-gcc.md)
     - [image ls 加不加 -a 的区别](./Docker/image%20ls%20加不加%20-a%20的区别.md)
+    - [prune](./Docker/prune.md)
     - [命名容器](./Docker/命名容器.md)
   - JS
     - Prettier
