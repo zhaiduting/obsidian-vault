@@ -275,6 +275,7 @@
     - [image ls 加不加 -a 的区别](./Docker/image%20ls%20加不加%20-a%20的区别.md)
     - [prune](./Docker/prune.md)
     - [命名容器](./Docker/命名容器.md)
+    - [多阶段构建](./Docker/多阶段构建.md)
   - JS
     - Prettier
       - [0、打印助手 ps(doc, width , log)](./JS/Prettier/0、打印助手%20ps(doc,%20width%20,%20log).md)
