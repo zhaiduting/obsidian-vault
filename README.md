@@ -275,6 +275,7 @@
     - [docker-gcc](./Docker/docker-gcc.md)
     - [image ls 加不加 -a 的区别](./Docker/image%20ls%20加不加%20-a%20的区别.md)
     - [prune](./Docker/prune.md)
+    - [启用 Kubernetes](./Docker/启用%20Kubernetes.md)
     - [命名容器](./Docker/命名容器.md)
     - [多阶段构建](./Docker/多阶段构建.md)
   - JS
