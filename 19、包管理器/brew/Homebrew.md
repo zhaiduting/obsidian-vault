@@ -100,7 +100,7 @@ brew install --cask android-studio        # Android
 brew install --cask phpstorm              # PHP
 brew install --cask intellij-idea         # Java/多语言
 brew install --cask goland                # GoLand
-brew install --cask rustrover             # Rust 
+brew install --cask rustrover             # Rust
 ```
 
 #### 🛠️ 开发工具
@@ -139,8 +139,13 @@ brew install --cask parallels             # 付费虚拟机（已购）
 brew install --cask utm                   # 苹果平台虚拟机（付费版）
 brew install --cask crossover             # Mac 直接运行 Windows 程序（已购 2024）
 brew install --cask virtualbox            # 免费跨平台虚拟机
-brew install --cask docker                # 容器与虚拟化环境管理
+```
 
+虽然以下两条命令最终安装的都是 Docker Desktop，但是升级时只能使用 `brew upgrade docker-desktop` 命令，而 `brew upgrade docker` 无法升级。
+
+```sh
+brew install --cask docker-desktop        # 容器与虚拟化环境管理
+brew install --cask docker                # 重定向/别名
 ```
 
 #### 🧩 系统工具与输入增强
