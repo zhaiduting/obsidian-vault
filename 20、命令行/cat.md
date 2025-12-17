@@ -44,3 +44,23 @@ test_cat > cat here_document.txt
 （另起一行输入 EOF 结束输入）
 test_cat >
 ```
+
+### Here Document（此处文档）
+
+#### 位置互换
+
+`<<EOF` 和 `> here_document.txt` 的**位置互换不影响最终结果**，因此以下两种写法效果相同
+
+1. `cat <<EOF > here_document.txt`
+2. `cat > here_document.txt <<EOF`
+
+#### 使用 `<<-EOF` 去除制表符
+
+执行以下命令，生成的 here_document.txt 文件的每行开头都没有制表符
+
+```sh
+cat > here_document.txt <<-EOF
+	第一行开头有个制表符
+	第二行也是
+	EOF
+```
