@@ -1,3 +1,7 @@
+---
+source: https://chatgpt.com/c/68bbd116-a0f8-832f-aecb-a28bc2a45d12
+---
+
 **Homebrew** 是 macOS 和 Linux 上的包管理器，用于安装、更新、管理和卸载软件包或工具。它的目标是让用户更容易地在系统中安装 Unix 工具和开源应用。
 
 它的官方口号是：
@@ -193,4 +197,10 @@ brew install --cask chatgpt-atlas         # ChatGPT 桌面客户端
 ```sh
 brew install --cask steam                 # 游戏平台
 brew install --cask battle-net            # 暴雪游戏平台
+```
+
+#### 🔐 远程连接工具
+
+```sh
+brew install --cask termius
 ```
