@@ -272,6 +272,7 @@
     - [终端工具比较](./Clippings/终端工具比较.md)
     - [资源路由](./Clippings/资源路由.md)
   - Docker
+    - [CentOS 安装 Podman](./Docker/CentOS%20安装%20Podman.md)
     - [ENTRYPOINT 与 CMD](./Docker/ENTRYPOINT%20与%20CMD.md)
     - [detach 模式运行容器](./Docker/detach%20模式运行容器.md)
     - [docker-gcc](./Docker/docker-gcc.md)
