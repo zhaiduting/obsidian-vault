@@ -320,6 +320,7 @@
   - 其它
     - [LocalSend 发送文件夹问题](./其它/LocalSend%20发送文件夹问题.md)
     - [Snagit 圆角透明度反馈信](./其它/Snagit%20圆角透明度反馈信.md)
+    - [Termius 连接虚拟机](./其它/Termius%20连接虚拟机.md)
     - [ffmpeg 导出 mp4 视频字幕](./其它/ffmpeg%20导出%20mp4%20视频字幕.md)
     - [今日拯救了手机的 Wi-Fi](./其它/今日拯救了手机的%20Wi-Fi.md)
     - [多设备通信 KDE Connect](./其它/多设备通信%20KDE%20Connect.md)
