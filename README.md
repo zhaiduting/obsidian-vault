@@ -274,6 +274,7 @@
   - Docker
     - [CentOS 安装 Podman](./Docker/CentOS%20安装%20Podman.md)
     - [ENTRYPOINT 与 CMD](./Docker/ENTRYPOINT%20与%20CMD.md)
+    - [Mac 安装 Podman](./Docker/Mac%20安装%20Podman.md)
     - [detach 模式运行容器](./Docker/detach%20模式运行容器.md)
     - [docker-gcc](./Docker/docker-gcc.md)
     - [image ls 加不加 -a 的区别](./Docker/image%20ls%20加不加%20-a%20的区别.md)
