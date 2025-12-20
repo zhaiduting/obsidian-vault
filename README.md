@@ -281,7 +281,7 @@
     - [启用 Kubernetes](./Docker/启用%20Kubernetes.md)
     - [命名容器](./Docker/命名容器.md)
     - [多阶段构建](./Docker/多阶段构建.md)
-    - [镜像站测试脚本](./Docker/镜像站测试脚本.md)
+    - [docker-mirror-gen.sh](Docker/docker-mirror-gen.sh.md)
   - JS
     - Prettier
       - [0、打印助手 ps(doc, width , log)](./JS/Prettier/0、打印助手%20ps(doc,%20width%20,%20log).md)
