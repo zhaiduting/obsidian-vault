@@ -277,12 +277,12 @@
     - [Mac 安装 Podman](./Docker/Mac%20安装%20Podman.md)
     - [detach 模式运行容器](./Docker/detach%20模式运行容器.md)
     - [docker-gcc](./Docker/docker-gcc.md)
+    - [docker-mirror-gen.sh](./Docker/docker-mirror-gen.sh.md)
     - [image ls 加不加 -a 的区别](./Docker/image%20ls%20加不加%20-a%20的区别.md)
     - [prune](./Docker/prune.md)
     - [启用 Kubernetes](./Docker/启用%20Kubernetes.md)
     - [命名容器](./Docker/命名容器.md)
     - [多阶段构建](./Docker/多阶段构建.md)
-    - [docker-mirror-gen.sh](Docker/docker-mirror-gen.sh.md)
   - JS
     - Prettier
       - [0、打印助手 ps(doc, width , log)](./JS/Prettier/0、打印助手%20ps(doc,%20width%20,%20log).md)
