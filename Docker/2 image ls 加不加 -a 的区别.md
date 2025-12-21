@@ -20,6 +20,10 @@ docker image ls 命令加不加 -a 选项有啥区别？
 
 ### ✅ 不加 -a（默认）
 
+```sh
+docker image ls
+```
+
 只显示：
 
 - “可用”的、可直接使用的镜像（即带有 **标签(tag)** 的镜像）
@@ -27,17 +31,34 @@ docker image ls 命令加不加 -a 选项有啥区别？
 
 📘 比如：
 
+```sh
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    f547e3d0d5d0   2 weeks ago   187MB
+ubuntu       22.04     27941809078c   3 weeks ago   77MB
+```
+
 这些都是“完整”的镜像，可以直接 `docker run` 。
 
 ---
 
 ### 🧩 加上 -a 或 --all
 
+```sh
+docker image ls -a
+```
+
 会显示：
 
 - 所有镜像，包括那些没有标签的中间层镜像（通常显示为 `<none>` ）
 
 📘 例如：
+
+```sh
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+nginx        latest    f547e3d0d5d0   2 weeks ago   187MB
+<none>       <none>    32ab4c5e981c   2 weeks ago   12MB
+ubuntu       22.04     27941809078c   3 weeks ago   77MB
+```
 
 这些 `<none>` 镜像往往是：
 
@@ -59,6 +80,10 @@ docker image ls 命令加不加 -a 选项有啥区别？
 
 当你执行：
 
+```sh
+docker image prune
+```
+
 Docker 会删除这些无用的 `<none>` 镜像（悬挂镜像，dangling images）。
 
 ---
@@ -75,13 +100,34 @@ Docker 会删除这些无用的 `<none>` 镜像（悬挂镜像，dangling images
 
 假设你手动构建了一个小镜像，比如这个 `Dockerfile` ：
 
+```sh
+FROM ubuntu:22.04
+RUN apt-get update
+RUN apt-get install -y curl
+```
+
 ---
 
 ### 🧱 第一步：构建镜像
 
 执行：
 
+```sh
+docker build -t mytest .
+```
+
 Docker 会输出类似：
+
+```sh
+Step 1/3 : FROM ubuntu:22.04
+ ---> 27941809078c
+Step 2/3 : RUN apt-get update
+ ---> a1b2c3d4e5f6
+Step 3/3 : RUN apt-get install -y curl
+ ---> b7c8d9e0f123
+Successfully built b7c8d9e0f123
+Successfully tagged mytest:latest
+```
 
 注意这里每个步骤（RUN、COPY、ADD 等）都会生成一个新的镜像层。  
 只有最后一个层被打上了标签 `mytest:latest` 。
@@ -92,7 +138,17 @@ Docker 会输出类似：
 
 #### （1）默认情况
 
+```sh
+docker image ls
+```
+
 输出类似：
+
+```sh
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+mytest       latest    b7c8d9e0f123   1 minute ago    120MB
+ubuntu       22.04     27941809078c   3 weeks ago     77MB
+```
 
 只看到可直接使用的镜像。
 
@@ -100,7 +156,18 @@ Docker 会输出类似：
 
 #### （2）加上 -a
 
+```sh
+docker image ls -a
+```
+
 输出就多了几行：
+
+```sh
+REPOSITORY   TAG       IMAGE ID       CREATED         SIZE
+mytest       latest    b7c8d9e0f123   1 minute ago    120MB
+<none>       <none>    a1b2c3d4e5f6   1 minute ago    115MB
+<none>       <none>    27941809078c   3 weeks ago     77MB
+```
 
 🔍 可以看到：
 
@@ -114,7 +181,18 @@ Docker 会输出类似：
 
 执行：
 
+```sh
+docker image prune
+```
+
 输出：
+
+```sh
+Deleted Images:
+a1b2c3d4e5f6
+...
+Total reclaimed space: 115MB
+```
 
 这些 `<none>` 镜像就会被清理掉。
 
@@ -138,12 +216,20 @@ Docker 会输出类似：
 非常好的观察 👏  
 你提到的 `27941809078c` （那一长串镜像 ID）其实是 **基础镜像层** ，就是 Dockerfile 里这行：
 
+```sh
+FROM ubuntu:22.04
+```
+
 ---
 
 ### 🧱 它的身份是什么？
 
 `27941809078c` 对应的是 **官方的 `ubuntu:22.04` 镜像** 。  
 当你执行：
+
+```sh
+FROM ubuntu:22.04
+```
 
 Docker 就会去拉取这个镜像作为构建的起点。  
 之后的每一步（ `RUN` 、 `COPY` 等）都会在它的基础上叠加新的一层。
@@ -221,6 +307,12 @@ dockerfile 有几行代码就会生成几行镜像？如果另外一个dockerfil
 
 假设你有这个 Dockerfile：
 
+```
+FROM ubuntu:22.04
+RUN apt-get update
+RUN apt-get install -y curl
+```
+
 构建后，Docker 实际上会生成 3 个层：
 
 | 层      | 来源                          | 状态                 |
@@ -231,7 +323,18 @@ dockerfile 有几行代码就会生成几行镜像？如果另外一个dockerfil
 
 执行完后：
 
+```sh
+docker image ls -a
+```
+
 你可能看到类似：
+
+```sh
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+mytest       latest    b7c8d9e0f123   1 minute ago     120MB
+<none>       <none>    a1b2c3d4e5f6   1 minute ago     115MB
+ubuntu       22.04     27941809078c   3 weeks ago      77MB
+```
 
 👉 虽然 Dockerfile 有 3 条指令，但显示的镜像是 **3 个** ：
 
@@ -245,7 +348,17 @@ dockerfile 有几行代码就会生成几行镜像？如果另外一个dockerfil
 
 再来一个不同的 Dockerfile，比如：
 
+```
+FROM ubuntu:22.04
+RUN apt-get update
+RUN apt-get install -y wget
+```
+
 构建：
+
+```sh
+docker build -t mytest2 .
+```
 
 ---
 
@@ -263,6 +376,14 @@ dockerfile 有几行代码就会生成几行镜像？如果另外一个dockerfil
 ---
 
 ### 🔍 实际显示可能是这样：
+
+```sh
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+mytest2      latest    c1d2e3f4g5h6   1 minute ago     120MB
+mytest       latest    b7c8d9e0f123   2 minutes ago    120MB
+<none>       <none>    a1b2c3d4e5f6   2 minutes ago    115MB
+ubuntu       22.04     27941809078c   3 weeks ago      77MB
+```
 
 注意：虽然两个 Dockerfile 各有 3 行，但并不是 6 个镜像。  
 因为前两层被复用，Docker 不会重复创建相同内容的层。
