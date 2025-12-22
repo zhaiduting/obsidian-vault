@@ -279,7 +279,7 @@
     - [1 多阶段构建](./Docker/1%20多阶段构建.md)
     - [2 docker-gcc](./Docker/2%20docker-gcc.md)
     - [2 image ls 加不加 -a 的区别](./Docker/2%20image%20ls%20加不加%20-a%20的区别.md)
-    - [6 CentOS 安装 Podman](./Docker/6%20CentOS%20安装%20Podman.md)
+    - [9 CentOS 安装 Podman](Docker/9%20CentOS%20安装%20Podman.md)
     - [8 启用 Kubernetes](./Docker/8%20启用%20Kubernetes.md)
     - [9 Mac 安装 Podman](./Docker/9%20Mac%20安装%20Podman.md)
     - [9 Mac 配置 podman](./Docker/9%20Mac%20配置%20podman.md)

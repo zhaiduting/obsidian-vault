@@ -73,7 +73,7 @@ for mirror in "${mirrors[@]}"; do
       echo "重定向到: $final_url"
     fi
   fi
-  
+
   # 获取认证头
   auth_header="$(grep -i '^WWW-Authenticate:' "$headers" || true)"
   rm -f "$headers"
@@ -87,7 +87,7 @@ for mirror in "${mirrors[@]}"; do
         --max-time 10 \
         "$final_url" || echo "000"
     )"
-    
+
     if [[ "$http_code2" =~ ^(200|401)$ ]]; then
       auth_header="$(grep -i '^WWW-Authenticate:' "$headers2" || true)"
     fi
@@ -113,10 +113,10 @@ for mirror in "${mirrors[@]}"; do
   # 5. 获取 token，增加错误处理
   token_response=""
   token=""
-  
+
   # 尝试获取 token，增加超时和错误处理
   token_response="$(curl -s --max-time 10 "$realm?service=$service&scope=repository:$IMAGE:pull" 2>/dev/null || echo "")"
-  
+
   if [[ -n "$token_response" ]]; then
     # 检查是否是有效的 JSON
     if echo "$token_response" | jq -e . >/dev/null 2>&1; then
@@ -144,9 +144,9 @@ for mirror in "${mirrors[@]}"; do
   else
     download_url="https://$mirror/v2/$IMAGE/blobs/$BLOB"
   fi
-  
+
   echo "下载地址: $download_url"
-  
+
   # 尝试下载，增加超时和重试
   for i in {1..2}; do
     speed="$(
@@ -158,7 +158,7 @@ for mirror in "${mirrors[@]}"; do
         "$download_url" \
         2>/dev/null || echo ""
     )"
-    
+
     if [[ -n "$speed" && "$speed" != "0" ]]; then
       break
     elif [[ $i -eq 1 ]]; then
@@ -263,7 +263,11 @@ echo -e "\n🏁 脚本执行完成"
 
 ### 生成的配置文件怎么用？
 
-#### Podman / Buildah / Skopeo
+#### macOS 配置 Podman
+
+已在 [Mac 配置 podman](./9%20Mac%20配置%20podman.md) 一文中详细记录过了，此处不再赘述。
+
+#### CentOS 配置 Podman
 
 系统级或者用户级，二选一
 
@@ -282,7 +286,7 @@ cp registries.conf ~/.config/containers/registries.conf
 podman pull alpine
 ```
 
-#### Docker
+#### CentOS 配置 Docker 
 
 放置位置
 
@@ -291,7 +295,7 @@ sudo cp daemon.json /etc/docker/daemon.json
 sudo systemctl restart docker
 ```
 
-macOS Docker Desktop：
+#### macOS 配置 Docker Desktop
 
 ```json
 Settings → Docker Engine → 粘贴 daemon.json 内容 → Apply
