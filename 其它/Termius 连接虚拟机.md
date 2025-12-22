@@ -42,7 +42,7 @@ Address: 192.168.50.153
 
 如果 Termius 无法连接虚拟机，并且宿主机的终端出现类似如下所示的输出
 
-```sh
+```powershell
 # 不指定路由器 IP 时无法识别 centos 主机
 ~ > nslookup centos
 Server:		114.114.114.114

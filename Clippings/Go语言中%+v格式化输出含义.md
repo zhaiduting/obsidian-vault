@@ -1,8 +1,8 @@
 ---
 author:
-  - "[[Clippings/curl 命令]]"
+  - "[[20、命令行/curl -X]]"
 source: https://chat.deepseek.com/a/chat/s/89bf7713-dd0d-4ada-943b-bd52f89d7243
-published: 
+published:
 created: 2025-01-19
 tags:
   - clippings

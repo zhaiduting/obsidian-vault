@@ -263,7 +263,7 @@
     - [Setup vs Set 区别](./Clippings/Setup%20vs%20Set%20区别.md)
     - [Unicode 字符排序问题](./Clippings/Unicode%20字符排序问题.md)
     - [crontab 命令](./Clippings/crontab%20命令.md)
-    - [curl 命令](./Clippings/curl%20命令.md)
+    - [curl -X](20、命令行/curl%20-X.md)
     - [go env](./Clippings/go%20env.md)
     - [‎Gemini - Go 类型断言](./Clippings/‎Gemini%20-%20Go%20类型断言.md)
     - [‎Gemini - Go 语言继承机制](./Clippings/‎Gemini%20-%20Go%20语言继承机制.md)
