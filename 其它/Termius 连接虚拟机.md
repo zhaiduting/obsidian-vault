@@ -24,6 +24,9 @@ brew install --cask termius
 
 ```sh
 nslookup centos <路由器的IP>
+
+# 也可以不写路由器地址，就像下面这样
+nslookup centos
 ```
 
 这条命令的大致意思是：查询一下名为 centos 的设备的 IP 地址是多少。结果显示：
@@ -34,3 +37,17 @@ Address: 192.168.50.153
 ```
 
 因此，Termius 连接 centos 虚拟机时，实际上是从路由器那里得到了虚拟机的 IP 地址。由此引入一个问题：如果遇到不够智能的路由器，通过设备名称进行连接的方式会不会失效呢？
+
+### 解决失效的问题
+
+过了一段时间，发现 Termius 连不上虚拟机。宿主机终端 nslookup 命令显示如下信息
+
+```sh
+~ > nslookup centos
+Server:		192.168.50.1
+Address:	192.168.50.1#53
+
+** server can't find centos: NXDOMAIN
+```
+
+解决方法很简单：重新开启一下虚拟机的桥接网络。 这可以让虚拟机向路由器重新做一下“自我介绍”，之后 Ternius 就可以正常连接虚拟机了。
