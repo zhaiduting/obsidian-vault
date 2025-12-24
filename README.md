@@ -281,7 +281,6 @@
     - [1 多阶段构建](./Docker/1%20多阶段构建.md)
     - [2 docker-gcc](./Docker/2%20docker-gcc.md)
     - [2 image ls 加不加 -a 的区别](./Docker/2%20image%20ls%20加不加%20-a%20的区别.md)
-    - [启用 Kubernetes](K8S/启用%20Kubernetes.md)
     - [9 CentOS 安装 Podman](./Docker/9%20CentOS%20安装%20Podman.md)
     - [9 Mac 安装 Podman](./Docker/9%20Mac%20安装%20Podman.md)
     - [9 Mac 配置 podman](./Docker/9%20Mac%20配置%20podman.md)
@@ -301,6 +300,9 @@
     - [暴露代码的怪异写法 arguments 0.exports 应用一例](./JS/暴露代码的怪异写法%20arguments%200.exports%20应用一例.md)
     - [构造函数显式返回 this 在 new 运算及 call 方法中的比较，兼谈 call 函数的副作用及其消除](./JS/构造函数显式返回%20this%20在%20new%20运算及%20call%20方法中的比较，兼谈%20call%20函数的副作用及其消除.md)
     - [测试 ES6 Promise 对象的链式传值](./JS/测试%20ES6%20Promise%20对象的链式传值.md)
+  - K8S
+    - [1 CentOS 搭建 K8S 集群](./K8S/1%20CentOS%20搭建%20K8S%20集群.md)
+    - [启用 Kubernetes](./K8S/启用%20Kubernetes.md)
   - Mac
     - [macOS 启动加载顺序](./Mac/macOS%20启动加载顺序.md)
     - [⌘J 统一访达窗口的设置](./Mac/⌘J%20统一访达窗口的设置.md)
