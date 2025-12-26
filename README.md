@@ -167,6 +167,25 @@
     - [水印命令](./20、命令行/水印命令.md)
     - [调试技巧](./20、命令行/调试技巧.md)
     - [🔧 正则工具](./20、命令行/🔧%20正则工具.md)
+  - 30、Docker
+    - [1 ENTRYPOINT 与 CMD](./30、Docker/1%20ENTRYPOINT%20与%20CMD.md)
+    - [1 detach 模式运行容器](./30、Docker/1%20detach%20模式运行容器.md)
+    - [1 prune](./30、Docker/1%20prune.md)
+    - [1 命名容器](./30、Docker/1%20命名容器.md)
+    - [1 多阶段构建](./30、Docker/1%20多阶段构建.md)
+    - [2 docker-gcc](./30、Docker/2%20docker-gcc.md)
+    - [2 image ls 加不加 -a 的区别](./30、Docker/2%20image%20ls%20加不加%20-a%20的区别.md)
+    - [9 CentOS 安装 Podman](./30、Docker/9%20CentOS%20安装%20Podman.md)
+    - [9 Mac 安装 Podman](./30、Docker/9%20Mac%20安装%20Podman.md)
+    - [9 Mac 配置 podman](./30、Docker/9%20Mac%20配置%20podman.md)
+    - [9 docker-mirror-gen.sh](./30、Docker/9%20docker-mirror-gen.sh.md)
+  - 31、Kind
+    - [1 集群操作命令](./31、Kind/1%20集群操作命令.md)
+    - [2 集群切换](./31、Kind/2%20集群切换.md)
+  - 32、K8S
+    - [1 CentOS 搭建 K8S 集群](./32、K8S/1%20CentOS%20搭建%20K8S%20集群.md)
+    - [启用 Kubernetes](./32、K8S/启用%20Kubernetes.md)
+    - [镜像传输](./32、K8S/镜像传输.md)
   - 50、React
     - [0、无需显式导入 React](./50、React/0、无需显式导入%20React.md)
     - [Jotai & jotai-immer](./50、React/Jotai%20&%20jotai-immer.md)
@@ -273,18 +292,6 @@
     - [如何识别 Mac 上的 DFU 端口 - 官方 Apple 支持 (中国)](./Clippings/如何识别%20Mac%20上的%20DFU%20端口%20-%20官方%20Apple%20支持%20(中国).md)
     - [终端工具比较](./Clippings/终端工具比较.md)
     - [资源路由](./Clippings/资源路由.md)
-  - Docker
-    - [1 ENTRYPOINT 与 CMD](30、Docker/1%20ENTRYPOINT%20与%20CMD.md)
-    - [1 detach 模式运行容器](30、Docker/1%20detach%20模式运行容器.md)
-    - [1 prune](30、Docker/1%20prune.md)
-    - [1 命名容器](30、Docker/1%20命名容器.md)
-    - [1 多阶段构建](30、Docker/1%20多阶段构建.md)
-    - [2 docker-gcc](30、Docker/2%20docker-gcc.md)
-    - [2 image ls 加不加 -a 的区别](30、Docker/2%20image%20ls%20加不加%20-a%20的区别.md)
-    - [9 CentOS 安装 Podman](30、Docker/9%20CentOS%20安装%20Podman.md)
-    - [9 Mac 安装 Podman](30、Docker/9%20Mac%20安装%20Podman.md)
-    - [9 Mac 配置 podman](30、Docker/9%20Mac%20配置%20podman.md)
-    - [9 docker-mirror-gen.sh](30、Docker/9%20docker-mirror-gen.sh.md)
   - JS
     - Prettier
       - [0、打印助手 ps(doc, width , log)](./JS/Prettier/0、打印助手%20ps(doc,%20width%20,%20log).md)
@@ -300,9 +307,6 @@
     - [暴露代码的怪异写法 arguments 0.exports 应用一例](./JS/暴露代码的怪异写法%20arguments%200.exports%20应用一例.md)
     - [构造函数显式返回 this 在 new 运算及 call 方法中的比较，兼谈 call 函数的副作用及其消除](./JS/构造函数显式返回%20this%20在%20new%20运算及%20call%20方法中的比较，兼谈%20call%20函数的副作用及其消除.md)
     - [测试 ES6 Promise 对象的链式传值](./JS/测试%20ES6%20Promise%20对象的链式传值.md)
-  - K8S
-    - [1 CentOS 搭建 K8S 集群](32、K8S/1%20CentOS%20搭建%20K8S%20集群.md)
-    - [启用 Kubernetes](32、K8S/启用%20Kubernetes.md)
   - Mac
     - [macOS 启动加载顺序](./Mac/macOS%20启动加载顺序.md)
     - [⌘J 统一访达窗口的设置](./Mac/⌘J%20统一访达窗口的设置.md)
