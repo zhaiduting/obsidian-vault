@@ -1,4 +1,4 @@
-将 [`docker-mirror-gen.sh`](./9%20docker-mirror-gen.sh.md) 生成的镜像配置文件 registries.conf 保存在 Mac 的 `$HOME/.config/containers/` 文件夹下，但是 podman 拉取镜像的时候并不会读取这份配置文件。
+将 [`docker-mirror-gen.sh`](30、Docker/9%20docker-mirror-gen.sh.md) 生成的镜像配置文件 registries.conf 保存在 Mac 的 `$HOME/.config/containers/` 文件夹下，但是 podman 拉取镜像的时候并不会读取这份配置文件。
 
 原因是 podman 是运行在虚拟机里面的，它不会读取宿主机里的 registries.conf 文件。可以采用软链接解决这个问题，让虚拟机里的 `~/.config/containers/registries.conf` 指向宿主机的 `$HOME/.config/containers/registries.conf` 文件就可以了。
 

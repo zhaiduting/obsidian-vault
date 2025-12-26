@@ -265,7 +265,7 @@ echo -e "\n🏁 脚本执行完成"
 
 #### macOS 配置 Podman
 
-已在 [Mac 配置 podman](./9%20Mac%20配置%20podman.md) 一文中详细记录过了，此处不再赘述。
+已在 [Mac 配置 podman](30、Docker/9%20Mac%20配置%20podman.md) 一文中详细记录过了，此处不再赘述。
 
 #### CentOS 配置 Podman
 
