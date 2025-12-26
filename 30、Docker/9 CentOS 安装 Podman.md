@@ -8,3 +8,7 @@ sudo dnf install -y podman
 ```
 
 并且安装了 `podman-docker`，这玩意可以让 docker 命令生效。如果不装这玩意的话，所有 docker 命令都得改用 podman 命令。
+
+```sh
+sudo dnf install -y podman-docker
+```
