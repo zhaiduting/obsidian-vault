@@ -176,6 +176,7 @@
     - [2 docker-gcc](./30、Docker/2%20docker-gcc.md)
     - [2 image ls 加不加 -a 的区别](./30、Docker/2%20image%20ls%20加不加%20-a%20的区别.md)
     - [9 CentOS 安装 Podman](./30、Docker/9%20CentOS%20安装%20Podman.md)
+    - [9 CentOS 虚拟机配置 Podman](./30、Docker/9%20CentOS%20虚拟机配置%20Podman.md)
     - [9 Mac 安装 Podman](./30、Docker/9%20Mac%20安装%20Podman.md)
     - [9 Mac 配置 podman](./30、Docker/9%20Mac%20配置%20podman.md)
     - [9 docker-mirror-gen.sh](./30、Docker/9%20docker-mirror-gen.sh.md)
