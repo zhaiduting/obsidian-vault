@@ -18,3 +18,4 @@ podman --log-level debug pull alpine
 
 - 虚拟机的网络使用桥接模式
 - 虚拟机使用自动生成的 Mac 地址
+- 路由器的 DNS 劫持入口设置为后置模式
