@@ -185,6 +185,7 @@
     - [2 集群切换](./31、Kind/2%20集群切换.md)
   - 32、K8S
     - [1 CentOS 搭建 K8S 集群](./32、K8S/1%20CentOS%20搭建%20K8S%20集群.md)
+    - [2 临时使用 pod](./32、K8S/2%20临时使用%20pod.md)
     - [启用 Kubernetes](./32、K8S/启用%20Kubernetes.md)
     - [镜像传输](./32、K8S/镜像传输.md)
   - 50、React
