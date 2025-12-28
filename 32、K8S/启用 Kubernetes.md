@@ -1,5 +1,5 @@
 ![启用Kubernetes](https://lib.zhaiduting.work.gd/uPic/%E5%90%AF%E7%94%A8Kubernetes.png)
-无需额外折腾，直接在 Docker 的设置界面就可以启用 K8S
+Docker Desktop 设置界面启用 K8S 的步骤如下：
 
 - 打开 Enable Kubernetes 开关
 - 点选 kind，选择版本，设定 Node 数量
