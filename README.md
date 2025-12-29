@@ -3,6 +3,29 @@
 这是我的笔记仓库，目录如下
 
 <!-- file-tree -->
+  - 0、Containers
+    - Docker
+      - [1 ENTRYPOINT 与 CMD](./0、Containers/Docker/1%20ENTRYPOINT%20与%20CMD.md)
+      - [1 detach 模式运行容器](./0、Containers/Docker/1%20detach%20模式运行容器.md)
+      - [1 prune](./0、Containers/Docker/1%20prune.md)
+      - [1 命名容器](./0、Containers/Docker/1%20命名容器.md)
+      - [1 多阶段构建](./0、Containers/Docker/1%20多阶段构建.md)
+      - [2 docker-gcc](./0、Containers/Docker/2%20docker-gcc.md)
+      - [2 image ls 加不加 -a 的区别](./0、Containers/Docker/2%20image%20ls%20加不加%20-a%20的区别.md)
+      - [9 CentOS 安装 Podman](./0、Containers/Docker/9%20CentOS%20安装%20Podman.md)
+      - [9 CentOS 虚拟机配置 Podman](./0、Containers/Docker/9%20CentOS%20虚拟机配置%20Podman.md)
+      - [9 Mac 安装 Podman](./0、Containers/Docker/9%20Mac%20安装%20Podman.md)
+      - [9 Mac 配置 podman](./0、Containers/Docker/9%20Mac%20配置%20podman.md)
+      - [9 docker-mirror-gen.sh](./0、Containers/Docker/9%20docker-mirror-gen.sh.md)
+    - K8S
+      - [1 CentOS 搭建 K8S 集群](./0、Containers/K8S/1%20CentOS%20搭建%20K8S%20集群.md)
+      - [2 临时使用 pod](./0、Containers/K8S/2%20临时使用%20pod.md)
+      - [启用 Kubernetes](./0、Containers/K8S/启用%20Kubernetes.md)
+      - [镜像传输](./0、Containers/K8S/镜像传输.md)
+    - Kind
+      - [1 集群操作命令](./0、Containers/Kind/1%20集群操作命令.md)
+      - [2 集群切换](./0、Containers/Kind/2%20集群切换.md)
+    - [⚠️ 用 Ubuntu 不用 CentOS](./0、Containers/⚠️%20用%20Ubuntu%20不用%20CentOS.md)
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
     - [1、Markdown的一些简单语法](./10、关于%20Obsidian/1、Markdown的一些简单语法.md)
@@ -167,27 +190,6 @@
     - [水印命令](./20、命令行/水印命令.md)
     - [调试技巧](./20、命令行/调试技巧.md)
     - [🔧 正则工具](./20、命令行/🔧%20正则工具.md)
-  - 30、Docker
-    - [1 ENTRYPOINT 与 CMD](0、Containers/Docker/1%20ENTRYPOINT%20与%20CMD.md)
-    - [1 detach 模式运行容器](0、Containers/Docker/1%20detach%20模式运行容器.md)
-    - [1 prune](0、Containers/Docker/1%20prune.md)
-    - [1 命名容器](0、Containers/Docker/1%20命名容器.md)
-    - [1 多阶段构建](0、Containers/Docker/1%20多阶段构建.md)
-    - [2 docker-gcc](0、Containers/Docker/2%20docker-gcc.md)
-    - [2 image ls 加不加 -a 的区别](0、Containers/Docker/2%20image%20ls%20加不加%20-a%20的区别.md)
-    - [9 CentOS 安装 Podman](0、Containers/Docker/9%20CentOS%20安装%20Podman.md)
-    - [9 CentOS 虚拟机配置 Podman](0、Containers/Docker/9%20CentOS%20虚拟机配置%20Podman.md)
-    - [9 Mac 安装 Podman](0、Containers/Docker/9%20Mac%20安装%20Podman.md)
-    - [9 Mac 配置 podman](0、Containers/Docker/9%20Mac%20配置%20podman.md)
-    - [9 docker-mirror-gen.sh](0、Containers/Docker/9%20docker-mirror-gen.sh.md)
-  - 31、Kind
-    - [1 集群操作命令](0、Containers/Kind/1%20集群操作命令.md)
-    - [2 集群切换](0、Containers/Kind/2%20集群切换.md)
-  - 32、K8S
-    - [1 CentOS 搭建 K8S 集群](0、Containers/K8S/1%20CentOS%20搭建%20K8S%20集群.md)
-    - [2 临时使用 pod](0、Containers/K8S/2%20临时使用%20pod.md)
-    - [启用 Kubernetes](0、Containers/K8S/启用%20Kubernetes.md)
-    - [镜像传输](0、Containers/K8S/镜像传输.md)
   - 50、React
     - [0、无需显式导入 React](./50、React/0、无需显式导入%20React.md)
     - [Jotai & jotai-immer](./50、React/Jotai%20&%20jotai-immer.md)
