@@ -20,6 +20,7 @@
     - K8S
       - [1 CentOS 搭建 K8S 集群](./0、Containers/K8S/1%20CentOS%20搭建%20K8S%20集群.md)
       - [2 临时使用 pod](./0、Containers/K8S/2%20临时使用%20pod.md)
+      - [3 kubectl 查询命令](./0、Containers/K8S/3%20kubectl%20查询命令.md)
       - [启用 Kubernetes](./0、Containers/K8S/启用%20Kubernetes.md)
       - [镜像传输](./0、Containers/K8S/镜像传输.md)
     - Kind
@@ -100,6 +101,7 @@
       - [1、简介](./17、IDE/IdeaVim/1、简介.md)
       - [2、关于 surround 插件](./17、IDE/IdeaVim/2、关于%20surround%20插件.md)
     - Vim
+      - [1、ZZ 退出](./17、IDE/Vim/1、ZZ%20退出.md)
       - [1、翻页](./17、IDE/Vim/1、翻页.md)
       - [2、执行上一条命令](./17、IDE/Vim/2、执行上一条命令.md)
       - [3、单词替换](./17、IDE/Vim/3、单词替换.md)
