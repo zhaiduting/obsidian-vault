@@ -21,6 +21,7 @@
       - [1 CentOS 搭建 K8S 集群](./0、Containers/K8S/1%20CentOS%20搭建%20K8S%20集群.md)
       - [2 临时使用 pod](./0、Containers/K8S/2%20临时使用%20pod.md)
       - [3 kubectl 查询命令](./0、Containers/K8S/3%20kubectl%20查询命令.md)
+      - [⚠️ pod 无限重启问题](./0、Containers/K8S/⚠️%20pod%20无限重启问题.md)
       - [启用 Kubernetes](./0、Containers/K8S/启用%20Kubernetes.md)
       - [镜像传输](./0、Containers/K8S/镜像传输.md)
     - Kind
