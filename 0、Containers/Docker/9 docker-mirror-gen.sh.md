@@ -15,24 +15,28 @@ source: https://chatgpt.com/c/69460ffe-514c-8323-8226-02b0be31a5f7
 set -euo pipefail
 
 mirrors=(
-  # 以下为个人站点/小型镜像站（稳定性可能较低）
-  "docker.1ms.run"              # 阿里云镜像加速器（旧版，个人维护版本）
-  "dytt.online"                 # 第三方镜像站（名称取自电影天堂dytt）
-  "docker-0.unsee.tech"         # 个人开发者镜像站
-  "lispy.org"                   # Lisp社区相关镜像站
-  "docker.xiaogenban1993.com"   # 个人开发者"小跟班"的镜像站
-  "666860.xyz"                  # 数字域名镜像站
-  "demo.52013120.xyz"           # 个人演示站点镜像源
-  "proxy.vvvv.ee"               # 个人代理服务镜像站
+  # === 企业 / 项目方维护的公共镜像代理（相对可预期） ===
+  "docker.m.daocloud.io"        # DaoCloud 提供的 Docker Hub 代理
+  "docker.1panel.live"          # 1Panel 官方镜像加速
 
-  # 以下为企业级/社区镜像服务（相对稳定）
-  "docker.1panel.live"          # 1Panel面板官方Docker镜像源
-  "docker.m.daocloud.io"        # DaoCloud道客加速器（企业级）
-  "registry.cyou"               # 通用镜像注册服务
-  "mirror.ccs.tencentyun.com"   # 腾讯云容器镜像服务（企业级）
+  # === 社区 / 个人维护的公益镜像代理 ===
+  "docker.anyhub.us.kg"
+  "dhub.kubesre.xyz"
+  "docker.xuanyuan.me"
+  "docker.1ms.run"
+  "docker-0.unsee.tech"
+  "docker.xiaogenban1993.com"
+  "dytt.online"
+  "666860.xyz"
+  "proxy.vvvv.ee"
+  "registry.cyou"
 
-  # 以下为官方站点
-  "registry-1.docker.io"        # Docker Hub官方主镜像仓库
+  # === 云厂商内网 / 特定环境镜像（公网可用性不保证） ===
+  "mirror.tencentcloudcr.com"   # 腾讯云 TCR 提供的 Docker Hub 镜像代理
+  "mirror.ccs.tencentyun.com"   # 腾讯云 CCS 体系镜像（仅腾讯云内网稳定）
+
+  # === 官方源（兜底） ===
+  "registry-1.docker.io"
 )
 
 IMAGE="library/alpine"
