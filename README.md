@@ -24,6 +24,7 @@
       - [pod 的节点亲和性](./0、Containers/K8S/pod%20的节点亲和性.md)
       - [⚠️ pod 无限重启问题](./0、Containers/K8S/⚠️%20pod%20无限重启问题.md)
       - [启用 Kubernetes](./0、Containers/K8S/启用%20Kubernetes.md)
+      - [无头服务](./0、Containers/K8S/无头服务.md)
       - [镜像传输](./0、Containers/K8S/镜像传输.md)
     - Kind
       - [1 集群操作命令](./0、Containers/Kind/1%20集群操作命令.md)
