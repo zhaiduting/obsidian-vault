@@ -28,8 +28,8 @@
       - [镜像传输](./0、Containers/K8S/镜像传输.md)
     - Kind
       - [1 集群操作命令](./0、Containers/Kind/1%20集群操作命令.md)
-      - [3 集群切换](0、Containers/Kind/3%20集群切换.md)
-      - [2 多节点集群](0、Containers/Kind/2%20多节点集群.md)
+      - [2 多节点集群](./0、Containers/Kind/2%20多节点集群.md)
+      - [3 集群切换](./0、Containers/Kind/3%20集群切换.md)
     - [⚠️ 用 Ubuntu 不用 CentOS](./0、Containers/⚠️%20用%20Ubuntu%20不用%20CentOS.md)
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
@@ -186,6 +186,7 @@
     - [git restore](./20、命令行/git%20restore.md)
     - [git stash](./20、命令行/git%20stash.md)
     - [jq 命令](./20、命令行/jq%20命令.md)
+    - [tail -f 命令详解](./20、命令行/tail%20-f%20命令详解.md)
     - [‼️ awk 字符串](./20、命令行/‼️%20awk%20字符串.md)
     - [⚙️ .gitignore 规则不生效的解决办法](./20、命令行/⚙️%20.gitignore%20规则不生效的解决办法.md)
     - [修改 Git 历史记录](./20、命令行/修改%20Git%20历史记录.md)
