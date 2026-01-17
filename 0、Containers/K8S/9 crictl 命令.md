@@ -1,6 +1,6 @@
 ![crictl](https://lib.zhaiduting.work.gd/uPic/crictl.png)
 
-`crictl` 是一个**面向容器运行时的调试/运维工具**。使用此命令之前，先执行命令连接到 K8s 集群的一个工作节点。以 podman 连接 kind-work 为例，终端记录如下
+`crictl` 是一个**面向容器运行时的调试/运维工具**。使用此命令之前，先连接集群的一个工作节点。以 podman 连接 kind-work 为例，终端记录如下
 
 ```sh
 ~ > kubectl get node
