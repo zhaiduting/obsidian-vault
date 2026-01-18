@@ -11,6 +11,7 @@
 在你的电脑上建立一个符合 containerd 2.0 规范的结构：
 
 ```sh
+# mkdir -p ./kind-certs/registry-1.docker.io
 mkdir -p ./kind-certs/docker.io
 ```
 
@@ -19,6 +20,7 @@ mkdir -p ./kind-certs/docker.io
 在 `./kind-certs/docker.io/hosts.toml` 中写入你的镜像加速器：
 
 ```sh
+# server = "https://registry-1.docker.io"
 server = "https://docker.io"
 
 [host."https://docker.1ms.run"]
@@ -59,22 +61,98 @@ containerdConfigPatches:
 1. 开启 `config_path` 补丁。
 2. 将刚才创建的目录挂载到节点容器内。
 
+如果 `containerdConfigPatches` 配置失效，可能遇到了 `containerd` 的版本问题。参考 https://github.com/containerd/containerd/blob/main/docs/hosts.md 查找相关版本的有效配置
+
 ### 动态映射的优点
 
 1. **热更新**：你以后想增加或删除加速器，只需修改宿主机的 `hosts.toml`。**不需要重启 KinD 集群**，containerd 会在下次拉取时自动读取新配置。
 2. **更强的表达力**：每个加速器（Host）都可以独立配置权限、认证信息或是否跳过 TLS 验证。
 3. **符合未来趋势**：这是 `containerd 2.x` 乃至以后版本的标准做法，老的 `mirrors` 字段最终会被完全废弃。
 
-### 验证
+### 验证镜像配置是否有效
 
-#### 检查节点文件挂载是否正确
+开两个终端，并且都连接到同一个 kind-worker 节点。一个终端监测 containerd 的日志变化，然后在另一个终端拉取一个很小的 alpine 镜像。根据 containerd 日志的输出信息可以判断 registry 镜像站是否生效。
+
+两个终端都要敲入以下命令连接到同一个节点，因为后续命令都需要在节点的 sh 窗口内敲入。
 
 ```sh
-# 进入其中一个工作节点
-# podman exec -it kind-worker bash
-docker exec -it kind-worker bash
-
-# 查看目录结构是否符合 Containerd 规范
-ls -R /etc/containerd/certs.d/
+podman exec -it kind-worker sh
 ```
 
+首先排除干扰因素，在任意一个 sh 里执行以下命令
+
+```sh
+# 查看目录结构是否符合 Containerd 规范
+ls -R /etc/containerd/certs.d/
+
+# 删除之前已下载的 alpine 镜像
+crictl rmi alpine
+```
+
+然后在左侧终端敲入监测命令
+
+```sh
+# 监测 containerd 日志变化，忽略之前所有信息
+journalctl -u containerd -f --since "1 second ago"
+```
+
+在右侧终端拉取镜像
+
+```sh
+# 故意拉取一个不存在的版本，看看是否走了镜像站
+# 如果能看到 host=<镜像站网址> 之类的输出说明配置有效
+crictl pull alpine:888
+
+# 实际拉取一下，看看耗时多少
+crictl pull alpine
+```
+
+![containerd验证镜像站](https://lib.zhaiduting.work.gd/uPic/containerd%E9%AA%8C%E8%AF%81%E9%95%9C%E5%83%8F%E7%AB%99.png)
+最后，右侧终端敲入 `exit` 命令退出 kind-worker 节点，再执行 `kubectl` 命令运行一个 `nginx` 容器。看看拉取镜像的过程是否有加速效果
+
+```sh
+# 建议先计时，并指定一个不带本地缓存的版本
+kubectl run nginx-test --image=nginx:latest --restart=Never
+
+# 测试完成后，记得删除这个 Pod 以释放资源
+kubectl delete pod nginx-test
+```
+
+通过新增的 kind-worker2 节点的 `containerd` 的监测日志，得到以下关键数据：
+
+- **拉取镜像耗时**：`Pulled image "nginx:latest" ... in 20.154219926s`
+- **读取字节量**：`bytes read=60913232` (约 **58.1 MB**)
+
+**计算平均下载速度**：大约 **2.88 MB/s**。
+
+**结论**：在没有加速器的情况下，从国内直连 Docker Hub 拉取 60MB 的镜像通常需要数分钟甚至直接超时失败。**20 秒完成拉取，说明加速器有效。**
+
+### 解决监视器句柄数量超限问题
+
+如果碰到以下错误提示 **"Insufficient watch descriptors available"** 说明你触碰到了 Linux 内核的一个资源限制：**`inotify` 监视器句柄数量达到了上限。**
+
+```sh
+~ > podman exec -it kind-worker sh
+# journalctl -u containerd -f --since "1 second ago"
+Insufficient watch descriptors available. Reverting to -n.
+-- No entries --
+#
+```
+
+解决方法如下：
+
+- 退出 kind-worker 节点
+- 查询到当前 `fs.inotify.max_user_instances` 数值为 128
+- 将其修改为 512
+
+```sh
+# exit
+~ > sysctl fs.inotify.max_user_instances
+fs.inotify.max_user_instances = 128
+~ >
+~ > sudo sysctl fs.inotify.max_user_instances=512
+[sudo] password for parallels:
+fs.inotify.max_user_instances = 512
+```
+
+再次敲入 `journalctl -u containerd -f` 命令就可以正常进入监测状态了。
