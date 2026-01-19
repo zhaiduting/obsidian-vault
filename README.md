@@ -289,6 +289,7 @@
     - [json 文件的导入问题](./Bug/json%20文件的导入问题.md)
     - [path 或 __dirname](./Bug/path%20或%20__dirname.md)
     - [未初始化的属性报错问题](./Bug/未初始化的属性报错问题.md)
+    - [监视器句柄数量超限问题](./Bug/监视器句柄数量超限问题.md)
   - CSS
     - [CSS 变量](./CSS/CSS%20变量.md)
     - [文档模式 DOCTYPE](./CSS/文档模式%20DOCTYPE.md)
