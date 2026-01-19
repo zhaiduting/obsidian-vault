@@ -151,4 +151,4 @@ kubectl delete pod nginx-test
 
 ### 解决监视器句柄数量超限问题
 
-如果碰到错误提示 **"Insufficient watch descriptors available"**，解决方法请参考：[监视器句柄数量超限问题](Bug/监视器句柄数量超限问题.md)
+如果碰到错误提示 **"Insufficient watch descriptors available"**，解决方法请参考：[监视器句柄数量超限问题](../../Bug/监视器句柄数量超限问题.md)
