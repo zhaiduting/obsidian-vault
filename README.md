@@ -20,6 +20,8 @@
     - K8S
       - [1 CentOS 搭建 K8S 集群](./0、Containers/K8S/1%20CentOS%20搭建%20K8S%20集群.md)
       - [2 临时使用 pod](./0、Containers/K8S/2%20临时使用%20pod.md)
+      - [2 生成资源定义文件](./0、Containers/K8S/2%20生成资源定义文件.md)
+      - [3 kubectl set image](./0、Containers/K8S/3%20kubectl%20set%20image.md)
       - [3 kubectl 查询命令](./0、Containers/K8S/3%20kubectl%20查询命令.md)
       - [9 crictl 命令](./0、Containers/K8S/9%20crictl%20命令.md)
       - [Apifox 导入 K8s API](./0、Containers/K8S/Apifox%20导入%20K8s%20API.md)
@@ -188,6 +190,7 @@
     - [curl -sL -o](./20、命令行/curl%20-sL%20-o.md)
     - [git restore](./20、命令行/git%20restore.md)
     - [git stash](./20、命令行/git%20stash.md)
+    - [grep -A](./20、命令行/grep%20-A.md)
     - [jq 命令](./20、命令行/jq%20命令.md)
     - [ls -R 和 -r 区别](./20、命令行/ls%20-R%20和%20-r%20区别.md)
     - [tail -f 命令详解](./20、命令行/tail%20-f%20命令详解.md)
