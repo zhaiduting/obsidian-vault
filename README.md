@@ -24,6 +24,7 @@
       - [3 kubectl set image](./0、Containers/K8S/3%20kubectl%20set%20image.md)
       - [3 kubectl 查询命令](./0、Containers/K8S/3%20kubectl%20查询命令.md)
       - [9 crictl 命令](./0、Containers/K8S/9%20crictl%20命令.md)
+      - [9 资源定位语法](./0、Containers/K8S/9%20资源定位语法.md)
       - [Apifox 导入 K8s API](./0、Containers/K8S/Apifox%20导入%20K8s%20API.md)
       - [pod 的节点亲和性](./0、Containers/K8S/pod%20的节点亲和性.md)
       - [⚠️ pod 无限重启问题](./0、Containers/K8S/⚠️%20pod%20无限重启问题.md)
