@@ -36,6 +36,7 @@
       - [2 多节点集群](./0、Containers/Kind/2%20多节点集群.md)
       - [3 集群切换](./0、Containers/Kind/3%20集群切换.md)
       - [4 Hosts 模式配置镜像](./0、Containers/Kind/4%20Hosts%20模式配置镜像.md)
+      - [5 设置集群自启动](./0、Containers/Kind/5%20设置集群自启动.md)
     - [⚠️ 用 Ubuntu 不用 CentOS](./0、Containers/⚠️%20用%20Ubuntu%20不用%20CentOS.md)
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
