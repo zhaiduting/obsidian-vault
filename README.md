@@ -23,6 +23,7 @@
       - [2 生成资源定义文件](./0、Containers/K8S/2%20生成资源定义文件.md)
       - [3 kubectl set image](./0、Containers/K8S/3%20kubectl%20set%20image.md)
       - [3 kubectl 查询命令](./0、Containers/K8S/3%20kubectl%20查询命令.md)
+      - [4 kubectl create 局限](./0、Containers/K8S/4%20kubectl%20create%20局限.md)
       - [9 crictl 命令](./0、Containers/K8S/9%20crictl%20命令.md)
       - [9 资源定位语法](./0、Containers/K8S/9%20资源定位语法.md)
       - [Apifox 导入 K8s API](./0、Containers/K8S/Apifox%20导入%20K8s%20API.md)
