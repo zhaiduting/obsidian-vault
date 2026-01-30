@@ -4,14 +4,14 @@
 
 我们将语法拆解为：`kubectl rollout [sub-command] [TYPE]/[NAME]`
 
-| **子命令**  | **功能描述**                     | **语法示例**                            |
-| ----------- | -------------------------------- | --------------------------------------- |
-| **status**  | 查看更新的实时状态               | `kubectl rollout status deploy/my-app`  |
-| **history** | 查看修订版本（Revision）记录     | `kubectl rollout history deploy/my-app` |
-| **undo**    | 回滚到上一个版本（或指定版本）   | `kubectl rollout undo deploy/my-app`    |
-| **pause**   | 暂停当前的更新流程               | `kubectl rollout pause deploy/my-app`   |
-| **resume**  | 恢复暂停中的更新                 | `kubectl rollout resume deploy/my-app`  |
-| **restart** | 强制触发一次滚动更新（重启服务） | `kubectl rollout restart deploy/my-app` |
+| **子命令**     | **功能描述**           | **语法示例**                                |
+| ----------- | ------------------ | --------------------------------------- |
+| **status**  | 查看更新的实时状态          | `kubectl rollout status deploy/my-app`  |
+| **history** | 查看修订版本（Revision）记录 | `kubectl rollout history deploy/my-app` |
+| **undo**    | 回滚到上一个版本（或指定版本）    | `kubectl rollout undo deploy/my-app`    |
+| **pause**   | 暂停当前的更新流程          | `kubectl rollout pause deploy/my-app`   |
+| **resume**  | 恢复暂停中的更新           | `kubectl rollout resume deploy/my-app`  |
+| **restart** | 强制触发一次滚动更新（重启服务）   | `kubectl rollout restart deploy/my-app` |
 
 ### 实验
 
