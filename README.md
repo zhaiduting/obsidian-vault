@@ -124,7 +124,7 @@
       - [99、光标移动大全](./17、IDE/Vim/99、光标移动大全.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [VS Code](./17、IDE/VS%20Code.md)
-    - [⚡️ GoLand 快捷键](./17、IDE/⚡️%20GoLand%20快捷键.md)
+    - [⚡️ Jetbrains 快捷键](17、IDE/⚡️%20Jetbrains%20快捷键.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
     - [启用暂存区](./17、IDE/启用暂存区.md)
   - 18、设置
