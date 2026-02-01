@@ -187,3 +187,6 @@ if let State::Working(ref mut name) = state {
     let old_name = mem::replace(name, "Task 2".to_string());
 }
 ```
+
+`if let State::Working(ref mut name) = state` 通过模式匹配，把枚举内部已有的 `String`  
+以 `&mut String` 的形式绑定到一个局部变量 `name` 上， 从而在这个作用域内读写它。
