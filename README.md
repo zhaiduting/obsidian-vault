@@ -350,6 +350,7 @@
     - [4 带参枚举](./Rust/4%20带参枚举.md)
     - [5 可选值 Optional values](./Rust/5%20可选值%20Optional%20values.md)
     - [6 为啥要用 enumerate()](./Rust/6%20为啥要用%20enumerate().md)
+    - [7 所有权（Ownership）与移动（Move）语义](./Rust/7%20所有权（Ownership）与移动（Move）语义.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
