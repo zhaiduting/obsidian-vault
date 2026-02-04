@@ -105,3 +105,5 @@ fn calculate_length(s: &String) -> usize { // 接收引用
 
 - [7.1 Copy 与 Move 的对比](7.1%20Copy%20与%20Move%20的对比.md)
 - [7.2 println 宏的语义](./7.2%20println%20宏的语义.md)
+- [7.3 Borrowing 的可变与不可变](7.3%20Borrowing%20的可变与不可变.md)
+- [7.4 Borrowing 的状态锁定](7.4%20Borrowing%20的状态锁定.md)
