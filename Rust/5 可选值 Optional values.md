@@ -176,17 +176,27 @@ nullable_ptr = None; // 相当于 NULL 指针，但它是类型安全的
 ```rust
 use std::mem;
 
+#[derive(Debug)]
 enum State {
     Working(String),
-    Idle,
+    _Idle,
 }
 
 let mut state = State::Working("Task 1".to_string());
 // 当我们需要修改 Working 内部的值，但受限于所有权时
-if let State::Working(ref mut name) = state {
+if let State::Working(name) = &mut state {
     let old_name = mem::replace(name, "Task 2".to_string());
+    println!("old_name = {}", old_name);
+    println!("name = {}", name);
 }
+
+println!("state = {:?}", state)
 ```
 
-`if let State::Working(ref mut name) = state` 通过模式匹配，把枚举内部已有的 `String`  
-以 `&mut String` 的形式绑定到一个局部变量 `name` 上， 从而在这个作用域内读写它。
+通过模式匹配，把枚举内部已有的 `String` 以 `&mut String` 的形式绑定到一个局部变量 `name` 上， 从而在这个作用域内读写它。运行结果如下：
+
+```shell
+old_name = Task 1
+name = Task 2
+state = Working("Task 2")
+```
