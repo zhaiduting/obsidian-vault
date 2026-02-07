@@ -84,11 +84,12 @@ fn safe_log(x: f64) -> Option<f64> {
 当错误原因非常明显（如“未找到”），不需要详细的错误类型（如 `Result`）时，直接返回 `None`。
 
 ```rust
-let neighbors = vec!["Alice", "Bob"];
-// get 方法在索引越界时返回 None，这比让程序崩溃更安全
-let third_neighbor = neighbors.get(2);
-assert_eq!(third_neighbor, None);
+fn add_last_numbers(stack: &mut Vec<i32>) -> Option<i32> {
+    Some(stack.pop()? + stack.pop()?)
+}
 ```
+
+更多示例以及问号语法相关内容： [问号运算符](5%20问号运算符.md)
 
 ### 4. Optional struct fields (可选的结构体字段)
 
