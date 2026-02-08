@@ -89,7 +89,7 @@ fn add_last_numbers(stack: &mut Vec<i32>) -> Option<i32> {
 }
 ```
 
-更多示例以及问号语法相关内容： [问号运算符](5%20问号运算符.md)
+更多示例以及问号语法相关内容： [问号运算符](7.5%20问号运算符.md)
 
 ### 4. Optional struct fields (可选的结构体字段)
 
