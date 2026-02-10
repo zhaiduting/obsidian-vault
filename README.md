@@ -360,6 +360,7 @@
     - [7.5 问号运算符](./Rust/7.5%20问号运算符.md)
     - [8 Box<T>](./Rust/8%20Box<T>.md)
     - [8.3 不同对象的数组](./Rust/8.3%20不同对象的数组.md)
+    - [8.4 自动解引用](./Rust/8.4%20自动解引用.md)
     - [rustc --explain E0277](./Rust/rustc%20--explain%20E0277.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
