@@ -368,6 +368,7 @@
     - [2 整数溢出](./Rust/2%20整数溢出.md)
     - [3 结构体](./Rust/3%20结构体.md)
     - [4 带参枚举](./Rust/4%20带参枚举.md)
+    - [4 结构体的方法](./Rust/4%20结构体的方法.md)
     - [5 可选值 Optional values](./Rust/5%20可选值%20Optional%20values.md)
     - [5 解构赋值](./Rust/5%20解构赋值.md)
     - [6 为啥要用 enumerate()](./Rust/6%20为啥要用%20enumerate().md)
