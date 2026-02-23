@@ -42,7 +42,7 @@
     - [⚠️ 用 Ubuntu 不用 CentOS](./0、Containers/⚠️%20用%20Ubuntu%20不用%20CentOS.md)
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
-    - [1、Markdown的一些简单语法](./10、关于%20Obsidian/1、Markdown的一些简单语法.md)
+    - [1、Markdown 基本语法](10、关于%20Obsidian/1、Markdown%20基本语法.md)
     - [2、禁止手机相册显示仓库图片](./10、关于%20Obsidian/2、禁止手机相册显示仓库图片.md)
     - [3、终端粘贴空白行问题](./10、关于%20Obsidian/3、终端粘贴空白行问题.md)
     - [99、多设备同步](./10、关于%20Obsidian/99、多设备同步.md)
