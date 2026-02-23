@@ -382,6 +382,8 @@
     - [8.3 不同对象的数组](./Rust/8.3%20不同对象的数组.md)
     - [8.4 自动解引用](./Rust/8.4%20自动解引用.md)
     - [rustc --explain E0277](./Rust/rustc%20--explain%20E0277.md)
+    - [write! 宏用法详解](./Rust/write!%20宏用法详解.md)
+    - [孤儿规则 Orphan Rule](./Rust/孤儿规则%20Orphan%20Rule.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
