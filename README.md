@@ -378,6 +378,7 @@
     - [7.2 println 宏的语义](./Rust/7.2%20println%20宏的语义.md)
     - [7.3 Borrowing 的可变与不可变](./Rust/7.3%20Borrowing%20的可变与不可变.md)
     - [7.4 Borrowing 的奇怪问题](./Rust/7.4%20Borrowing%20的奇怪问题.md)
+    - [7.4 Borrowing 的奇怪问题2](./Rust/7.4%20Borrowing%20的奇怪问题2.md)
     - [7.5 问号运算符](./Rust/7.5%20问号运算符.md)
     - [8 Box](./Rust/8%20Box.md)
     - [8.3 不同对象的数组](./Rust/8.3%20不同对象的数组.md)
@@ -388,6 +389,7 @@
     - [孤儿规则 Orphan Rule](./Rust/孤儿规则%20Orphan%20Rule.md)
     - [引用计数 Rc](./Rust/引用计数%20Rc.md)
     - [自动派生](./Rust/自动派生.md)
+    - [解构赋值与 mem](./Rust/解构赋值与%20mem.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
