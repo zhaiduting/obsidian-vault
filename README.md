@@ -125,6 +125,7 @@
       - [98、vimtutor](./17、IDE/Vim/98、vimtutor.md)
       - [99、光标移动大全](./17、IDE/Vim/99、光标移动大全.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
+    - [RustRover 运行文件](./17、IDE/RustRover%20运行文件.md)
     - [VS Code](./17、IDE/VS%20Code.md)
     - [⚡️ Jetbrains 快捷键](./17、IDE/⚡️%20Jetbrains%20快捷键.md)
     - [保存时自动格式化](./17、IDE/保存时自动格式化.md)
@@ -397,6 +398,7 @@
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
   - 其它
     - [LocalSend 发送文件夹问题](./其它/LocalSend%20发送文件夹问题.md)
+    - [MacDroid 挂载手机](./其它/MacDroid%20挂载手机.md)
     - [Snagit 圆角透明度反馈信](./其它/Snagit%20圆角透明度反馈信.md)
     - [Termius 使用主机名连接虚拟机](./其它/Termius%20使用主机名连接虚拟机.md)
     - [ffmpeg 导出 mp4 视频字幕](./其它/ffmpeg%20导出%20mp4%20视频字幕.md)
