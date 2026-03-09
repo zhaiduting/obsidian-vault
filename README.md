@@ -42,7 +42,6 @@
     - [⚠️ 用 Ubuntu 不用 CentOS](./0、Containers/⚠️%20用%20Ubuntu%20不用%20CentOS.md)
   - 10、关于 Obsidian
     - [0、文章标题的禁用字符](./10、关于%20Obsidian/0、文章标题的禁用字符.md)
-    - [100、多设备同步](📝%20草稿/100、多设备同步.md)
     - [1、Markdown 基本语法](./10、关于%20Obsidian/1、Markdown%20基本语法.md)
     - [1、Markdown 警示框](./10、关于%20Obsidian/1、Markdown%20警示框.md)
     - [2、禁止手机相册显示仓库图片](./10、关于%20Obsidian/2、禁止手机相册显示仓库图片.md)
@@ -396,6 +395,7 @@
     - [rustc --explain E0277](./Rust/rustc%20--explain%20E0277.md)
     - [wrapping_add](./Rust/wrapping_add.md)
     - [write! 宏用法详解](./Rust/write!%20宏用法详解.md)
+    - [字符与字节](./Rust/字符与字节.md)
     - [孤儿规则 Orphan Rule](./Rust/孤儿规则%20Orphan%20Rule.md)
     - [引用计数 Rc](./Rust/引用计数%20Rc.md)
     - [自动派生](./Rust/自动派生.md)
