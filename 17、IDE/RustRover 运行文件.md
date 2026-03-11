@@ -23,8 +23,8 @@ tags:
 1. 在项目根目录下创建 `examples/` 文件夹。
 2. 将你的文件（例如 `demo.rs` ）放进去。
 3. 使用以下命令运行：
-   Bash
-   ```
+
+   ```sh
    cargo run --example demo
    ```
 
@@ -38,9 +38,7 @@ tags:
 
 在 `Cargo.toml` 中添加：
 
-Ini, TOML
-
-```
+```toml
 [[bin]]
 name = "my-tool"
 path = "src/tool.rs"
@@ -48,9 +46,7 @@ path = "src/tool.rs"
 
 运行命令：
 
-Bash
-
-```
+```sh
 cargo run --bin my-tool
 ```
 
@@ -60,9 +56,7 @@ cargo run --bin my-tool
 
 如果你想彻底摆脱 Cargo 的束缚，像运行单文件 C 语言程序一样操作：
 
-Bash
-
-```
+```sh
 rustc src/your_file.rs
 ./your_file
 ```
