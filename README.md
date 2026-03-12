@@ -379,6 +379,7 @@
     - [4 结构体的方法](./Rust/4%20结构体的方法.md)
     - [5.1 解构赋值 if let 和 let-else](./Rust/5.1%20解构赋值%20if%20let%20和%20let-else.md)
     - [5.2 anyhow](./Rust/5.2%20anyhow.md)
+    - [5.2 thiserror](./Rust/5.2%20thiserror.md)
     - [5.2 问号运算符](./Rust/5.2%20问号运算符.md)
     - [5.2 问号运算符的错误处理](./Rust/5.2%20问号运算符的错误处理.md)
     - [5.3 可选值 Optional values](./Rust/5.3%20可选值%20Optional%20values.md)
