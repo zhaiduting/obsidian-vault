@@ -433,6 +433,7 @@
     - [罗技 Lift 无线蓝牙鼠标](./其它/罗技%20Lift%20无线蓝牙鼠标.md)
   - 路由器
     - [SSH 连接](./路由器/SSH%20连接.md)
+    - [更新 Clash 内核](./路由器/更新%20Clash%20内核.md)
   - [LICENSE](./LICENSE)
   - [README](./README.md)
   - [⚠️ 旅行物品](./⚠️%20旅行物品.md)
