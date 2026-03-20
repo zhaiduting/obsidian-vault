@@ -1,4 +1,4 @@
-![IdeaVim](https://lib.zhaiduting.work.gd/uPic/IdeaVim.png)
+![IdeaVim|74](https://lib.zhaiduting.work.gd/uPic/IdeaVim.png)
 
 **tpope/vim-surround** 是一个非常流行的 Vim 插件，它的作用是让你可以轻松地添加、删除或修改配对的**环绕字符**，比如引号、括号、XML 标签等。
 
