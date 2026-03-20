@@ -2,7 +2,7 @@
 
 1. 浏览器打开 http://192.168.50.1/Advanced_System_Content.asp
 2. 输入路由器的用户名 `zhaiduting` 及密码
-3. 系统管理 » 系统设置 » 滚动页面到「服务」栏，完成下列设置点击应用按钮：
+3. 系统管理 » 系统设置 » 滚动页面到「服务」栏，完成下列设置后点击应用按钮：
    - 启用 SSH 为 LAN only
    - 不启用 SSH Port Forwarding
    - 改掉默认的端口号
