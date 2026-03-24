@@ -377,6 +377,7 @@
     - [3.2 单元结构体](./Rust/3.2%20单元结构体.md)
     - [312 collect() 的黑魔法](./Rust/312%20collect()%20的黑魔法.md)
     - [312 从 Vec 到 Result](./Rust/312%20从%20Vec%20到%20Result.md)
+    - [316 collect() 喂鱼问题](./Rust/316%20collect()%20喂鱼问题.md)
     - [316 collect() 释疑](./Rust/316%20collect()%20释疑.md)
     - [4 带参枚举](./Rust/4%20带参枚举.md)
     - [4 结构体的方法](./Rust/4%20结构体的方法.md)
