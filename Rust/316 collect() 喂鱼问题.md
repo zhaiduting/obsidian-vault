@@ -24,7 +24,7 @@ println!("{:?}", set);
 
 ### 懒人鱼
 
-将范型参数的参数使用 `_` 替代后程序照样可以正常运行，这种偷懒的写法叫做「懒人鱼」。例如
+将范型参数的范參使用 `_` 替代后程序照样可以正常运行，这种偷懒的写法叫做「懒人鱼」。例如
 `words.collect::<Vec<_>>()` 或者 `words.collect::<HashSet<_>>()`
 
 ### 所有权的问题
@@ -45,7 +45,7 @@ println!("{:?}", set);
 
 `split_whitespace` 返回一个迭代器，迭代器像是一个“一次性抽纸盒”。每抽出一张（执行一次 `next()`），盒子里的纸就少一张。`collect` 会不停地抽，直到抽空为止。
 
-`collect` 函数的签名通常是 `fn collect<B>(self) -> B`。注意那个 `self`，它没有 `&`。这意味着 `words` 这个变量的所有权被**移动**进了 `collect` 函数内部。一旦函数执行完，`words` 在当前作用域就失效了。
+`collect` 函数的签名通常是 `fn collect<B>(self) -> B`。注意这里的 `self`，它没有 `&`。这意味着 `words` 这个变量的所有权被**移动**进了 `collect` 函数内部。一旦函数执行完，`words` 在当前作用域就失效了。
 
 再次执行 `collect` 会报错 value used here after move（值在移动后被再次使用）。
 
@@ -55,11 +55,31 @@ println!("{:?}", set);
 - **不可逆性**：如果你只传 `&self`（不可变引用），根据 Rust 的安全规则，`collect` 就不能修改迭代器内部的指针位置。
 - **死循环风险**：如果 `collect` 不改变迭代器的状态，那它永远只能读到第一张“抽纸”，无法完成“收集全部”的任务。
 
-`collect` 能否可变借用 `self` 呢？也是无意义的，因为首次执行 `collect` 后指针已经走到头了，再次调用 `collect` 则不会有任何结果。
-
-解决方法如下：克隆一个迭代器。先使用克隆版的迭代器进行搜集，后搜集的则不受影响。
+如果 `collect` 设计成可变借用 `self` 会怎样？可以通过迭代器的 `by_ref` 方法进行模拟，因为它返回的就是迭代器的可变借用。代码如下
 
 ```rust
-let vector = words.clone().collect::<Vec<_>>(); // 克隆迭代器
-let set = words.collect::<HashSet<_>>(); // 正常运行
+let mut words = "hello world".split_whitespace();
+
+// 第一次调用 collect（通过可变引用）
+// 这会把 words 里的指针推到最后
+let v1: Vec<_> = words.by_ref().collect();
+println!("第一次收集: {:?}", v1); // 输出: ["hello", "world"]
+
+// 第二次调用 collect
+// 此时 words 已经“干涸”了
+use std::collections::HashSet;
+let v2: HashSet<_> = words.collect();
+println!("第二次收集: {:?}", v2); // 输出: {}
+```
+
+以上结果表明，再次调用 `collect` 只能得到一个空容器。因为首次执行 `collect` 后，指针已经走到头，东西已被取光了。
+
+> [!TIP]
+> `fn by_ref(&mut self) -> &mut Self` 是迭代器的一个“**变身术**”。它能把一个“**会消失的调用**”变成一个“**只借走的调用**”。
+
+总之，无论是可变借用还是不可变借用都不能满足本例要求。正确方法是：克隆迭代器，然后对克隆版的迭代器与原版迭代器分别调用 `collect` 方法，结果互不影响。
+
+```rust
+let vector: Vec<_> = words.clone().collect(); // 克隆迭代器
+let set: HashSet<_> = words.collect(); // ✅
 ```
