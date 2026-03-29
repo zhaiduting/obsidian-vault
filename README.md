@@ -337,6 +337,7 @@
   - Mac
     - [macOS 启动加载顺序](./Mac/macOS%20启动加载顺序.md)
     - [⌘J 统一访达窗口的设置](./Mac/⌘J%20统一访达窗口的设置.md)
+    - [使用台前调度分组 App](./Mac/使用台前调度分组%20App.md)
     - [挂载 iPhone](./Mac/挂载%20iPhone.md)
     - [清除App的历史记录](./Mac/清除App的历史记录.md)
     - [系统镜像下载方法](./Mac/系统镜像下载方法.md)
@@ -347,6 +348,8 @@
   - Php
     - [创建 Laravel 项目](./Php/创建%20Laravel%20项目.md)
   - Rust
+    - [0 cargo binstall 与cargo install](./Rust/0%20cargo%20binstall%20与cargo%20install.md)
+    - [0 安装](./Rust/0%20安装.md)
     - [1 创建Rust项目](./Rust/1%20创建Rust项目.md)
     - [1 控制 println 宏的啰嗦程度](./Rust/1%20控制%20println%20宏的啰嗦程度.md)
     - [10 单体二进制、薄二进制&双料项目](./Rust/10%20单体二进制、薄二进制&双料项目.md)
