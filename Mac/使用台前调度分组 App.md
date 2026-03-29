@@ -3,9 +3,9 @@
 屏幕左侧使用 RustRover 敲代码，右侧使用 Safari 实时预览。按下 ⌘ + tab 键切换到第 3 个 App 时，RustRover 和 Safari 一起被隐藏（相当于一个整体），再次按下 ⌘ + tab 键时，RustRover 和 Safari 一起显现。
 
 > [!TIP]
-> RustRover 默认没有 “Web Preview” 功能，无法实现左侧敲代码右侧预览的效果。替代方案：使用 macOS 的「台前调度」的「App 分组」功能。
+> RustRover 默认没有 “Web Preview” 功能，无法实现左侧敲代码、右侧预览的效果。但是我们可以改用 macOS 的「台前调度」的「App 分组」功能实现目标，并且此功能更强大、更灵活、更具通用性。
 
-### 实现步骤
+### 具体步骤如下
 
 1. Mac 开启「台前调度」
 2. 打开 RustRover
