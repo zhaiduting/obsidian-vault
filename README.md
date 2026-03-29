@@ -124,6 +124,7 @@
       - [4、代码移动操作](./17、IDE/Vim/4、代码移动操作.md)
       - [98、vimtutor](./17、IDE/Vim/98、vimtutor.md)
       - [99、光标移动大全](./17、IDE/Vim/99、光标移动大全.md)
+    - [File Watcher](./17、IDE/File%20Watcher.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [RustRover 运行文件](./17、IDE/RustRover%20运行文件.md)
     - [VS Code](./17、IDE/VS%20Code.md)
