@@ -124,7 +124,6 @@
       - [4、代码移动操作](./17、IDE/Vim/4、代码移动操作.md)
       - [98、vimtutor](./17、IDE/Vim/98、vimtutor.md)
       - [99、光标移动大全](./17、IDE/Vim/99、光标移动大全.md)
-    - [2 配置 File Watcher](Rust-Dioxus-Learning/2%20配置%20File%20Watcher.md)
     - [GoLand 构建标记](./17、IDE/GoLand%20构建标记.md)
     - [RustRover 运行文件](./17、IDE/RustRover%20运行文件.md)
     - [VS Code](./17、IDE/VS%20Code.md)
@@ -418,6 +417,10 @@
     - [解构赋值与 mem](./Rust/解构赋值与%20mem.md)
     - [闭包与代码块的区别](./Rust/闭包与代码块的区别.md)
     - [预导入 Prelude](./Rust/预导入%20Prelude.md)
+  - Rust-Dioxus-Learning
+    - [1 安装 dioxus-cli](./Rust-Dioxus-Learning/1%20安装%20dioxus-cli.md)
+    - [2 配置 File Watcher](./Rust-Dioxus-Learning/2%20配置%20File%20Watcher.md)
+    - [3 设置 main.css](./Rust-Dioxus-Learning/3%20设置%20main.css.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
