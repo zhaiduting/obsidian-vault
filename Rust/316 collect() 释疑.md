@@ -34,9 +34,22 @@ where B: FromIterator<Self::Item>
 
 ### 场景 A：收集成列表
 
+简单列表
+
 ```rust
 let v: Vec<_> = "abc".chars().collect(); // 变成 ['a', 'b', 'c']
 ```
+
+复杂列表
+
+```rust
+// 这里 `collect` 只是机械地把 `Result` 盒子一个个丢进 `Vec` 里。它不会检查盒子里是 `Ok` 还是 `Err`，也不会短路。
+let results: Vec<Result<i32, _>> = strings.into_iter()
+    .map(|s| s.parse::<i32>())
+    .collect();
+```
+
+使用 Result 包裹的列表 [312 从 Vec 到 Result](312%20从%20Vec%20到%20Result.md)
 
 ### 场景 B：收集成键值对（哈希表）
 
