@@ -349,6 +349,7 @@
     - [创建 Laravel 项目](./Php/创建%20Laravel%20项目.md)
   - Rust
     - [0 cargo binstall 与cargo install](./Rust/0%20cargo%20binstall%20与cargo%20install.md)
+    - [0 关于警告](./Rust/0%20关于警告.md)
     - [0 安装](./Rust/0%20安装.md)
     - [1 创建Rust项目](./Rust/1%20创建Rust项目.md)
     - [1 控制 println 宏的啰嗦程度](./Rust/1%20控制%20println%20宏的啰嗦程度.md)
@@ -378,6 +379,7 @@
     - [3 结构体](./Rust/3%20结构体.md)
     - [3.1 元组结构体](./Rust/3.1%20元组结构体.md)
     - [3.2 单元结构体](./Rust/3.2%20单元结构体.md)
+    - [3.2 单元结构体的实例](./Rust/3.2%20单元结构体的实例.md)
     - [312 collect() 的黑魔法](./Rust/312%20collect()%20的黑魔法.md)
     - [312 从 Vec 到 Result](./Rust/312%20从%20Vec%20到%20Result.md)
     - [316 collect() 喂鱼问题](./Rust/316%20collect()%20喂鱼问题.md)
