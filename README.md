@@ -415,7 +415,7 @@
     - [孤儿规则 Orphan Rule](./Rust/孤儿规则%20Orphan%20Rule.md)
     - [引用计数 Rc](./Rust/引用计数%20Rc.md)
     - [自动派生](./Rust/自动派生.md)
-    - [范型的涡轮鱼](./Rust/范型的涡轮鱼.md)
+    - [泛型的涡轮鱼](Rust/泛型的涡轮鱼.md)
     - [解构赋值与 mem](./Rust/解构赋值与%20mem.md)
     - [闭包与代码块的区别](./Rust/闭包与代码块的区别.md)
     - [预导入 Prelude](./Rust/预导入%20Prelude.md)
