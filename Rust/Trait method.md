@@ -10,7 +10,9 @@ source: https://gemini.google.com/app/3e32603da6ae22b3
 
 在 Rust 编译器的眼里，`TraitName::method()` 是一个**带洞的方程**。这个洞就是 `Self`。只要你能给出一个证据（不管是返回值、参数还是显式类型标注）把这个洞填上，它就能顺藤摸瓜找到对应的 `impl` 块。
 
-以 `From` 为例，看看 `Self` 是如何被“逼”出来的：
+#### 以 `From` 为例
+
+看看 `Self` 是如何被“逼”出来的：
 
 ```rust
 // Trait 定义
@@ -28,6 +30,40 @@ let s: String = From::from("hello");
 - **第四步**：它去查找 `impl From<&str> for String`。找到了！调用成功。
 
 **反例**：如果你写 `let _ = From::from("hello");`（不给左侧变量类型），编译器就会罢工，因为它不知道你想把 `&str` 转成什么。
+
+#### 以问号运算符为例
+
+```rust
+struct MyError(ParseIntError);
+
+fn Foo() -> Result<i32, MyError> {  
+    let n = "123a".parse::<i32>()?;  
+    Ok(n)  
+}
+```
+
+- 数字解析失败，函数返回 `Err(From::from(e))`，其中 e 是 ParseIntError 的实例
+- 但是 Foo 函数签名限定出错时返回值类型为 `Err(e)`，要求 e 是 MyError 的实例
+- 这相当于将 `From::from` 的执行结果赋值给 MyError 类型的变量
+- 也就是说 `From::from` 的返回值 Self 类型可以赋值给 MyError 类型，由此可见 Self 就是 MyError
+- 编译器查找 `impl From<ParseIntError> for MyError`，如果能找到则执行，否则报错
+
+简单起见，可以将原始错误对象用[元组结构体](3.1%20元组结构体.md)包装一下作为 impl 的具体实现，代码如下：
+
+```rust
+impl From<ParseIntError> for MyError {
+    fn from(e: ParseIntError) -> MyError {
+        Self(e)
+    }
+}
+fn main() {
+    println!("{:?}", Foo())
+}
+
+// 运行结果 Err(MyError(ParseIntError { kind: InvalidDigit }))
+```
+
+通常应该使用带參枚举变体包装原始错误对象，相关笔记：[问号运算符的错误处理](5.2%20问号运算符的错误处理.md)
 
 ---
 
