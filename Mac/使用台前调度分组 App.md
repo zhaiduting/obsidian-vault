@@ -7,12 +7,14 @@
 
 ### 具体步骤如下
 
-1. Mac 开启「台前调度」
+1. Mac 开启[台前调度功能](https://support.apple.com/zh-cn/guide/mac-help/mchl534ba392/26/mac/26)
 2. 打开 RustRover
 3. 打开 Safari，此时 RustRover 自动缩回屏幕左侧
 4. 将 RustRover 重新拖拽到屏幕中央，此时 Safari 和 RustRover 进入同一个分组
 5. 在此分组内分别调整 Safari 和 RustRover 的位置及窗口大小，直到满意
 
-### 参考文档
+### 快捷键
 
-Mac 使用手册 » [使用台前调度整理 Mac 桌面](https://support.apple.com/zh-cn/guide/mac-help/mchl534ba392/26/mac/26)
+> [!TIP]
+> ⌘ + 反引号键（\`）：在 IDE 与 `Dioxus App` 之间切换（组内切换）
+> ⌘ + tab 键：从 IDE & `Dioxus App` 组切换到其它 App，再按则切回分组（组外切换）
