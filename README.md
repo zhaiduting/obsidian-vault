@@ -427,6 +427,7 @@
     - [1 安装 dioxus-cli](./Rust-Dioxus-Learning/1%20安装%20dioxus-cli.md)
     - [2 配置 File Watcher](./Rust-Dioxus-Learning/2%20配置%20File%20Watcher.md)
     - [3 设置 main.css](./Rust-Dioxus-Learning/3%20设置%20main.css.md)
+    - [4 使用台前调度优化开发体验](./Rust-Dioxus-Learning/4%20使用台前调度优化开发体验.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
