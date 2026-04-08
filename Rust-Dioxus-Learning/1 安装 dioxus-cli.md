@@ -1,6 +1,6 @@
 ```sh
 cargo install cargo-binstall
-cargo binstall dioxus-cli --force
+cargo binstall dioxus-cli
 ```
 
 ### 检查开发环境
@@ -99,3 +99,29 @@ dx serve
 ```
 
 之后会显示一个链接，点击查看效果
+
+### 升级 cli
+
+过了一段时间，发现如下提示：dx 与 dioxus 版本不兼容。解决办法就是升级 cli 版本
+
+```sh
+hot_dog > dx serve
+11:47:17 [dev] 🚫dx and dioxus versions are incompatible!
+                  • dx version: 0.7.3
+                  • dioxus versions: [0.7.4]
+```
+
+由于 `cargo-binstall` 本身没有专门的 `upgrade` 命令，只能通过重新安装最新版本来实现升级。注意：需要带上 `--force` 才能进行覆盖安装
+
+```sh
+cargo binstall dioxus-cli --force
+```
+
+### 更新依赖包
+
+再次执行 serve 命令发现 `dx version: 0.7.5` 太超前了，还需要更新 `dioxus` 版本。命令如下
+
+```sh
+# 直接更新所有依赖
+cargo update
+```
