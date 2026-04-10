@@ -351,6 +351,15 @@
   - Php
     - [创建 Laravel 项目](./Php/创建%20Laravel%20项目.md)
   - Rust
+    - trait object
+      - [1 特征对象](./Rust/trait%20object/1%20特征对象.md)
+      - [2 胖指针和瘦指针](./Rust/trait%20object/2%20胖指针和瘦指针.md)
+      - [3 vtable_ptr 和 vtable](./Rust/trait%20object/3%20vtable_ptr%20和%20vtable.md)
+      - [4 vtable 的具体作用](./Rust/trait%20object/4%20vtable%20的具体作用.md)
+    - 泛型
+      - [where 子句](./Rust/泛型/where%20子句.md)
+      - [泛型的涡轮鱼](./Rust/泛型/泛型的涡轮鱼.md)
+      - [等式约束](./Rust/泛型/等式约束.md)
     - [0 cargo binstall 与cargo install](./Rust/0%20cargo%20binstall%20与cargo%20install.md)
     - [0 关于警告](./Rust/0%20关于警告.md)
     - [0 安装](./Rust/0%20安装.md)
@@ -399,6 +408,7 @@
     - [6 为啥要用 enumerate()](./Rust/6%20为啥要用%20enumerate().md)
     - [7 所有权（Ownership）与移动（Move）语义](./Rust/7%20所有权（Ownership）与移动（Move）语义.md)
     - [7.1 Copy 与 Move 的对比](./Rust/7.1%20Copy%20与%20Move%20的对比.md)
+    - [7.1 move](./Rust/7.1%20move.md)
     - [7.2 println 宏的语义](./Rust/7.2%20println%20宏的语义.md)
     - [7.3 Borrowing 的可变与不可变](./Rust/7.3%20Borrowing%20的可变与不可变.md)
     - [7.4 Borrowing 的奇怪问题](./Rust/7.4%20Borrowing%20的奇怪问题.md)
@@ -418,7 +428,6 @@
     - [字符与字节](./Rust/字符与字节.md)
     - [孤儿规则 Orphan Rule](./Rust/孤儿规则%20Orphan%20Rule.md)
     - [引用计数 Rc](./Rust/引用计数%20Rc.md)
-    - [泛型的涡轮鱼](./Rust/泛型的涡轮鱼.md)
     - [自动派生](./Rust/自动派生.md)
     - [解构赋值与 mem](./Rust/解构赋值与%20mem.md)
     - [闭包与代码块的区别](./Rust/闭包与代码块的区别.md)
