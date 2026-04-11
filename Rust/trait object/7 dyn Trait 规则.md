@@ -53,3 +53,8 @@ fn start(c: &dyn Worker<Job=String>) { // ✅ dyn 正常
     todo!()
 }
 ```
+
+### 官方文档链接
+
+ https://doc.rust-lang.org/reference/items/traits.html#dyn-compatibility
+
