@@ -357,6 +357,9 @@
       - [2 胖指针和瘦指针](./Rust/trait%20object/2%20胖指针和瘦指针.md)
       - [3 vtable_ptr 和 vtable](./Rust/trait%20object/3%20vtable_ptr%20和%20vtable.md)
       - [4 vtable 的具体作用](./Rust/trait%20object/4%20vtable%20的具体作用.md)
+      - [5 DST](./Rust/trait%20object/5%20DST.md)
+      - [6 术语回顾](./Rust/trait%20object/6%20术语回顾.md)
+      - [7 dyn Trait 规则](./Rust/trait%20object/7%20dyn%20Trait%20规则.md)
     - 泛型
       - [where 子句](./Rust/泛型/where%20子句.md)
       - [泛型的涡轮鱼](./Rust/泛型/泛型的涡轮鱼.md)
