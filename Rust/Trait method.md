@@ -42,7 +42,7 @@ fn Foo() -> Result<i32, MyError> {
 }
 ```
 
-- 数字解析失败，函数返回 `Err(From::from(e))`，其中 e 是 ParseIntError 的实例
+- 当数字解析失败时，函数返回 `Err(From::from(e))`，其中 e 是 ParseIntError 的实例
 - 但是 Foo 函数签名限定出错时返回值类型为 `Err(e)`，要求 e 是 MyError 的实例
 - 这相当于将 `From::from` 的执行结果赋值给 MyError 类型的变量
 - 也就是说 `From::from` 的返回值 Self 类型可以赋值给 MyError 类型，由此可见 Self 就是 MyError
