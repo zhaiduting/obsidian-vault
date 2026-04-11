@@ -364,6 +364,11 @@
       - [where 子句](./Rust/泛型/where%20子句.md)
       - [泛型的涡轮鱼](./Rust/泛型/泛型的涡轮鱼.md)
       - [等式约束](./Rust/泛型/等式约束.md)
+    - 闭包
+      - [0 闭包与代码块的区别](./Rust/闭包/0%20闭包与代码块的区别.md)
+      - [0 闭包与函数的区别](./Rust/闭包/0%20闭包与函数的区别.md)
+      - [1 闭包与 move](./Rust/闭包/1%20闭包与%20move.md)
+      - [1 闭包的本质](./Rust/闭包/1%20闭包的本质.md)
     - [0 cargo binstall 与cargo install](./Rust/0%20cargo%20binstall%20与cargo%20install.md)
     - [0 关于警告](./Rust/0%20关于警告.md)
     - [0 安装](./Rust/0%20安装.md)
@@ -434,7 +439,6 @@
     - [引用计数 Rc](./Rust/引用计数%20Rc.md)
     - [自动派生](./Rust/自动派生.md)
     - [解构赋值与 mem](./Rust/解构赋值与%20mem.md)
-    - [0 闭包与代码块的区别](Rust/闭包/0%20闭包与代码块的区别.md)
     - [预导入 Prelude](./Rust/预导入%20Prelude.md)
   - Rust-Dioxus-Learning
     - [1 安装 dioxus-cli](./Rust-Dioxus-Learning/1%20安装%20dioxus-cli.md)
