@@ -5,6 +5,7 @@
 使用 `read_unchecked` 绕过读写锁的检测。
 
 ```rust
+// 🚫 弃用的写法
 match result.read_unchecked().as_ref() {
     Ok(resp) => rsx! { "success! {resp}" },
     Err(err) => rsx! { "err: {err:?}" },
@@ -16,7 +17,7 @@ match result.read_unchecked().as_ref() {
 你不再需要 `read_unchecked`，也不需要先定义一个临时变量。直接对 `read()` 的结果进行匹配即可：
 
 ```rust
-// Rust 2024 写法正确 ✅
+// ✅ Rust 2024 写法正确
 match result.read().as_ref() {
     Ok(resp) => rsx! { "成功获取数据: {resp}" },
     Err(err) => rsx! { "出错啦: {err:?}" },
