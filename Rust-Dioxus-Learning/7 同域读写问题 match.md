@@ -18,6 +18,7 @@ match result.read_unchecked().as_ref() {
 
 ```rust
 // ✅ Rust 2024 写法正确
+// 假设 result 是一个 Signal<Result<String, Error>>
 match result.read().as_ref() {
     Ok(resp) => rsx! { "成功获取数据: {resp}" },
     Err(err) => rsx! { "出错啦: {err:?}" },
