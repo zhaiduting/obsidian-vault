@@ -371,6 +371,7 @@
       - [1 闭包与 move](./Rust/闭包/1%20闭包与%20move.md)
       - [1 闭包的函数特征](./Rust/闭包/1%20闭包的函数特征.md)
       - [1 闭包的本质](./Rust/闭包/1%20闭包的本质.md)
+      - [2 闭包与 Copy](./Rust/闭包/2%20闭包与%20Copy.md)
     - [0 cargo binstall 与cargo install](./Rust/0%20cargo%20binstall%20与cargo%20install.md)
     - [0 关于警告](./Rust/0%20关于警告.md)
     - [0 安装](./Rust/0%20安装.md)
@@ -434,6 +435,7 @@
     - [Vector](./Rust/Vector.md)
     - [read_to_string](./Rust/read_to_string.md)
     - [rustc --explain E0277](./Rust/rustc%20--explain%20E0277.md)
+    - [todo!() 和 unimplemented!()](./Rust/todo!()%20和%20unimplemented!().md)
     - [wrapping_add](./Rust/wrapping_add.md)
     - [write! 宏用法详解](./Rust/write!%20宏用法详解.md)
     - [字符与字节](./Rust/字符与字节.md)
@@ -453,6 +455,7 @@
     - [7 同域读写问题 match](./Rust-Dioxus-Learning/7%20同域读写问题%20match.md)
     - [7 同域读写问题](./Rust-Dioxus-Learning/7%20同域读写问题.md)
     - [8 上下文状态](./Rust-Dioxus-Learning/8%20上下文状态.md)
+    - [z generational-box](./Rust-Dioxus-Learning/z%20generational-box.md)
   - Windows
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
