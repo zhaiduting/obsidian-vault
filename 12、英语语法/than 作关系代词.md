@@ -1,5 +1,5 @@
 ---
-source: https://gemini.google.com/app/5d5f08cb6082ba32
+source: /app/5d5f08cb6082ba32
 ---
 
 这种语法现象在英语语法中被称为 **"Than" as a Relative Pronoun（than 作为关系代词）**，有时也被归类为 **Comparative Clauses with Subject Ellipsis（带主语省略的比较从句）**。

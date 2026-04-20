@@ -1,12 +1,8 @@
 ---
-author:
-  - Gemini
 created: 2025-09-28
-source: https://g.co/gemini/share/66ec28cc4aa2
+author:
+  - Franco Victorio
 ---
-
-[作者：Franco Victorio](https://medium.com/@fvictorio?source=post_page---byline--a0d98c845e70---------------------------------------)
-[翻译：Gemini](https://g.co/gemini/share/66ec28cc4aa2)
 
 在这篇文章中，我将向您展示如何为 [Prettier](https://prettier.io/) 构建一个非常简单的插件。您将学习如何组织、测试以及当然是编写插件。我远非这方面的专家，但在为 [Solidity 插件](https://github.com/prettier-solidity/prettier-plugin-solidity/)做贡献的过程中学到了很多，并且注意到除了官方文档之外，关于这个主题的资料似乎并不多。
 

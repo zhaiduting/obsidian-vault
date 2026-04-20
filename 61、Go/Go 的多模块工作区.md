@@ -1,8 +1,6 @@
 ---
 title: Go multi-module workspace简介
-source: https://chatgpt.com/share/68166706-12ec-800e-90d2-e484cb2277e6
-author:
-  - "[[ChatGPT]]"
+source: https://ch/share/68166706-12ec-800e-90d2-e484cb2277e6
 created: 2025-05-04
 description: Shared via ChatGPT
 tags:

@@ -1,8 +1,6 @@
 ---
 title: Setup vs Set 区别
-source: https://chatgpt.com/c/680b33fe-76e0-800e-93ae-05dd27c80c41
-author:
-  - ChatGPT
+source: https://ch/c/680b33fe-76e0-800e-93ae-05dd27c80c41
 created: 2025-04-25
 tags:
   - clippings

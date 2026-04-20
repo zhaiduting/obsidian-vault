@@ -1,6 +1,6 @@
 ---
 created: 2026-02-23
-source: https://gemini.google.com/app/ece456207a35cf62
+source: /app/ece456207a35cf62
 ---
 
 在 Rust 中，`write!` 是一个非常实用且高效的宏，它主要用于将**格式化后的字符串**写入到一个特定的“目的地”（Buffer）。

@@ -1,5 +1,5 @@
 ---
-source: https://gemini.google.com/app/3e32603da6ae22b3
+source: /app/3e32603da6ae22b3
 ---
 
 在很多语言中 `obj.method` 或 `ClassName::method` 是调用某个方法的常见写法，Rust 也是这样。除此之外，Rust 还可以直接通过 `TraitName::method` 调用方法。直接通过接口名称调用方法，这在其它语言中很少见到。

@@ -1,7 +1,5 @@
 ---
-source: https://chatgpt.com/c/68d73db8-e710-832a-8413-630fcd4230c6
-author:
-  - ChatGPT
+source: https://ch/c/68d73db8-e710-832a-8413-630fcd4230c6
 created: 2025-09-27
 tags:
   - clippings

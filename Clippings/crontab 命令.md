@@ -1,6 +1,6 @@
 ---
 title: ChatGPT
-source: https://chatgpt.com/c/67a15a6f-6cdc-800e-ba9a-bd5afb0cacdd
+source: https://ch/c/67a15a6f-6cdc-800e-ba9a-bd5afb0cacdd
 author: 
 published: 
 created: 2025-02-04

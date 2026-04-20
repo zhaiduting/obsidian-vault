@@ -1,7 +1,5 @@
 ---
 source: https://copilot.microsoft.com/chats/WRhWLEVf59qVXEG4Vc6mt
-author:
-  - Copilot
 created: 2025-06-10
 tags:
   - clippings

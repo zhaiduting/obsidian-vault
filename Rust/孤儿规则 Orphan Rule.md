@@ -1,6 +1,6 @@
 ---
 created: 2026-02-23
-source: https://gemini.google.com/app/069b2e188f965b23
+source: /app/069b2e188f965b23
 ---
 
 **在 Rust 里，如果你想把“特征（Trait）”安装到“类型（Type）”上，这两个东西里至少得有一个是“你自己家”的。**

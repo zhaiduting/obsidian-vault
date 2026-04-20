@@ -1,5 +1,5 @@
 ---
-source: https://gemini.google.com/share/18ae201e1ef6
+source: /share/18ae201e1ef6
 ---
 
 在 Rust 中，`todo!()` 和 `unimplemented!()` 的功能几乎**完全相同**。它们都是用来标记尚未完成的代码片段的宏，并且在执行到该位置时都会触发 `panic!`。

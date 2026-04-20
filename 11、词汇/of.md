@@ -1,5 +1,5 @@
 ---
-source: https://chatgpt.com/c/6854d8b4-edec-800e-80f6-bc95ebea8b1d
+source: https://ch/c/6854d8b4-edec-800e-80f6-bc95ebea8b1d
 ---
 
 ## 🌟 一、基本定义：“of” 表示 **从属、部分、来源、内容、特征** 等关系

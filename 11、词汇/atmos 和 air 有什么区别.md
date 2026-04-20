@@ -1,6 +1,6 @@
 ---
 title: atmos 和 air 有什么区别
-source: https://gemini.google.com/app/9f63f993a5ed104d
+source: /app/9f63f993a5ed104d
 author:
   - "[[Gemini]]"
 created: 2025-06-03

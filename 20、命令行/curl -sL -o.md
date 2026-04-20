@@ -1,8 +1,6 @@
 ---
 title: 解释curl命令
-source: https://chatgpt.com/c/6949ccf0-9f40-8322-8a49-e8de1666df01
-author:
-  - ChatGPT
+source: https://ch/c/6949ccf0-9f40-8322-8a49-e8de1666df01
 created: 2025-12-23
 tags:
   - clippings

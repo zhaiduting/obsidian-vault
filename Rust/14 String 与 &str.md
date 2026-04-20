@@ -1,7 +1,5 @@
 ---
-author:
-  - Gemini
-source: https://gemini.google.com/app/b25bad2cebc0de40
+source: /app/b25bad2cebc0de40
 ---
 
 **它们自身的“元数据”都在栈上，但它们指向的“内容”位置不同。**

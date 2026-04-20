@@ -1,5 +1,5 @@
 ---
-source: https://chatgpt.com/c/68bbd116-a0f8-832f-aecb-a28bc2a45d12
+source: https://ch/c/68bbd116-a0f8-832f-aecb-a28bc2a45d12
 ---
 
 **Homebrew** 是 macOS 和 Linux 上的包管理器，用于安装、更新、管理和卸载软件包或工具。它的目标是让用户更容易地在系统中安装 Unix 工具和开源应用。

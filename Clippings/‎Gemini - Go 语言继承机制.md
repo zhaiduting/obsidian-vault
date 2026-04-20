@@ -1,6 +1,5 @@
 ---
-title: ‎Gemini - chat to supercharge your ideas
-source: https://gemini.google.com/app/25910a98c0afaeaf
+source: /app/25910a98c0afaeaf
 author:
   - Gemini
 published: 

@@ -1,7 +1,5 @@
 ---
-source: https://gemini.google.com/app/9b1762343d5abdc3
-author:
-  - Gemini
+source: /app/9b1762343d5abdc3
 created: 2026-01-01
 tags:
   - clippings

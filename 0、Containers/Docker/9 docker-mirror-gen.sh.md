@@ -1,8 +1,6 @@
 ---
-author:
-  - ChatGPT
 created: 2025-12-20
-source: https://chatgpt.com/c/69460ffe-514c-8323-8226-02b0be31a5f7
+source: https://ch/c/69460ffe-514c-8323-8226-02b0be31a5f7
 ---
 
 ### 测速并生成配置文件

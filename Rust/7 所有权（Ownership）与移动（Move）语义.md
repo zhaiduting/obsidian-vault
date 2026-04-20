@@ -1,5 +1,5 @@
 ---
-source: https://gemini.google.com/app/738e1d7442f6bde4
+source: /app/738e1d7442f6bde4
 author:
   - Gemini
 created: 2026-02-03
