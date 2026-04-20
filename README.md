@@ -84,6 +84,7 @@
     - [aware， conscious，sensible](./11、词汇/aware，%20conscious，sensible.md)
     - [compromise 折中、泄密](./11、词汇/compromise%20折中、泄密.md)
     - [equal parts](./11、词汇/equal%20parts.md)
+    - [exclusive, premium, limited, luxury](./11、词汇/exclusive,%20premium,%20limited,%20luxury.md)
     - [get the most out of...](./11、词汇/get%20the%20most%20out%20of....md)
     - [of 不接形容词](./11、词汇/of%20不接形容词.md)
     - [of](./11、词汇/of.md)
@@ -369,6 +370,7 @@
     - 闭包
       - [0 闭包与代码块的区别](./Rust/闭包/0%20闭包与代码块的区别.md)
       - [0 闭包与函数的区别](./Rust/闭包/0%20闭包与函数的区别.md)
+      - [0 闭包是啥？](./Rust/闭包/0%20闭包是啥？.md)
       - [1 闭包与 move](./Rust/闭包/1%20闭包与%20move.md)
       - [1 闭包的函数特征](./Rust/闭包/1%20闭包的函数特征.md)
       - [1 闭包的本质](./Rust/闭包/1%20闭包的本质.md)
