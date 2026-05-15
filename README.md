@@ -366,6 +366,7 @@
       - [5 DST](./Rust/trait%20object/5%20DST.md)
       - [6 术语回顾](./Rust/trait%20object/6%20术语回顾.md)
       - [7 dyn Trait 规则](./Rust/trait%20object/7%20dyn%20Trait%20规则.md)
+      - [8 trait 参数](./Rust/trait%20object/8%20trait%20参数.md)
     - 泛型
       - [where 子句](./Rust/泛型/where%20子句.md)
       - [泛型的涡轮鱼](./Rust/泛型/泛型的涡轮鱼.md)
