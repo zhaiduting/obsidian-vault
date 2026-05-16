@@ -103,6 +103,7 @@
     - [液体三态对比](./11、词汇/液体三态对比.md)
     - [狺狺狂吠](./11、词汇/狺狺狂吠.md)
     - [码头](./11、词汇/码头.md)
+    - [美元硬币面值与换算](./11、词汇/美元硬币面值与换算.md)
     - [聒噪](./11、词汇/聒噪.md)
     - [虚与委蛇](./11、词汇/虚与委蛇.md)
     - [请让路](./11、词汇/请让路.md)
@@ -366,7 +367,7 @@
       - [5 DST](./Rust/trait%20object/5%20DST.md)
       - [6 术语回顾](./Rust/trait%20object/6%20术语回顾.md)
       - [7 dyn Trait 规则](./Rust/trait%20object/7%20dyn%20Trait%20规则.md)
-      - [8 trait 参数](./Rust/trait%20object/8%20trait%20参数.md)
+      - [8 trait 作参数](./Rust/trait%20object/8%20trait%20作参数.md)
     - 泛型
       - [where 子句](./Rust/泛型/where%20子句.md)
       - [泛型的涡轮鱼](./Rust/泛型/泛型的涡轮鱼.md)
