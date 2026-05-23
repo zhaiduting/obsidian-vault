@@ -31,16 +31,16 @@ source: https://ch/c/68bbd116-a0f8-832f-aecb-a28bc2a45d12
 
 ### 🔧 常用命令
 
-| 命令                    | 作用                           |
-| ----------------------- | ------------------------------ |
-| `brew install <包名>`   | 安装软件包                     |
-| `brew uninstall <包名>` | 卸载软件包                     |
-| `brew update`           | 更新 Homebrew 本身             |
-| `brew upgrade`          | 升级已安装软件包               |
-| `brew list`             | 列出已安装的所有包             |
-| `brew info <包名>`      | 查看某个软件包的详细信息       |
-| `brew search <关键词>`  | 搜索软件包                     |
-| `brew doctor`           | 检查 Homebrew 是否存在配置问题 |
+| 命令                    | 作用                   |
+| --------------------- | -------------------- |
+| `brew install <包名>`   | 安装软件包                |
+| `brew uninstall <包名>` | 卸载软件包                |
+| `brew update`         | 更新 Homebrew 本身       |
+| `brew upgrade`        | 升级已安装软件包             |
+| `brew list`           | 列出已安装的所有包            |
+| `brew info <包名>`      | 查看某个软件包的详细信息         |
+| `brew search <关键词>`   | 搜索软件包                |
+| `brew doctor`         | 检查 Homebrew 是否存在配置问题 |
 
 ---
 
