@@ -471,6 +471,7 @@
     - [使用 UUP 下载 Win 系统](./Windows/使用%20UUP%20下载%20Win%20系统.md)
     - [凭据管理器](./Windows/凭据管理器.md)
     - [微软官方下载 Win 系统](./Windows/微软官方下载%20Win%20系统.md)
+    - [我的文档重命名](./Windows/我的文档重命名.md)
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
   - 其它
     - [LocalSend 发送文件夹问题](./其它/LocalSend%20发送文件夹问题.md)
