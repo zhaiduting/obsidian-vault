@@ -20,5 +20,5 @@ brew install --cask linearmouse
 滚动 » **纵向** » 修饰键 » ⌘ (Command) 设置为「缩放」  
 返回 Moonlight 后，「Cmd + 滚轮」也会生效！
 
-> [!CAUTION]
+> [!WARNING]
 > 「Cmd + 滚轮」事件实际发送的是数字小键盘的 + 号键的键位码！也就是说执行「Cmd + 滚轮下翻」实际效果相当于按下了小键盘的加号键；「Cmd + 滚轮上翻」相当于小键盘的减号键
