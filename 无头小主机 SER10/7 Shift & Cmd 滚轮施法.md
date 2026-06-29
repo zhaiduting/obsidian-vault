@@ -18,7 +18,13 @@ brew install --cask linearmouse
 
 ![替换cmd为缩放](https://lib.zhaiduting.work.gd/uPic/%E6%9B%BF%E6%8D%A2cmd%E4%B8%BA%E7%BC%A9%E6%94%BE.png)
 滚动 » **纵向** » 修饰键 » ⌘ (Command) 设置为「缩放」  
-返回 Moonlight 后，「Cmd + 滚轮」也会生效！
+返回 Moonlight 后，「Cmd + 滚轮」也会生效
 
 > [!WARNING]
-> 「Cmd + 滚轮」事件实际发送的是数字小键盘的键位码！执行「Cmd + 滚轮下翻」实际效果相当于按下了小键盘的加号键；「Cmd + 滚轮上翻」相当于小键盘的减号键
+> 此法实际上是将「Cmd + 滚轮事件」映射成了数字小键盘的键位码。主要缺点：
+>
+> 1. 对于「Cmd + 字母键」无法生效；
+> 2. 类似于「Shift + Cmd + 滚轮事件」这样的组合键也无效
+
+> [!IMPORTANT]
+> 下一篇介绍更好的解决办法：使用 Karabiner-Elements 重新启用 Cmd 修饰键功能
