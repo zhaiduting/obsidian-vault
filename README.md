@@ -441,6 +441,7 @@
     - [8.4 自动解引用](./Rust/8.4%20自动解引用.md)
     - [Brainfuck 加法](./Rust/Brainfuck%20加法.md)
     - [Brainfuck 归零](./Rust/Brainfuck%20归零.md)
+    - [Cell](./Rust/Cell.md)
     - [Ok 必须使用 Result 前缀的情形](./Rust/Ok%20必须使用%20Result%20前缀的情形.md)
     - [Trait method](./Rust/Trait%20method.md)
     - [Vector](./Rust/Vector.md)
