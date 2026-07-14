@@ -70,3 +70,7 @@ let f = || {
 	let move_world = world;
 };
 ```
+
+### 引申阅读
+
+[Dioxus 闭包使用 move 的原因](../../Rust-Dioxus-Learning/9%20dx闭包使用move的原因.md)
