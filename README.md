@@ -442,6 +442,7 @@
     - [Brainfuck 加法](./Rust/Brainfuck%20加法.md)
     - [Brainfuck 归零](./Rust/Brainfuck%20归零.md)
     - [Cell](./Rust/Cell.md)
+    - [Drop 特征](./Rust/Drop%20特征.md)
     - [Ok 必须使用 Result 前缀的情形](./Rust/Ok%20必须使用%20Result%20前缀的情形.md)
     - [Trait method](./Rust/Trait%20method.md)
     - [Vector](./Rust/Vector.md)

@@ -24,3 +24,5 @@ match result.read().as_ref() {
     Err(err) => rsx! { "出错啦: {err:?}" },
 }
 ```
+
+提个问题：[这里为啥要使用 .as_ref() 呢？](https://chatgpt.com/share/6a586c64-a6fc-83ec-8f0e-3acb92123c7a)
