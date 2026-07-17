@@ -457,6 +457,8 @@
     - [自动派生](./Rust/自动派生.md)
     - [解构赋值与 mem](./Rust/解构赋值与%20mem.md)
     - [预导入 Prelude](./Rust/预导入%20Prelude.md)
+  - Rust Crate
+    - [serde](./Rust%20Crate/serde.md)
   - Rust-Dioxus-Learning
     - [1 安装 dioxus-cli](./Rust-Dioxus-Learning/1%20安装%20dioxus-cli.md)
     - [2 配置 File Watcher](./Rust-Dioxus-Learning/2%20配置%20File%20Watcher.md)
