@@ -105,3 +105,17 @@ fn main() {
     process_user(user);
 }
 ```
+
+### 关于 `serde_json` 及 `serde_yaml`
+
+代码中的 `serde_yaml` 及 `serde_json` 并非全局函数，而是 Crate。实际上 serde、serde_json 及 serde_yaml 都是独立的 **crate**，属于平级关系，并非父子关系。项目的 `Cargo.toml` 文件的 \[dependencies] 类似如下
+
+```yml
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+serde_json = "1"
+```
+
+**只要 crate 被添加到 `Cargo.toml`，并且里面的项是 `pub`，就可以通过 crate 路径访问它**。例如
+`serde_json::to_string`、`serde_json::from_str` 都是这样访问的。
