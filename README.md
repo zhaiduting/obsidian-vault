@@ -428,6 +428,7 @@
     - [5.2 问号运算符的错误处理](./Rust/5.2%20问号运算符的错误处理.md)
     - [5.3 可选值 Optional values](./Rust/5.3%20可选值%20Optional%20values.md)
     - [5.4 易错值 Fallible result](./Rust/5.4%20易错值%20Fallible%20result.md)
+    - [5.5 Option 与 Result 简析](./Rust/5.5%20Option%20与%20Result%20简析.md)
     - [6 为啥要用 enumerate()](./Rust/6%20为啥要用%20enumerate().md)
     - [7 所有权（Ownership）与移动（Move）语义](./Rust/7%20所有权（Ownership）与移动（Move）语义.md)
     - [7.1 Copy 与 Move 的对比](./Rust/7.1%20Copy%20与%20Move%20的对比.md)
