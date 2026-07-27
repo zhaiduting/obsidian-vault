@@ -447,6 +447,7 @@
     - [Cell](./Rust/Cell.md)
     - [Drop 特征](./Rust/Drop%20特征.md)
     - [Ok 必须使用 Result 前缀的情形](./Rust/Ok%20必须使用%20Result%20前缀的情形.md)
+    - [String ：：from](./Rust/String%20：：from.md)
     - [Trait method](./Rust/Trait%20method.md)
     - [Vector](./Rust/Vector.md)
     - [read_to_string](./Rust/read_to_string.md)
