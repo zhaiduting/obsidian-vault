@@ -453,6 +453,7 @@
     - [Vector](./Rust/Vector.md)
     - [read_to_string](./Rust/read_to_string.md)
     - [rustc --explain E0277](./Rust/rustc%20--explain%20E0277.md)
+    - [thread_local](./Rust/thread_local.md)
     - [todo!() 和 unimplemented!()](./Rust/todo!()%20和%20unimplemented!().md)
     - [wrapping_add](./Rust/wrapping_add.md)
     - [write! 宏用法详解](./Rust/write!%20宏用法详解.md)
