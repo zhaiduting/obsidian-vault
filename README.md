@@ -170,6 +170,7 @@
       - [链接本地库文件](./19、包管理器/npm/链接本地库文件.md)
     - win
       - [Chocolatey](./19、包管理器/win/Chocolatey.md)
+      - [Scoop](./19、包管理器/win/Scoop.md)
       - [Winget](./19、包管理器/win/Winget.md)
     - [deb » apt 和 apt-get](./19、包管理器/deb%20»%20apt%20和%20apt-get.md)
     - [rpm » yum & dnf](./19、包管理器/rpm%20»%20yum%20&%20dnf.md)
