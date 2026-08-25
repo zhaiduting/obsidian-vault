@@ -487,6 +487,7 @@
     - [我的文档重命名](./Windows/我的文档重命名.md)
     - [文件权限相关命令 icacls](./Windows/文件权限相关命令%20icacls.md)
   - 其它
+    - [DNSExit Remote Access](./其它/DNSExit%20Remote%20Access.md)
     - [LocalSend 发送文件夹问题](./其它/LocalSend%20发送文件夹问题.md)
     - [MacDroid 挂载手机](./其它/MacDroid%20挂载手机.md)
     - [Snagit 圆角透明度反馈信](./其它/Snagit%20圆角透明度反馈信.md)
