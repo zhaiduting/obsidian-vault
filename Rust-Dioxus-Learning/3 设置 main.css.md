@@ -43,7 +43,7 @@ document::Stylesheet { href: MAIN_CSS } // ⭐️
 
 ### document::Stylesheet
 
-如果不考虑 CLI 的额外处理，仅看生成的 HTML 节点，下面两行 Rust 代码会渲染出完全相同的 HTML DOM 结构：
+下面两行 Rust 代码会渲染出完全相同的 HTML DOM 结构：
 
 ```rust
 // 使用 Stylesheet ⭐️
@@ -59,6 +59,5 @@ document::Link { rel: "stylesheet", href: asset!("/assets/style.css") }
 <link rel="stylesheet" href="/assets/style.css" />
 ```
 
-可见在生成的 HTML 结构上，这两种写法是等价的；但在 Dioxus CLI 的构建与开发体验（如 CSS 预处理和 CSS 热重载）上，它们并不等价。Dioxus CLI (`dx`) 会针对 `document::Stylesheet` 做专门的工具链优化和生命周期拦截，而 `document::Link` 仅仅被视作一个通用的 HTML 标签属性映射。
-
-**使用建议**：引入 CSS 样式表时**始终使用 `document::Stylesheet`**，这样可以最大化享受 `dx` CLI 提供的 CSS 热重载和资源构建优化；只有在处理 Favicon、Font Preload、Canonical URL 等非 CSS 链入时，才使用 `document::Link`。
+> [!TIP]
+> `document::Stylesheet` 只是 `document::Link` 的语法糖，避免手写 `rel="stylesheet"` 和 `type="text/css"` 的麻烦。两者在编译、热重载和最终渲染上没有任何区别。
