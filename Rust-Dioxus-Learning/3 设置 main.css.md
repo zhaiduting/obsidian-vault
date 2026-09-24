@@ -60,4 +60,4 @@ document::Link { rel: "stylesheet", href: asset!("/assets/style.css") }
 ```
 
 > [!TIP]
-> `document::Stylesheet` 只是 `document::Link` 的语法糖，避免手写 `rel="stylesheet"` 和 `type="text/css"` 的麻烦。两者在编译、热重载和最终渲染上没有任何区别。
+> `document::Stylesheet` 只是 `document::Link` 的语法糖，避免了手写 `rel="stylesheet"` 和 `type="text/css"` 的麻烦。
