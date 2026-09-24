@@ -77,6 +77,7 @@
     - [Fancy characters 及框线符](./11、词汇/Fancy%20characters%20及框线符.md)
     - [Fundamentals](./11、词汇/Fundamentals.md)
     - [Got the hang of it](./11、词汇/Got%20the%20hang%20of%20it.md)
+    - [Leverage 和 Use 的区别](./11、词汇/Leverage%20和%20Use%20的区别.md)
     - [Route vs Router](./11、词汇/Route%20vs%20Router.md)
     - [TinkerCAD 之 Multi Moves](./11、词汇/TinkerCAD%20之%20Multi%20Moves.md)
     - [TinkerCAD 之 View it](./11、词汇/TinkerCAD%20之%20View%20it.md)
