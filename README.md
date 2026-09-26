@@ -481,6 +481,7 @@
     - [4 使用台前调度优化开发体验](./Rust-Dioxus-Learning/4%20使用台前调度优化开发体验.md)
     - [5 启用日志](./Rust-Dioxus-Learning/5%20启用日志.md)
     - [6 读写状态](./Rust-Dioxus-Learning/6%20读写状态.md)
+    - [6.2 读写状态](./Rust-Dioxus-Learning/6.2%20读写状态.md)
     - [7 同域读写问题 match](./Rust-Dioxus-Learning/7%20同域读写问题%20match.md)
     - [7 同域读写问题](./Rust-Dioxus-Learning/7%20同域读写问题.md)
     - [8 上下文状态](./Rust-Dioxus-Learning/8%20上下文状态.md)
