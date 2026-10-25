@@ -393,7 +393,7 @@
       - [1 闭包的本质](./Rust/闭包/1%20闭包的本质.md)
       - [2 闭包与 Copy](./Rust/闭包/2%20闭包与%20Copy.md)
       - [3 闭包可变借用外部变量](./Rust/闭包/3%20闭包可变借用外部变量.md)
-    - [0 cargo binstall 与cargo install](./Rust/0%20cargo%20binstall%20与cargo%20install.md)
+    - [0 cargo 常用命令](Rust/0%20cargo%20常用命令.md)
     - [0 关于警告](./Rust/0%20关于警告.md)
     - [0 安装](./Rust/0%20安装.md)
     - [1 创建Rust项目](./Rust/1%20创建Rust项目.md)

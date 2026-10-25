@@ -1,11 +1,15 @@
+## `cargo install` 与 `binstall`
+
 以 `dioxus-cli` 为例，以下任意一条命令都可以安装它
 
 - `cargo install dioxus-cli`
 - `cargo binstall dioxus-cli`
 
 > [!TIP]
-> 首选命令是第二条，但是可能会遇到网络故障。
-> 如果 `binstall` 报错 no such command，可以通过 `cargo install cargo-binstall` 解决这个问题。
+> 首选命令是第二条，但前提是 binstall 必须存在。如果 `binstall` 报错 no such command，可以通过 `cargo install cargo-binstall` 安装它。
+>
+> `cargo install cargo-binstall` ✅
+> `cargo install binstall` ❌
 
 为了帮你彻底理清两者的区别，我们把它们放在 2023 款 MacBook Pro (M2) 的开发场景下对比：
 
@@ -56,6 +60,17 @@
 
 ---
 
-### 💡 总结
+### 💡 提示
 
 你既然已经安装好了 `binstall`，以后安装任何 Rust 工具（比如 `cargo-expand`, `cargo-watch`, `dioxus-cli`），**第一反应应该是先用 `binstall`**。如果它报错说找不到包，再退回到 `cargo install`。
+
+> [!TIP]
+> 对于 `cargo binstall xxx` 可以成功执行的命令，改为 `cargo install xxx` 是不是肯定也可以？从技术逻辑上讲，99% 的情况下完全可以；但从效率和体验上讲，往往是个灾难。
+
+## `cargo add`
+
+| **命令**             | **本质作用**                                 | **操作对象**               | **典型应用场景**                                                                                               |
+| -------------------- | -------------------------------------------- | -------------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **`cargo add`**      | **管理项目依赖库**（修改 `Cargo.toml`）      | 库（Library） / 依赖包     | 在写代码时，项目需要引入某个第三方库（如 `trpl`, `tokio`, `serde`）                                            |
+| **`cargo install`**  | **编译并安装二进制程序**（源码编译）         | 可执行程序（Binary / CLI） | 把 crates.io 上的源码下载下来，**在本地从头编译**成可执行文件，并放到全局 bin 目录下（如 `dx`, `cargo-watch`） |
+| **`cargo binstall`** | **下载并安装预编译的二进制程序**（跳过编译） | 可执行程序（Binary / CLI） | 同样是装工具，但**直接去 GitHub Releases 下载编译好的二进制包**，省去漫长的本地编译时间                        |
