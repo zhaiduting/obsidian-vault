@@ -74,3 +74,9 @@
 | **`cargo add`**      | **管理项目依赖库**（修改 `Cargo.toml`）      | 库（Library） / 依赖包     | 在写代码时，项目需要引入某个第三方库（如 `trpl`, `tokio`, `serde`）                                            |
 | **`cargo install`**  | **编译并安装二进制程序**（源码编译）         | 可执行程序（Binary / CLI） | 把 crates.io 上的源码下载下来，**在本地从头编译**成可执行文件，并放到全局 bin 目录下（如 `dx`, `cargo-watch`） |
 | **`cargo binstall`** | **下载并安装预编译的二进制程序**（跳过编译） | 可执行程序（Binary / CLI） | 同样是装工具，但**直接去 GitHub Releases 下载编译好的二进制包**，省去漫长的本地编译时间                        |
+
+> [!TIP]
+> `cargo add xxx` 会把 `xxx` 添加到 `Cargo.toml` 的 `[dependencies]`
+> `cargo add xxx --dev` 则将其添加到 `[dev-dependencies]`
+
+如果 `[dependencies]` 包含 xxx 依赖，而项目实际并未使用它，则会导致编译失败。删除此依赖则编译成功，但这会导致 `/examples` 里的文件报错。解决办法：将 xxx 安装到 `[dev-dependencies]` 下！

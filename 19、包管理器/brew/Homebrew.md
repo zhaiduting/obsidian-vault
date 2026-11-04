@@ -31,16 +31,16 @@ source: https://ch/c/68bbd116-a0f8-832f-aecb-a28bc2a45d12
 
 ### 🔧 常用命令
 
-| 命令                    | 作用                   |
-| --------------------- | -------------------- |
-| `brew install <包名>`   | 安装软件包                |
-| `brew uninstall <包名>` | 卸载软件包                |
-| `brew update`         | 更新 Homebrew 本身       |
-| `brew upgrade`        | 升级已安装软件包             |
-| `brew list`           | 列出已安装的所有包            |
-| `brew info <包名>`      | 查看某个软件包的详细信息         |
-| `brew search <关键词>`   | 搜索软件包                |
-| `brew doctor`         | 检查 Homebrew 是否存在配置问题 |
+| 命令                    | 作用                           |
+| ----------------------- | ------------------------------ |
+| `brew install <包名>`   | 安装软件包                     |
+| `brew uninstall <包名>` | 卸载软件包                     |
+| `brew update`           | 更新 Homebrew 本身             |
+| `brew upgrade`          | 升级已安装软件包               |
+| `brew list`             | 列出已安装的所有包             |
+| `brew info <包名>`      | 查看某个软件包的详细信息       |
+| `brew search <关键词>`  | 搜索软件包                     |
+| `brew doctor`           | 检查 Homebrew 是否存在配置问题 |
 
 ---
 
@@ -144,6 +144,9 @@ brew install --cask utm                   # 苹果平台虚拟机（付费版）
 brew install --cask crossover             # Mac 直接运行 Windows 程序（已购 2024）
 brew install --cask virtualbox            # 免费跨平台虚拟机
 ```
+
+> [!WARNING]
+> brew upgrade 命令可能会升级 Parallels 到最新版，如果是大版本升级，则会导致现有激活码失效。最终决定执行 brew uninstall parallels 删除了它，改用 https://my.parallels.com/login?continue=/desktop/pdfm/downloads 手动下载了 v26 版 dmg 格式的安装包
 
 虽然以下两条命令最终安装的都是 Docker Desktop，但是升级时只能使用 `brew upgrade docker-desktop` 命令，而 `brew upgrade docker` 无法升级。
 
