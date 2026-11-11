@@ -488,6 +488,7 @@
     - [7 同域读写问题 match](./Rust-Dioxus-Learning/7%20同域读写问题%20match.md)
     - [8 上下文状态](./Rust-Dioxus-Learning/8%20上下文状态.md)
     - [9 dx闭包使用move的原因](./Rust-Dioxus-Learning/9%20dx闭包使用move的原因.md)
+    - [Futures](./Rust-Dioxus-Learning/Futures.md)
     - [Handler Props](./Rust-Dioxus-Learning/Handler%20Props.md)
     - [z generational-box](./Rust-Dioxus-Learning/z%20generational-box.md)
   - Windows
